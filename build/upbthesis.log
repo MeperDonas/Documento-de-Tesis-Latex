@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.18)  20 NOV 2025 00:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.18)  20 NOV 2025 00:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"c:/Users/meper/Desktop/Proyecto de Grado/Tesis/Test Latex VSCODE/upbthesis.tex"
-(c:/Users/meper/Desktop/Proyecto de Grado/Tesis/Test Latex VSCODE/upbthesis.tex
+**"c:/Users/meper/Desktop/Proyecto de Grado/Tesis/Documento-de-Tesis-Latex/upbthesis.tex"
+(c:/Users/meper/Desktop/Proyecto de Grado/Tesis/Documento-de-Tesis-Latex/upbthesis.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
 (ieee_upb.cls
@@ -766,7 +766,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 15.
 LaTeX Font Info:    Trying to load font information for T1+ptm on input line 32.
  (C:\Program Files\MiKTeX\tex/latex/psnfss\t1ptm.fd
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-) (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.aux
+) (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
@@ -863,7 +863,7 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 Package caption Info: rotating package is loaded.
 Package caption Info: End \AtBeginDocument code.
 Package hyperref Info: Link coloring ON on input line 32.
- (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.out) (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.out)
+ (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.out) (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.out)
 \@outlinefile=\write4
 \openout4 = `upbthesis.out'.
 
@@ -1014,7 +1014,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [3
 
-] (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.toc
+] (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 
@@ -1040,7 +1040,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [5]
 \c@mytablecounter=\count409
- (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.lot
+ (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.lot
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
@@ -1371,7 +1371,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[40] (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.aux
+[40] (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -1388,14 +1388,14 @@ Package rerunfilecheck Info: File `upbthesis.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  18798 strings out of 467871
- 299872 string characters out of 5428442
+ 300019 string characters out of 5428442
  858743 words of memory out of 5000000
  47265 multiletter control sequences out of 15000+600000
  662468 words of font info for 87 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,11n,104p,1468b,768s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,11n,104p,1475b,768s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.pdf" (41 pages, 209214 bytes).
+Output written on "c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.pdf" (41 pages, 209214 bytes).
 PDF statistics:
  538 PDF objects out of 1000 (max. 8388607)
  100 named destinations out of 1000 (max. 500000)

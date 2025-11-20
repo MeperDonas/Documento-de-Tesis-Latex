@@ -1,7 +1,7 @@
-PWD c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE
+PWD c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex
 INPUT C:\Users\meper\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\upbthesis.tex
-OUTPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.log
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\upbthesis.tex
+OUTPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.log
 INPUT .\ieee_upb.cls
 INPUT ieee_upb.cls
 INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
@@ -207,10 +207,10 @@ INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\t1ptm.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\t1ptm.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\t1ptm.fd
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.aux
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.aux
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.aux
-OUTPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.aux
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
+OUTPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -224,14 +224,14 @@ INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.out
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.out
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.out
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.out
-OUTPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.pdf
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.out
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.out
-OUTPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.out
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.out
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.out
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.out
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.out
+OUTPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.pdf
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.out
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.out
+OUTPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.out
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\t1pcr.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\t1pcr.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\t1pcr.fd
@@ -268,14 +268,14 @@ INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8r.tfm
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.toc
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.toc
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.toc
-OUTPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.toc
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.lot
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.lot
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.lot
-OUTPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.lot
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.toc
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.toc
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.toc
+OUTPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.toc
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.lot
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.lot
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.lot
+OUTPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.lot
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -315,9 +315,9 @@ INPUT .\Images\upb_logo.png
 INPUT .\Images\upb_logo.png
 INPUT .\Images\upb_logo.png
 INPUT .\Images\upb_logo.png
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.aux
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.out
-INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Test Latex VSCODE\build\upbthesis.out
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.out
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.out
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmbi8a.pfb
