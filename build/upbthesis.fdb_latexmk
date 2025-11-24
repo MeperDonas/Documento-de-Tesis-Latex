@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1763616789.8629 "c:/Users/meper/Desktop/Proyecto de Grado/Tesis/Documento-de-Tesis-Latex/upbthesis.tex" "build/upbthesis.pdf" "upbthesis" 1763616791.48587 0
+["pdflatex"] 1764017693.10646 "c:/Users/meper/Desktop/Proyecto de Grado/Tesis/Documento-de-Tesis-Latex/upbthesis.tex" "build/upbthesis.pdf" "upbthesis" 1764017695.21172 0
   "C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/courier/pcrb8t.tfm" 1136765053 1384 87406e4336af44af883a035f17f319d9 ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/courier/pcrbc8t.tfm" 1136765053 1400 8b4e30598ee2af7679ffc3e70fd4e91f ""
@@ -146,13 +146,13 @@
   "C:/Users/meper/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1763505362 80909 eab91d9745dd2edfd62a31d53cd5fe15 ""
   "C:/Users/meper/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1763505425 13323445 e39c52d8788f53d20f73bd4d438922b8 ""
   "Images/upb_logo.png" 1763503374 25158 7e36b6c9a01c1498da829a20b77ee2be ""
-  "build/upbthesis.aux" 1763616791 6668 01f67457a6a26704979735c08aee1193 "pdflatex"
-  "build/upbthesis.lot" 1763616791 387 ec982eec0bd01ad4f95fc933295ff34a "pdflatex"
-  "build/upbthesis.out" 1763616791 7823 936ae5d6fd426499caa9db0ae8a5a94b "pdflatex"
-  "build/upbthesis.toc" 1763616791 3773 d9843cf0800440fb0cff20dab6161f59 "pdflatex"
-  "c:/Users/meper/Desktop/Proyecto de Grado/Tesis/Documento-de-Tesis-Latex/upbthesis.tex" 1763616184 72017 89a9a22e133fdada540745e8d8d297f5 ""
+  "build/upbthesis.aux" 1764017694 5316 fccdcd06c242e5b89542f87a1cf0449f "pdflatex"
+  "build/upbthesis.lot" 1764017694 387 e31144a93856c527801a78b8a9ad0dda "pdflatex"
+  "build/upbthesis.out" 1764017694 5376 973e02ae2de5dde0ca8b04f92e2ce18e "pdflatex"
+  "build/upbthesis.toc" 1764017694 2790 32d730ea2b527e28fe7cd1735e22c7f5 "pdflatex"
+  "c:/Users/meper/Desktop/Proyecto de Grado/Tesis/Documento-de-Tesis-Latex/upbthesis.tex" 1764017689 95325 123db67e64aab5d95a1a8ab79db21d27 ""
   "ieee_upb.cls" 1763503374 11896 56012ef200d1cc93338525ec9ac9d94a ""
-  "upbthesis.tex" 1763616184 72017 89a9a22e133fdada540745e8d8d297f5 ""
+  "upbthesis.tex" 1764017689 95325 123db67e64aab5d95a1a8ab79db21d27 ""
   (generated)
   "build/upbthesis.aux"
   "build/upbthesis.log"

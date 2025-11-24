@@ -399,175 +399,83 @@ El despliegue accesible mediante las plataformas seleccionadas, que ofrecen plan
 \newpage
 \section{METODOLOGÍA}
 
-El desarrollo del proyecto se llevará a cabo mediante una metodología iterativa e incremental, adaptada a las características de un proyecto académico individual con restricciones de tiempo. Este enfoque permite construir el sistema de forma progresiva, priorizando las funcionalidades esenciales y garantizando que se cumplan los objetivos específicos definidos en el plazo establecido de \textbf{12 semanas}.
+El desarrollo del proyecto se llevará a cabo mediante una metodología cuidadosamente diseñada que combina principios iterativos e incrementales, específicamente adaptada a las características particulares de un proyecto académico individual que enfrenta restricciones temporales definidas. Este enfoque metodológico permite construir el sistema de forma progresiva y controlada, priorizando meticulosamente las funcionalidades esenciales que demuestran el cumplimiento de los objetivos académicos establecidos, y garantizando que cada iteración produzca resultados tangibles y evaluables dentro del plazo establecido de doce semanas consecutivas.
 
 \subsection{Enfoque Metodológico}
 
-El proyecto adoptará un modelo de \textbf{desarrollo iterativo incremental con enfoque MVP} (Producto Mínimo Viable), que consiste en identificar y desarrollar únicamente las funcionalidades críticas necesarias para demostrar el cumplimiento de los objetivos académicos.
+El proyecto adoptará un modelo de desarrollo iterativo incremental fundamentado en el enfoque de Producto Mínimo Viable, conocido en la industria como MVP por sus siglas en inglés. Este modelo consiste fundamentalmente en identificar con precisión y desarrollar exclusivamente las funcionalidades críticas y absolutamente necesarias para demostrar exitosamente el cumplimiento de los objetivos académicos planteados, evitando conscientemente la implementación de características secundarias o de lujo que, aunque podrían resultar atractivas, no contribuyen directamente a los objetivos centrales del proyecto y consumirían recursos temporales limitados.
 
-Este enfoque se complementa con \textbf{prácticas ágiles adaptadas} para trabajo individual:
+Este enfoque central se complementa estratégicamente con prácticas ágiles cuidadosamente adaptadas para el contexto específico de trabajo individual. Se implementarán sprints de una semana de duración, estableciendo ciclos de trabajo cortos que permiten definir metas concretas y alcanzables, facilitando la evaluación continua del progreso y permitiendo ajustes rápidos ante desviaciones o problemas identificados. La visualización del flujo de trabajo se gestionará mediante un tablero Kanban implementado en Trello, proporcionando una representación visual clara del estado actual de todas las tareas, identificando cuellos de botella potenciales, y manteniendo el foco en las actividades prioritarias en todo momento.
 
-\begin{itemize}
-    \item \textbf{Sprints de 1 semana:} Ciclos de trabajo cortos con metas concretas y alcanzables
-    \item \textbf{Tablero Kanban:} Visualización del flujo de trabajo mediante Trello
-    \item \textbf{Priorización estricta:} Enfoque en funcionalidades core, eliminando características opcionales
-    \item \textbf{Desarrollo en paralelo:} Trabajo simultáneo en backend y frontend cuando sea posible
-    \item \textbf{Documentación continua:} Avance del documento de tesis en paralelo al desarrollo
-\end{itemize}
+La priorización estricta constituye un pilar fundamental de esta metodología, manteniendo un enfoque inquebrantable en las funcionalidades core del sistema y eliminando deliberadamente características opcionales o de bajo impacto que podrían distraer recursos del desarrollo de capacidades esenciales. El desarrollo en paralelo, cuando resulte técnicamente viable y no genere conflictos, permitirá trabajar simultáneamente en componentes del backend y frontend que sean independientes entre sí, maximizando la eficiencia del tiempo disponible. La documentación continua garantizará que el documento de tesis avance en paralelo al desarrollo técnico, evitando la acumulación de trabajo de documentación al final del proyecto y asegurando que cada logro técnico quede apropiadamente registrado y explicado mientras los detalles aún están frescos en la memoria.
 
-\subsubsection{Principios de Desarrollo}
+Los principios fundamentales que guiarán el desarrollo diario del proyecto establecen que la simplicidad debe priorizarse sobre la sofisticación innecesaria, implementando siempre la versión más simple que cumpla efectivamente con los requisitos establecidos. La sobre-ingeniería debe evitarse conscientemente, resistiendo la tentación de implementar optimizaciones prematuras o arquitecturas excesivamente complejas que no aportan valor inmediato y complican el mantenimiento futuro. La reutilización inteligente de código aprovechará activamente librerías consolidadas y componentes existentes en el ecosistema de las tecnologías seleccionadas, evitando reinventar soluciones que ya existen y han sido probadas extensivamente.
 
-\begin{enumerate}
-    \item \textbf{Simplicidad primero:} Implementar la versión más simple que funcione
-    \item \textbf{No sobre-ingenierizar:} Evitar optimizaciones prematuras o arquitecturas complejas innecesarias
-    \item \textbf{Reutilización:} Aprovechar librerías y componentes existentes
-    \item \textbf{Integración temprana:} Probar la comunicación frontend-backend desde la semana 3
-    \item \textbf{Documentación paralela:} Escribir secciones del documento conforme se completan fases
-\end{enumerate}
+La integración temprana entre frontend y backend comenzará tan pronto como la semana tres, permitiendo identificar problemas de comunicación o incompatibilidades de diseño antes de que se acumule demasiado código dependiente. Esta integración temprana reduce significativamente el riesgo de descubrir problemas fundamentales en etapas tardías cuando su corrección resultaría extremadamente costosa en tiempo y esfuerzo. Finalmente, la documentación paralela implica escribir secciones del documento de tesis conforme se completan las fases correspondientes del desarrollo, distribuyendo la carga de documentación a lo largo de todo el proyecto en lugar de concentrarla al final cuando la presión temporal es máxima.
 
 \subsection{Fases del Proyecto}
 
-El proyecto se divide en 6 fases principales distribuidas a lo largo de 12 semanas:
+El proyecto se estructura en seis fases principales claramente diferenciadas, cada una con objetivos específicos, actividades definidas y entregables tangibles que servirán como hitos de control del progreso. Estas fases se distribuyen estratégicamente a lo largo de las doce semanas de duración total del proyecto, balanceando cuidadosamente la carga de trabajo y asegurando que cada fase construya sobre los cimientos establecidos por las fases anteriores.
 
-\subsubsection{Fase 1: Análisis, Diseño y Configuración (Semanas 1-2)}
+La primera fase, denominada Análisis, Diseño y Configuración, se extenderá durante las semanas uno y dos, consumiendo aproximadamente cuarenta horas de trabajo dedicado. Durante esta fase inicial crítica se ejecutará una revisión bibliográfica exhaustiva que permita comprender el estado del arte en sistemas de gestión para pequeños negocios, identificar mejores prácticas arquitectónicas consolidadas en la literatura académica y profesional, y familiarizarse profundamente con las tecnologías seleccionadas mediante la lectura de documentación oficial, tutoriales especializados y ejemplos de código representativos. La definición meticulosa de requisitos funcionales y no funcionales establecerá con claridad meridiana qué debe hacer exactamente el sistema en términos de funcionalidades visibles al usuario y bajo qué restricciones técnicas, de rendimiento y de seguridad operará en su ambiente de producción. El diseño detallado de la arquitectura por capas producirá diagramas arquitectónicos completos y anotados que guiarán visualmente toda la implementación posterior, asegurando que todos los componentes del sistema encajen coherentemente en una estructura organizada y escalable.
 
-\textbf{Actividades:}
+El diseño exhaustivo del modelo de base de datos resultará en un diagrama entidad-relación completo y normalizado que capture meticulosamente todas las entidades del dominio del negocio, incluyendo productos, categorías, ventas, items de venta, clientes y movimientos de inventario, junto con todos sus atributos relevantes y las relaciones con cardinalidad apropiada que existen entre estas entidades. La especificación detallada de endpoints de la API REST documentará sistemáticamente cada ruta expuesta por el backend, especificando claramente sus parámetros esperados tanto en query strings como en el cuerpo de las peticiones, los formatos precisos de respuesta en formato JSON, los códigos de estado HTTP que pueden retornar bajo diferentes circunstancias, y ejemplos ilustrativos de peticiones y respuestas exitosas y de error. La creación de wireframes detallados y prototipos interactivos en Figma proporcionará una visión visual concreta y navegable de cómo lucirán estéticamente y funcionarán operativamente las interfaces principales del sistema antes de invertir tiempo en escribir una sola línea de código de implementación, permitiendo validar decisiones de diseño de experiencia de usuario económicamente antes de comprometer esfuerzo de desarrollo.
 
-\begin{itemize}
-    \item Revisión bibliográfica y análisis de antecedentes
-    \item Definición de requisitos funcionales y no funcionales
-    \item Diseño de arquitectura por capas
-    \item Diseño del modelo de base de datos (Diagrama Entidad-Relación)
-    \item Especificación de endpoints de la API REST
-    \item Creación de wireframes y prototipos en Figma
-    \item Setup de proyectos NestJS y Next.js
-    \item Configuración de Docker y bases de datos
-    \item Configuración de repositorio Git
-\end{itemize}
+El setup inicial meticuloso de los proyectos NestJS y Next.js establecerá la estructura base organizada de carpetas y archivos, configurará todas las dependencias necesarias especificadas en archivos package.json, establecerá scripts de desarrollo y construcción, y asegurará que ambos proyectos puedan ejecutarse localmente sin problemas técnicos en la máquina de desarrollo. La configuración cuidadosa de Docker creará archivos docker-compose que definan contenedores que encapsulen la base de datos PostgreSQL con su configuración específica de puertos, volúmenes para persistencia de datos, y eventualmente otros servicios que pudieran necesitarse, garantizando que cualquier desarrollador pueda replicar exactamente el mismo ambiente de desarrollo completo con sus dependencias mediante la ejecución de un solo comando simple. Finalmente, la configuración profesional del repositorio Git establecerá las convenciones claras de mensajes de commits siguiendo estándares como Conventional Commits, la estructura de branches definiendo estrategias como Git Flow o trunk-based development según convenga, archivos .gitignore apropiados que excluyan archivos generados o sensibles, y las reglas de integración mediante pull requests y revisiones que se seguirán consistentemente durante todo el proyecto.
 
-\textbf{Entregables:}
+Los entregables concretos y evaluables de esta primera fase fundamental incluirán un documento formal estructurado de requisitos funcionales y no funcionales, diagramas de arquitectura y base de datos en formato digital editable, especificaciones de API documentadas formalmente, wireframes visuales navegables, y un repositorio Git completamente configurado, inicializado y operacional con ambos proyectos ejecutándose exitosamente en modo de desarrollo.
 
-\begin{itemize}
-    \item Documento de requisitos
-    \item Diagrama de arquitectura por capas
-    \item Diagrama ER de la base de datos
-    \item Especificación de API REST
-    \item Wireframes de interfaces principales
-    \item Repositorio configurado
-\end{itemize}
+La segunda fase, Backend Core, ocupará intensivamente las semanas tres, cuatro y cinco, demandando aproximadamente sesenta y cuatro horas de desarrollo concentrado y enfocado. Esta fase crucial se dedicará exclusivamente a construir sistemáticamente toda la lógica de servidor que constituye el corazón pulsante del sistema, implementando capa por capa la funcionalidad backend requerida. La implementación robusta del módulo de autenticación proporcionará las capacidades esenciales de seguridad incluyendo login seguro de usuario administrador con validación de credenciales contra la base de datos, generación y firma criptográfica de tokens JWT con información de sesión, validación rigurosa de tokens en peticiones protegidas, y protección automática de rutas sensibles que requieren autenticación válida mediante guards de NestJS.
 
-\subsubsection{Fase 2: Backend Core (Semanas 3-5)}
+El desarrollo completo y exhaustivo del módulo de inventario abarcará la implementación minuciosa del CRUD completo de productos con todos sus atributos incluyendo nombre, SKU, código de barras, precios de costo y venta, y niveles de stock, la gestión jerárquica de categorías permitiendo organizar productos lógicamente, el registro detallado de movimientos de stock con diferentes tipos como compras, ventas, ajustes de entrada y salida, el control automatizado de niveles de inventario que actualiza stock en tiempo real tras cada operación, y las alertas inteligentes de stock bajo que identifican productos que han caído por debajo de sus umbrales mínimos configurados y requieren reposición urgente.
 
-\textbf{Actividades:}
+La implementación cuidadosa del módulo de ventas incluirá la creación de nuevas transacciones de venta capturando toda la información relevante, el registro preciso de items vendidos como entidades independientes vinculadas a la venta padre, el cálculo automático confiable de subtotales sumando los productos de cantidad por precio unitario, la aplicación correcta de tasas de IVA según la tasa configurada en cada producto, el cálculo del total final sumando subtotal más impuestos, y el manejo flexible de diferentes métodos de pago incluyendo efectivo con cálculo de cambio, tarjeta, y transferencia bancaria. El módulo de clientes permitirá registrar comprehensivamente nueva información de clientes con todos sus datos demográficos y de contacto, consultar eficientemente clientes existentes mediante diferentes criterios de búsqueda, actualizar información cuando cambian datos de contacto o se corrige información incorrecta, y eliminar lógicamente clientes mediante soft delete preservando integridad referencial con ventas históricas asociadas.
 
-\begin{itemize}
-    \item Implementación del módulo de autenticación
-    \item Desarrollo del módulo de inventario completo (productos, categorías, movimientos)
-    \item Implementación del módulo de ventas y clientes
-    \item Desarrollo de endpoints de reportes
-    \item Integración con Prisma ORM
-    \item Documentación automática con Swagger
-    \item Pruebas unitarias de servicios críticos
-\end{itemize}
+El desarrollo enfocado de endpoints de reportes expondrá servicios especializados que calculen eficientemente métricas clave del negocio mediante consultas agregadas optimizadas, generen datos estructurados apropiadamente formateados para alimentar gráficas en el frontend, y proporcionen listados filtrados de transacciones permitiendo aplicar múltiples criterios de filtrado simultáneamente por fecha, cliente, producto, o método de pago. La integración profunda y completa con Prisma ORM abstraerá elegantemente todas las operaciones de base de datos mediante un cliente JavaScript tipado que garantiza seguridad de tipos estricta en todas las consultas, previene errores de tipos en tiempo de compilación, y proporciona autocompletado inteligente durante el desarrollo.
 
-\textbf{Entregables:}
+La documentación automática y siempre actualizada mediante Swagger generará una interfaz web interactiva y explorable donde todos los endpoints pueden ser visualizados organizadamente, su documentación puede ser leída comprensiblemente, y pueden ser probados interactivamente enviando peticiones reales directamente desde el navegador sin necesidad de herramientas externas como Postman. Las pruebas unitarias implementadas con Jest verificarán meticulosamente el funcionamiento correcto de servicios críticos de manera completamente aislada de dependencias externas mediante el uso de mocks y stubs, detectando rápidamente regresiones cuando cambios posteriores rompen inadvertidamente funcionalidad existente previamente validada.
 
-\begin{itemize}
-    \item API REST funcional
-    \item Documentación Swagger
-    \item Base de datos configurada y migrada
-    \item Pruebas unitarias implementadas
-\end{itemize}
+Los entregables tangibles y demostrables de esta segunda fase incluirán una API REST completamente funcional y accesible mediante herramientas de testing de APIs como Postman o Insomnia, documentación Swagger navegable e interactiva accesible mediante navegador web, una base de datos PostgreSQL correctamente configurada con todas sus migraciones aplicadas exitosamente reflejando el schema final diseñado, y una suite comprehensiva de pruebas unitarias automatizadas ejecutables mediante comandos npm que validen el comportamiento correcto de la lógica de negocio implementada.
 
-\subsubsection{Fase 3: Frontend Core (Semanas 6-8)}
+La tercera fase, Frontend Core, se desarrollará intensamente durante las semanas seis, siete y ocho, requiriendo otras sesenta y cuatro horas de trabajo enfocado y dedicado. Esta fase crítica construirá meticulosamente toda la interfaz visual e interactiva con la que los usuarios finales del sistema interactuarán cotidianamente para realizar sus operaciones diarias. La implementación cuidadosa del layout general y el sistema de navegación establecerá la estructura visual consistente y profesional que compartirán todas las páginas de la aplicación, incluyendo el menú lateral colapsable con iconos y etiquetas descriptivas, la barra superior con información de usuario y botón de logout, y el área de contenido principal donde se renderizarán los componentes específicos de cada sección.
 
-\textbf{Actividades:}
+El desarrollo completo del módulo de autenticación en la interfaz de usuario proporcionará las pantallas pulidas de login con campos de usuario y contraseña validados, manejo robusto de sesiones almacenando tokens JWT en el cliente, y redirecciones automáticas apropiadas para usuarios no autenticados que intentan acceder a rutas protegidas devolviéndolos elegantemente a la página de login. La creación exhaustiva del módulo de inventario en la interfaz incluirá formularios modales bien diseñados para agregar nuevos productos con todos sus campos requeridos y opcionales validados apropiadamente, formularios similares para editar productos existentes pre-populados con datos actuales, tablas paginadas responsivas para visualizar el catálogo completo de productos con información resumida en columnas, filtros interactivos implementados con inputs controlados para buscar productos específicos por nombre, SKU o código de barras, y pantallas detalladas de producto que muestren toda la información exhaustiva de un producto individual incluyendo su imagen, descripción completa, historial de movimientos de stock, y estadísticas de ventas.
 
-\begin{itemize}
-    \item Implementación del layout y sistema de navegación
-    \item Desarrollo del módulo de autenticación (UI)
-    \item Creación del módulo de inventario (productos, categorías)
-    \item Desarrollo del punto de venta (POS)
-    \item Implementación del módulo de clientes
-    \item Creación del dashboard y reportes
-    \item Desarrollo de componentes reutilizables
-    \item Integración con la API REST
-\end{itemize}
+El desarrollo enfocado del punto de venta construirá una interfaz específicamente optimizada para registrar ventas de manera extremadamente rápida y eficiente, con búsqueda instantánea de productos que actualiza resultados mientras el usuario escribe, un carrito visual e interactivo donde se acumulan los items seleccionados mostrando cantidades ajustables, precios unitarios, y subtotales calculados, cálculo automático en tiempo real de subtotal general sumando todos los items, IVA calculado sobre el subtotal, y total final claramente destacado, y un flujo simplificado y guiado para completar la transacción seleccionando método de pago, ingresando monto pagado si es efectivo, mostrando cambio calculado automáticamente, y confirmando la venta con un solo clic final.
 
-\textbf{Entregables:}
+La implementación completa del módulo de clientes proveerá interfaces consistentes con el resto de la aplicación para registrar nuevos clientes capturando toda su información mediante formularios validados, editar información existente cuando sea necesario corregir errores o actualizar datos de contacto, buscar clientes eficientemente por diferentes criterios incluyendo nombre, documento, teléfono o email, y visualizar pantallas detalladas de cada cliente mostrando su información completa junto con el historial completo de compras realizadas presentado en tabla ordenada cronológicamente. La creación profesional del dashboard y los reportes presentará visualizaciones gráficas atractivas y comprensibles de las métricas más importantes del negocio mediante librerías especializadas como Recharts, tarjetas destacadas con KPIs clave como ventas del día, ventas del mes, y número de transacciones presentados con formato claro y grande, y gráficas interactivas que muestren tendencias temporales de ventas a lo largo de los últimos siete o treinta días permitiendo identificar visualmente patrones y anomalías.
 
-\begin{itemize}
-    \item Interfaz web responsive completa
-    \item Módulos funcionales integrados
-    \item Componentes UI reutilizables
-    \item Sistema de navegación implementado
-\end{itemize}
+El desarrollo sistemático de componentes reutilizables establecerá una biblioteca interna organizada de elementos UI consistentes incluyendo botones de diferentes variantes como primario, secundario, destructivo, y outline, inputs de formulario con validación integrada y mensajes de error, modales reutilizables con diferentes tamaños y propósitos, tablas genéricas paginadas con capacidades de ordenamiento, y otros elementos que compartan estilos visuales y comportamientos interactivos consistentes, acelerando significativamente el desarrollo de nuevas pantallas mediante la composición de estos componentes probados. La integración completa y funcional con la API REST conectará todas estas interfaces cuidadosamente diseñadas con los servicios de backend previamente desarrollados y probados, implementando llamadas asíncronas apropiadas mediante fetch o axios, manejando estados de carga mostrando indicadores visuales al usuario, manejando errores presentando mensajes comprensibles, y actualizando el estado local tras operaciones exitosas.
 
-\subsubsection{Fase 4: Integración, Pruebas y Refinamiento (Semanas 9-10)}
+Los entregables evaluables de esta tercera fase comprenderán una interfaz web completamente responsive que se adapta elegantemente y mantiene usabilidad en diferentes tamaños de pantalla desde móviles hasta monitores de escritorio grandes, todos los módulos funcionales completamente integrados con el backend y demostrablemente operativos ejecutando flujos completos end-to-end, una biblioteca documentada de componentes UI reutilizables organizados en carpeta dedicada con ejemplos de uso, y un sistema de navegación intuitivo y consistente entre todas las secciones principales de la aplicación manteniendo siempre claro al usuario dónde se encuentra.
 
-\textbf{Actividades:}
+La cuarta fase, Integración, Pruebas y Refinamiento, ocupará intensivamente las semanas nueve y diez consumiendo aproximadamente cuarenta horas dedicadas a aseguramiento de calidad. Esta fase crítica verificará exhaustivamente que todos los componentes desarrollados independientemente funcionen correctamente cuando operan en conjunto formando un sistema integrado completo. Las pruebas rigurosas de integración validarán flujos completos que atraviesen múltiples capas del sistema desde la interfaz de usuario hasta la base de datos y de regreso, verificando que datos ingresados en formularios del frontend se persistan correctamente en la base, que consultas desde el frontend reciban respuestas correctas del backend, y que actualizaciones se reflejen consistentemente en todas las vistas relevantes.
 
-\begin{itemize}
-    \item Pruebas de integración de flujos completos
-    \item Pruebas de casos de uso end-to-end
-    \item Corrección de bugs identificados
-    \item Refinamiento de experiencia de usuario
-    \item Implementación de generación de comprobantes
-    \item Optimización de rendimiento
-    \item Ajustes de diseño visual
-\end{itemize}
+Las pruebas exhaustivas de casos de uso end-to-end simularán escenarios reales completos de usuario ejecutados manualmente siguiendo guiones detallados, como completar una venta completa desde la búsqueda inicial de productos, pasando por la adición de múltiples items al carrito con diferentes cantidades, selección de cliente opcional, elección de método de pago, hasta la generación exitosa del comprobante imprimible. La corrección sistemática y documentada de bugs identificados durante las pruebas garantizará que el sistema alcance un nivel de calidad profesional aceptable, priorizando bugs críticos que bloquean funcionalidad esencial, seguidos de bugs mayores que afectan experiencia de usuario, y finalmente bugs menores cosméticos que no impactan funcionalidad.
 
-\textbf{Entregables:}
+El refinamiento cuidadoso de la experiencia de usuario ajustará aspectos visuales basándose en pruebas de usabilidad, mejorará la claridad de mensajes de retroalimentación al usuario, optimizará flujos de interacción eliminando pasos innecesarios, y pulirá detalles de interacción como animaciones de transición, estados hover de botones, y feedback visual de acciones. La implementación completa de la generación de comprobantes de venta producirá documentos HTML profesionalmente formateados que incluyan logo del negocio, información de la venta con fecha y número único, detalle de items vendidos en tabla, subtotales e IVA, total destacado, método de pago, y que puedan imprimirse directamente desde el navegador o guardarse como PDF mediante funcionalidad nativa del navegador.
 
-\begin{itemize}
-    \item Sistema integrado funcionando
-    \item Reporte de pruebas ejecutadas
-    \item Bugs críticos corregidos
-    \item Comprobantes de venta implementados
-\end{itemize}
+La optimización enfocada de rendimiento identificará y corregirá cuellos de botella en consultas de base de datos agregando índices apropiados a columnas frecuentemente filtradas u ordenadas, optimización de carga de datos implementando paginación donde sea apropiado, carga perezosa de imágenes, y caché de datos que no cambian frecuentemente, y optimización de renderizado de interfaces evitando re-renders innecesarios mediante memoización apropiada. Los ajustes finales de diseño visual perfeccionarán colores asegurando contraste adecuado para accesibilidad, espaciados manteniendo consistencia mediante sistema de diseño, tipografías garantizando legibilidad en todos los tamaños, y otros aspectos estéticos para lograr una presentación profesional y pulida digna de un sistema de nivel empresarial.
 
-\subsubsection{Fase 5: Validación y Despliegue (Semana 11)}
+Los entregables concretos incluirán el sistema completamente integrado y funcionando establemente sin errores críticos que bloqueen funcionalidad esencial, un reporte estructurado documentando detalladamente todas las pruebas ejecutadas con sus resultados indicando pass o fail, la corrección documentada en commits de Git de todos los bugs críticos y la mayoría de los bugs menores identificados, y la funcionalidad de comprobantes completamente implementada, probada exhaustivamente, y demostrable generando comprobantes reales para ventas de ejemplo.
 
-\textbf{Actividades:}
+La quinta fase, Validación y Despliegue, se concentrará intensamente en la semana once utilizando aproximadamente veinte horas productivas. Esta fase expondrá el sistema desarrollado a usuarios reales representativos para obtener retroalimentación valiosa y objetiva sobre usabilidad y adecuación a necesidades reales. El despliegue profesional del frontend en Vercel publicará la interfaz completa en un dominio accesible públicamente desde cualquier lugar con internet, configurando integración continua automática que redespliegue el sitio cada vez que se haga push a la rama principal del repositorio. El despliegue equivalente del backend en Railway establecerá el servidor de API en un ambiente de producción estable con la configuración apropiada de variables de entorno, configuración de CORS para permitir peticiones desde el dominio del frontend, y configuración de límites de recursos apropiados para el plan gratuito.
 
-\begin{itemize}
-    \item Despliegue del frontend en Vercel
-    \item Despliegue del backend en Railway
-    \item Configuración de base de datos en producción
-    \item Validación con usuarios potenciales (2-3 personas)
-    \item Recopilación de feedback
-    \item Implementación de ajustes críticos
-\end{itemize}
+La configuración cuidadosa de la base de datos en producción ejecutará todas las migraciones necesarias aplicando el schema completo en la instancia de PostgreSQL productiva, potencialmente poblando datos iniciales de ejemplo para facilitar demostraciones, y configurando backups automáticos para prevenir pérdida de datos. La validación estructurada con usuarios potenciales involucrará a dos o tres personas cuidadosamente seleccionadas representativas del público objetivo de pequeños comerciantes para que utilicen el sistema de manera guiada en escenarios realistas simulados, ejecutando tareas típicas como registrar productos, realizar ventas, consultar reportes, observando cómo interactúan naturalmente con el sistema, identificando puntos de confusión o fricción, y recolectando sus impresiones espontáneas.
 
-\textbf{Entregables:}
+La recopilación sistemática y estructurada de feedback mediante cuestionarios preparados previamente con preguntas específicas sobre usabilidad, utilidad percibida, y claridad de funcionalidades, complementados con entrevistas semi-estructuradas que permitan profundizar en observaciones particulares, capturará tanto opiniones explícitas como observaciones comportamentales implícitas durante el uso. La implementación rápida y enfocada de ajustes críticos corregirá los problemas más urgentes e impactantes identificados durante las sesiones de validación que puedan resolverse en el tiempo limitado restante, priorizando cambios que eliminen confusiones graves o simplifiquen significativamente flujos problemáticos.
 
-\begin{itemize}
-    \item Sistema desplegado y accesible
-    \item Resultados de validación con usuarios
-    \item Reporte de feedback y ajustes realizados
-\end{itemize}
+Los entregables evaluables comprenderán el sistema completamente desplegado y públicamente accesible mediante URL estable desde cualquier navegador moderno en cualquier ubicación geográfica, resultados completos y detalladamente documentados de las sesiones de validación con usuarios incluyendo observaciones, tiempos de tarea, errores cometidos, y comentarios verbales transcritos, y un reporte ejecutivo sintetizando el feedback recibido organizando comentarios por temas, identificando patrones recurrentes, y documentando todos los ajustes implementados en respuesta directa a la retroalimentación recolectada.
 
-\subsubsection{Fase 6: Documentación Final (Semana 12)}
+La sexta y última fase, Documentación Final, ocupará íntegramente la semana doce consumiendo las veinte horas finales del proyecto en consolidación documental. Esta fase culminante asegurará que todo el trabajo técnico realizado esté apropiadamente documentado para referencia futura. La redacción detallada del manual de usuario explicará paso a paso con lenguaje claro y no técnico cómo utilizar cada funcionalidad del sistema, incluyendo capturas de pantalla numeradas ilustrativas que muestren exactamente qué botones presionar y qué información ingresar, organizando el contenido por tareas comunes que los usuarios desearán realizar.
 
-\textbf{Actividades:}
+La documentación técnica completa y exhaustiva detallará decisiones arquitectónicas importantes justificando por qué se tomaron, estructura del código fuente describiendo la organización de carpetas y archivos, convenciones de nombres y estilos adoptadas, proceso completo de despliegue paso a paso para replicarlo si fuera necesario, y cualquier otra información técnica necesaria para que futuros desarrolladores puedan comprender, mantener, o extender el sistema efectivamente. La finalización del documento de tesis incorporará todas las secciones pendientes que no se completaron durante el desarrollo, integrará resultados de pruebas y validación en las secciones apropiadas con análisis reflexivo, y pulirá meticulosamente la redacción completa asegurando consistencia de estilo, claridad de expresión, corrección gramatical y ortográfica impecable.
 
-\begin{itemize}
-    \item Redacción del manual de usuario
-    \item Documentación técnica completa
-    \item Finalización del documento de tesis
-    \item Preparación de presentación final
-    \item Capturas de pantalla y diagramas finales
-    \item Revisión y corrección del documento
-\end{itemize}
+La preparación profesional de la presentación final creará diapositivas visualmente atractivas y efectivas que resuman los aspectos más importantes del proyecto incluyendo motivación y problemática abordada, objetivos planteados, arquitectura implementada con diagramas, tecnologías utilizadas con sus logos, funcionalidades desarrolladas con capturas ilustrativas, resultados de pruebas y validación con datos cuantitativos, conclusiones reflexivas, y trabajo futuro potencial, diseñadas específicamente para ser presentadas oralmente en el tiempo limitado de una defensa de tesis.
 
-\textbf{Entregables:}
+La recopilación organizada de capturas de pantalla de alta calidad y diagramas actualizados documentará visualmente el sistema terminado en toda su gloria funcional, capturando cada pantalla principal desde diferentes estados, flujos completos mediante secuencias de capturas numeradas, y diagramas técnicos finales reflejando el sistema tal como quedó implementado. La revisión meticulosa y corrección exhaustiva del documento completo asegurará calidad profesional y académica en el trabajo escrito mediante múltiples pasadas de revisión enfocándose sucesivamente en estructura lógica, claridad de argumentación, corrección técnica, consistencia de referencias, y finalmente gramática y ortografía.
 
-\begin{itemize}
-    \item Manual de usuario
-    \item Documentación técnica
-    \item Documento de tesis completo
-    \item Presentación final
-\end{itemize}
+Los entregables finales y definitivos incluirán un manual de usuario completo en formato PDF de al menos quince páginas ricamente ilustrado, documentación técnica exhaustiva igualmente en PDF de al menos veinte páginas con todos los detalles relevantes, el documento de tesis en su versión absolutamente definitiva formateado según especificaciones institucionales y listo para impresión y entrega formal, y una presentación profesional en PowerPoint o herramienta similar de aproximadamente veinte diapositivas preparada específicamente para la defensa oral del proyecto ante el jurado evaluador.
 
 \begin{table}[h!]
 \centering
@@ -625,7 +533,6 @@ El proyecto se divide en 6 fases principales distribuidas a lo largo de 12 seman
 \end{tabular}
 \end{table}
 
-\subsection{Distribución Semanal Recomendada}
 
 \begin{table}[h!]
 \centering
@@ -653,15 +560,6 @@ Domingo & 2h & Revisión semanal + planeación \\
 \end{tabular}
 \end{table}
 
-\subsection{Hitos de Control}
-
-\begin{itemize}
-    \item \textbf{Semana 2:} Presentación de arquitectura y diseño
-    \item \textbf{Semana 5:} Demo de API funcional con Postman
-    \item \textbf{Semana 8:} Demo de interfaz completa integrada
-    \item \textbf{Semana 11:} Sistema desplegado y funcional
-    \item \textbf{Semana 12:} Entrega final del documento
-\end{itemize}
 
 \newpage
 \section{PRESUPUESTO}
