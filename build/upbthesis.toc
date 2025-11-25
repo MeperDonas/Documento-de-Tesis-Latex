@@ -1,34 +1,34 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {section}{\numberline {I}INTRODUCCIÓN}{8}{section.1}%
-\contentsline {section}{\numberline {II}DELIMITACIÓN DEL PROBLEMA}{9}{section.2}%
-\contentsline {subsection}{\numberline {A}Situación problema}{9}{subsection.2.1}%
-\contentsline {section}{\numberline {III}ANTECEDENTES}{11}{section.3}%
-\contentsline {section}{\numberline {IV}JUSTIFICACIÓN}{14}{section.4}%
-\contentsline {section}{\numberline {V}OBJETIVOS}{20}{section.5}%
-\contentsline {subsection}{\numberline {A}Objetivo general}{20}{subsection.5.1}%
-\contentsline {subsection}{\numberline {B}Objetivos específicos}{20}{subsection.5.2}%
-\contentsline {section}{\numberline {VI}MARCO TEÓRICO}{21}{section.6}%
-\contentsline {subsection}{\numberline {A}Marco Conceptual}{21}{subsection.6.1}%
-\contentsline {subsubsection}{\numberline {1}Arquitectura de Software}{21}{subsubsection.6.1.1}%
-\contentsline {subsubsection}{\numberline {2}API REST (Representational State Transfer)}{22}{subsubsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {3}Gestión de Inventarios}{23}{subsubsection.6.1.3}%
-\contentsline {subsubsection}{\numberline {4}Punto de Venta (POS - Point of Sale)}{23}{subsubsection.6.1.4}%
-\contentsline {subsubsection}{\numberline {5}Base de Datos Relacional}{24}{subsubsection.6.1.5}%
-\contentsline {subsection}{\numberline {B}Marco Tecnológico}{24}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {1}Tecnologías Principales}{25}{subsubsection.6.2.1}%
-\contentsline {subsubsection}{\numberline {2}Herramientas de Apoyo y Bibliotecas Complementarias}{27}{subsubsection.6.2.2}%
-\contentsline {subsubsection}{\numberline {3}Justificación de la Selección Tecnológica}{28}{subsubsection.6.2.3}%
-\contentsline {section}{\numberline {VII}METODOLOGÍA}{30}{section.7}%
-\contentsline {subsection}{\numberline {A}Enfoque Metodológico}{30}{subsection.7.1}%
-\contentsline {subsection}{\numberline {B}Fases del Proyecto}{31}{subsection.7.2}%
-\contentsline {section}{\numberline {VIII}PRESUPUESTO}{41}{section.8}%
-\contentsline {subsection}{\numberline {A}Notas sobre el Presupuesto}{42}{subsection.8.1}%
-\contentsline {section}{\numberline {IX}RESULTADOS}{44}{section.9}%
-\contentsline {subsection}{\numberline {A}Requerimientos del Sistema}{44}{subsection.9.1}%
-\contentsline {subsection}{\numberline {B}Requerimientos Funcionales}{44}{subsection.9.2}%
-\contentsline {subsection}{\numberline {C}Requerimientos No Funcionales}{44}{subsection.9.3}%
-\contentsline {subsection}{\numberline {D}Ejemplo de una lista}{44}{subsection.9.4}%
-\contentsline {subsection}{\numberline {E}Ejemplo de una figura}{44}{subsection.9.5}%
-\contentsline {section}{\numberline {X}CONCLUSIONES}{45}{section.10}%
-\contentsline {section}{BIBLIOGRAFÍA}{46}{section.10}%
+\contentsline {section}{\numberline {I}INTRODUCCIÓN}{9}{section.1}%
+\contentsline {section}{\numberline {II}DELIMITACIÓN DEL PROBLEMA}{10}{section.2}%
+\contentsline {subsection}{\numberline {A}Situación problema}{10}{subsection.2.1}%
+\contentsline {section}{\numberline {III}ANTECEDENTES}{12}{section.3}%
+\contentsline {section}{\numberline {IV}JUSTIFICACIÓN}{15}{section.4}%
+\contentsline {section}{\numberline {V}OBJETIVOS}{21}{section.5}%
+\contentsline {subsection}{\numberline {A}Objetivo general}{21}{subsection.5.1}%
+\contentsline {subsection}{\numberline {B}Objetivos específicos}{21}{subsection.5.2}%
+\contentsline {section}{\numberline {VI}MARCO TEÓRICO}{22}{section.6}%
+\contentsline {subsection}{\numberline {A}Marco Conceptual}{22}{subsection.6.1}%
+\contentsline {subsubsection}{\numberline {1}Arquitectura de Software}{22}{subsubsection.6.1.1}%
+\contentsline {subsubsection}{\numberline {2}API REST (Representational State Transfer)}{23}{subsubsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {3}Gestión de Inventarios}{24}{subsubsection.6.1.3}%
+\contentsline {subsubsection}{\numberline {4}Punto de Venta (POS - Point of Sale)}{24}{subsubsection.6.1.4}%
+\contentsline {subsubsection}{\numberline {5}Base de Datos Relacional}{25}{subsubsection.6.1.5}%
+\contentsline {subsection}{\numberline {B}Marco Tecnológico}{25}{subsection.6.2}%
+\contentsline {subsubsection}{\numberline {1}Tecnologías Principales}{26}{subsubsection.6.2.1}%
+\contentsline {subsubsection}{\numberline {2}Herramientas de Apoyo y Bibliotecas Complementarias}{28}{subsubsection.6.2.2}%
+\contentsline {subsubsection}{\numberline {3}Justificación de la Selección Tecnológica}{29}{subsubsection.6.2.3}%
+\contentsline {section}{\numberline {VII}METODOLOGÍA}{31}{section.7}%
+\contentsline {subsection}{\numberline {A}Enfoque Metodológico}{31}{subsection.7.1}%
+\contentsline {subsection}{\numberline {B}Fases del Proyecto}{32}{subsection.7.2}%
+\contentsline {section}{\numberline {VIII}PRESUPUESTO}{42}{section.8}%
+\contentsline {subsection}{\numberline {A}Notas sobre el Presupuesto}{43}{subsection.8.1}%
+\contentsline {section}{\numberline {IX}RESULTADOS}{45}{section.9}%
+\contentsline {subsection}{\numberline {A}Requerimientos del Sistema}{45}{subsection.9.1}%
+\contentsline {subsection}{\numberline {B}Requerimientos Funcionales}{45}{subsection.9.2}%
+\contentsline {subsection}{\numberline {C}Requerimientos No Funcionales}{70}{subsection.9.3}%
+\contentsline {subsection}{\numberline {D}Ejemplo de una lista}{70}{subsection.9.4}%
+\contentsline {subsection}{\numberline {E}Ejemplo de una figura}{70}{subsection.9.5}%
+\contentsline {section}{\numberline {X}CONCLUSIONES}{71}{section.10}%
+\contentsline {section}{BIBLIOGRAFÍA}{72}{section.10}%
 \contentsfinish 

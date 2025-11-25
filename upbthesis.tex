@@ -7,7 +7,7 @@
 \usepackage{pdflscape} 
 \usepackage{setspace}
 \setstretch{1.5}
-\usepackage{xcolor}
+\usepackage[table]{xcolor}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks=true,
@@ -671,6 +671,864 @@ Los requerimientos del sistema son esenciales en cualquier proyecto. En el caso 
 
 Los requerimientos funcionales describen las funcionalidades específicas que debe proporcionar el sistema.
 
+% Tabla de requerimientos funcionales
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Alta}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF01 & \cellcolor{tableheaderblue}\textbf{Actor} & Administrador / Usuario \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Autenticación y control de sesión}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe gestionar el acceso seguro de los usuarios mediante credenciales y mecanismos de control de sesión basados en tokens.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe validar las credenciales de acceso (correo y contraseña) contra la base de datos antes de permitir el ingreso del usuario. \newline
+El sistema debe generar un token de sesión (por ejemplo, JWT) para mantener la autenticación del usuario durante su navegación por el sistema. \newline
+El sistema debe restringir el acceso a las rutas internas únicamente a usuarios que posean un token de sesión válido y no expirado.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe permitir que el usuario ingrese su correo y contraseña en un formulario seguro (canal cifrado). \newline
+2. El sistema debe redirigir al dashboard principal cuando las credenciales sean válidas y el token se genere correctamente. \newline
+3. El sistema debe bloquear y redirigir a la pantalla de inicio de sesión cuando se intente acceder a recursos internos sin un token válido.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe almacenar las contraseñas encriptadas en la base de datos utilizando algoritmos de hashing seguros.} \\ \hline
+\end{tabular}
+\caption{RF01: Autenticación y control de sesión}
+\label{tab:rf01}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Alta}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF02 & \cellcolor{tableheaderblue}\textbf{Actor} & Administrador \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Gestión del catálogo de productos}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir la administración completa del catálogo de productos comercializados, garantizando la unicidad de identificadores y la disponibilidad inmediata de la información.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir crear, leer, actualizar y desactivar productos, capturando como mínimo: nombre, SKU, código de barras, categoría, precio de costo, precio de venta, impuesto aplicable y stock actual. \newline
+El sistema debe validar que el SKU y el código de barras de un producto sean únicos dentro del catálogo. \newline
+El sistema debe aplicar eliminación lógica (borrado lógico) a los productos con ventas históricas, evitando la pérdida de información asociada.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe mostrar un mensaje de error cuando se intente registrar un producto con un SKU o código de barras ya existente. \newline
+2. El sistema debe mostrar el producto recién creado o actualizado de forma inmediata en el listado general de inventario. \newline
+3. El sistema debe impedir la eliminación física de productos que tengan ventas asociadas, permitiendo únicamente su desactivación.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe manejar paginación en el listado de productos cuando el número de registros supere el límite establecido.} \\ \hline
+\end{tabular}
+\caption{RF02: Gestión del catálogo de productos}
+\label{tab:rf02}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Alta}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF03 & \cellcolor{tableheaderblue}\textbf{Actor} & Administrador / Usuario de inventario \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Registro de movimientos de inventario}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe mantener la trazabilidad de las variaciones de inventario distintas a las ventas, mediante el registro estructurado de movimientos de entrada y salida.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe registrar entradas y salidas de inventario clasificándolas por tipo (compra, ajuste, daño, devolución u otros definidos). \newline
+El sistema debe actualizar en tiempo cercano al real el stock disponible del producto según la cantidad registrada en cada movimiento. \newline
+El sistema debe almacenar para cada movimiento la fecha, la hora, el tipo de movimiento, el usuario responsable y una justificación.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe impedir registrar movimientos de salida que dejen el stock resultante en un valor negativo. \newline
+2. El sistema debe reflejar inmediatamente en la ficha del producto el nuevo stock disponible tras registrar un movimiento. \newline
+3. El sistema debe permitir consultar el historial de movimientos por producto y por rango de fechas.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe tratar cada movimiento como irreversible una vez confirmado; para corregir errores se debe generar un contra-movimiento con signo contrario.} \\ \hline
+\end{tabular}
+\caption{RF03: Registro de movimientos de inventario}
+\label{tab:rf03}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Media}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF04 & \cellcolor{tableheaderblue}\textbf{Actor} & Sistema / Administrador / Usuario de inventario \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Alertas de stock bajo y umbral mínimo}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe notificar de forma proactiva sobre productos cuyo nivel de existencias se encuentre por debajo del umbral mínimo configurado, facilitando la toma de decisiones de reabastecimiento.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir configurar un umbral mínimo de stock por producto. \newline
+El sistema debe identificar y marcar como “stock bajo” los productos cuyo stock actual sea inferior o igual al umbral configurado. \newline
+El sistema debe resaltar visualmente los productos con stock bajo en el listado de inventario y/o en el dashboard principal.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe recalcular las alertas de stock automáticamente cada vez que se registre una venta o un movimiento de inventario. \newline
+2. El sistema debe resaltar claramente los productos en condición de stock bajo mediante iconos, colores o etiquetas diferenciadas. \newline
+3. El sistema debe permitir que el usuario modifique el umbral mínimo de un producto y que la alerta se actualice en consecuencia.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema no debe generar alertas para productos marcados como inactivos.} \\ \hline
+\end{tabular}
+\caption{RF04: Alertas de stock bajo y umbral mínimo}
+\label{tab:rf04}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Alta}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF05 & \cellcolor{tableheaderblue}\textbf{Actor} & Cajero / Administrador \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Procesamiento de venta en tiempo real}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe proporcionar una interfaz ágil para la ejecución de ventas, permitiendo la selección de productos, el cálculo automático de totales y el registro de la transacción con impacto inmediato en el inventario.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir buscar productos por nombre, SKU o código de barras y agregarlos a un carrito de venta con la cantidad correspondiente. \newline
+El sistema debe calcular automáticamente el subtotal, el valor del impuesto y el total final de la venta según los datos del catálogo. \newline
+El sistema debe registrar la venta con un identificador único, fecha, hora, usuario, productos vendidos, cantidades, totales y cliente asociado (cuando aplique).} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe impedir confirmar una venta cuando al menos uno de los productos no disponga de stock suficiente. \newline
+2. El sistema debe mostrar al usuario un resumen detallado de la venta antes de su confirmación. \newline
+3. El sistema debe completar el registro de la venta y dejarla disponible para consulta en el historial de ventas inmediatamente después de su confirmación.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+La interfaz de venta debe minimizar el número de clics necesarios para completar una transacción típica en el punto de venta.} \\ \hline
+\end{tabular}
+\caption{RF05: Procesamiento de venta en tiempo real}
+\label{tab:rf05}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Alta}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF06 & \cellcolor{tableheaderblue}\textbf{Actor} & Cajero / Administrador \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Gestión de métodos de pago y cálculo de cambio}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe manejar diferentes métodos de pago y calcular el cambio a devolver al cliente cuando el pago se realice en efectivo.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir seleccionar el método de pago para cada venta (efectivo, tarjeta, transferencia u otros definidos). \newline
+El sistema debe permitir ingresar el monto entregado por el cliente en caso de pago en efectivo y calcular automáticamente el cambio a devolver. \newline
+El sistema debe registrar el método de pago y los valores asociados en el detalle de la venta para su posterior análisis.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe validar que el monto entregado por el cliente en efectivo sea igual o superior al total de la venta. \newline
+2. El sistema debe mostrar de forma clara el valor del cambio a devolver antes de finalizar la transacción. \newline
+3. El sistema debe permitir filtrar ventas por método de pago en los reportes y consultas.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+Los métodos de pago disponibles deben ser configurables únicamente por usuarios con permisos de administración.} \\ \hline
+\end{tabular}
+\caption{RF06: Gestión de métodos de pago y cálculo de cambio}
+\label{tab:rf06}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Alta}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF07 & \cellcolor{tableheaderblue}\textbf{Actor} & Sistema / Cajero / Administrador \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Actualización automática de stock por venta}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe actualizar automáticamente las existencias de los productos involucrados en una venta al momento de confirmar la transacción, manteniendo la consistencia con el módulo de inventario.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe descontar del stock de cada producto la cantidad vendida cuando una venta se confirme exitosamente. \newline
+El sistema debe registrar un movimiento de inventario de tipo “salida por venta” asociado al identificador de la venta. \newline
+El sistema debe impedir la confirmación de la venta si, por concurrencia u otros factores, el stock disponible es insuficiente en el momento del cierre.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe mostrar el nuevo stock disponible del producto inmediatamente después de confirmar la venta. \newline
+2. El sistema debe impedir la confirmación de la venta si no se logra aplicar correctamente el descuento de inventario. \newline
+3. El sistema debe permitir consultar, desde la ficha de un producto, los movimientos de salida generados por ventas.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+La operación de registro de venta y descuento de inventario debe ejecutarse de forma atómica para evitar inconsistencias.} \\ \hline
+\end{tabular}
+\caption{RF07: Actualización automática de stock por venta}
+\label{tab:rf07}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Media}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF08 & \cellcolor{tableheaderblue}\textbf{Actor} & Cajero / Administrador \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Emisión de comprobantes de venta}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe generar un comprobante documental de cada venta realizada, disponible en formato imprimible o digital, para soporte del cliente y del negocio.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe generar automáticamente un comprobante al finalizar exitosamente una venta, incluyendo: logo del negocio, fecha, número de venta, datos del cliente (si aplica), detalle de ítems, impuestos, total y método de pago. \newline
+El sistema debe permitir la visualización del comprobante desde el navegador y su impresión directa o descarga en formato digital (por ejemplo, PDF). \newline
+El sistema debe manejar un consecutivo incremental y único para la numeración de las ventas.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe generar el comprobante inmediatamente después de finalizar la venta sin requerir acciones adicionales del usuario. \newline
+2. El sistema debe presentar el comprobante en un formato compatible con impresoras de tirilla y/o tamaño carta, según configuración. \newline
+3. El sistema debe permitir recuperar y volver a imprimir o descargar el comprobante desde el historial de ventas.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El diseño del comprobante debe ajustarse a los formatos definidos por la configuración del negocio y las normas vigentes aplicables.} \\ \hline
+\end{tabular}
+\caption{RF08: Emisión de comprobantes de venta}
+\label{tab:rf08}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Media}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF09 & \cellcolor{tableheaderblue}\textbf{Actor} & Administrador \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Gestión de anulaciones y devoluciones}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir gestionar anulaciones totales y devoluciones parciales de ventas, ajustando en consecuencia el inventario y los registros históricos.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir seleccionar una venta registrada y marcarla como anulada o registrar la devolución de uno o varios productos. \newline
+El sistema debe generar los movimientos de inventario necesarios para revertir total o parcialmente el descuento de stock asociado a la venta original. \newline
+El sistema debe registrar la fecha, el usuario responsable y el motivo de la anulación o devolución.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe reflejar el ajuste del inventario derivado de la anulación o devolución en el stock de los productos afectados. \newline
+2. El sistema debe mantener visible en el historial la venta original con un estado que indique “anulada” o “con devolución”. \newline
+3. El sistema debe impedir la anulación de ventas cuando existan restricciones adicionales configuradas (por ejemplo, cierres de caja o cierres contables).} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+Solo usuarios con permisos de administración pueden ejecutar procesos de anulación o devolución.} \\ \hline
+\end{tabular}
+\caption{RF09: Gestión de anulaciones y devoluciones}
+\label{tab:rf09}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Media}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF10 & \cellcolor{tableheaderblue}\textbf{Actor} & Administrador / Cajero \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Gestión del directorio de clientes}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe centralizar la información de los clientes para facilitar su uso en las ventas y en los procesos de seguimiento comercial.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir registrar, editar y buscar clientes, almacenando como mínimo: nombre o razón social, documento de identidad, teléfono, correo electrónico y dirección. \newline
+El sistema debe validar que no se registren clientes duplicados con el mismo número de documento de identidad. \newline
+El sistema debe permitir asociar un cliente existente a una venta en el módulo POS y aplicar eliminación lógica cuando se desee inactivar un cliente.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe mostrar un mensaje de error cuando se intente registrar un cliente con un número de documento ya existente. \newline
+2. El sistema debe permitir filtrar rápidamente clientes por nombre, documento o correo electrónico. \newline
+3. El sistema debe conservar el historial de ventas asociadas al cliente aun cuando este se marque como inactivo.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El tratamiento de la información de clientes debe cumplir con las políticas de protección de datos personales aplicables al negocio.} \\ \hline
+\end{tabular}
+\caption{RF10: Gestión del directorio de clientes}
+\label{tab:rf10}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Media}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF11 & \cellcolor{tableheaderblue}\textbf{Actor} & Administrador / Cajero \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Consulta de historial de compras por cliente}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir consultar el historial de compras de un cliente específico, con el fin de apoyar el análisis de comportamiento y la fidelización.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir seleccionar un cliente y listar las ventas asociadas, mostrando fecha, número de venta, monto total y método de pago. \newline
+El sistema debe permitir filtrar el historial de compras por rango de fechas. \newline
+El sistema debe calcular el total acumulado de compras del cliente en el período consultado.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe mostrar únicamente las ventas correspondientes al cliente seleccionado y al período filtrado. \newline
+2. El sistema debe actualizar el historial de compras en tiempo cercano al real cuando se registre una nueva venta del cliente. \newline
+3. El sistema debe permitir exportar o imprimir el historial de compras si la funcionalidad de exportación está habilitada.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El acceso al historial detallado de compras debe estar restringido a usuarios con permisos autorizados.} \\ \hline
+\end{tabular}
+\caption{RF11: Consulta de historial de compras por cliente}
+\label{tab:rf11}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Media}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF12 & \cellcolor{tableheaderblue}\textbf{Actor} & Administrador \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Dashboard de indicadores y reporte histórico filtrable}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe ofrecer una vista ejecutiva del estado del negocio mediante indicadores clave y reportes históricos de ventas con filtros avanzados.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe calcular y mostrar en el dashboard métricas clave como ventas del día, ventas del mes, número de transacciones y número de productos con stock bajo. \newline
+El sistema debe permitir generar reportes históricos de ventas filtrables por rango de fechas, cliente, producto y método de pago, presentando el detalle de cada transacción. \newline
+El sistema debe recalcular los totales monetarios del reporte según los filtros aplicados y presentar la información en tablas paginadas y/o gráficas.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe actualizar los indicadores del dashboard en tiempo cercano al real o al recargar la página. \newline
+2. El sistema debe permitir al usuario seleccionar un rango de fechas y aplicar filtros combinados para la generación del reporte histórico de ventas. \newline
+3. El sistema debe garantizar que los totales mostrados en el dashboard y en los reportes coincidan con la sumatoria de las ventas almacenadas en la base de datos bajo los filtros activos.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+Las consultas del dashboard y de los reportes deben estar optimizadas para no degradar significativamente el tiempo de respuesta del sistema, aun con volúmenes crecientes de datos.} \\ \hline
+\end{tabular}
+\caption{RF12: Dashboard de indicadores y reporte histórico filtrable}
+\label{tab:rf12}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Media}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF13 & \cellcolor{tableheaderblue}\textbf{Actor} & Administrador \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Gestión de categorías de productos}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir la creación, modificación, consulta y eliminación de categorías para organizar el catálogo de productos, facilitando la navegación y búsqueda por agrupaciones lógicas.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir crear categorías con nombre único y descripción opcional. \newline
+El sistema debe permitir editar el nombre y descripción de categorías existentes. \newline
+El sistema debe permitir desactivar categorías que contengan productos asociados mediante eliminación lógica. \newline
+El sistema debe mostrar la cantidad de productos asociados a cada categoría en el listado de categorías.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe impedir la creación de categorías con nombres duplicados. \newline
+2. El sistema debe reasignar automáticamente los productos a una categoría "Sin categoría" cuando se elimine lógicamente su categoría original. \newline
+3. El sistema debe permitir filtrar el catálogo de productos por categoría seleccionada.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe validar que el nombre de la categoría no exceda los 100 caracteres y que no contenga caracteres especiales no permitidos.} \\ \hline
+\end{tabular}
+\caption{RF13: Gestión de categorías de productos}
+\label{tab:rf13}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Media}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF14 & \cellcolor{tableheaderblue}\textbf{Actor} & Administrador \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Gestión de imágenes de productos}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir la carga, visualización y eliminación de imágenes asociadas a los productos del catálogo, mejorando la identificación visual en el punto de venta y en los reportes.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir cargar imágenes de productos en formatos JPG, PNG o WEBP con un tamaño máximo de 5MB. \newline
+El sistema debe optimizar automáticamente las imágenes cargadas para reducir el tiempo de carga sin pérdida significativa de calidad. \newline
+El sistema debe almacenar las imágenes en un servicio de almacenamiento en la nube (Cloudinary) y guardar únicamente la URL en la base de datos. \newline
+El sistema debe permitir reemplazar la imagen de un producto existente.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe validar el formato y tamaño del archivo antes de iniciar la carga. \newline
+2. El sistema debe mostrar una vista previa de la imagen antes de confirmar su guardado. \newline
+3. El sistema debe mostrar la imagen del producto en el módulo de punto de venta y en el comprobante de venta.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe implementar mecanismos de seguridad para prevenir la carga de archivos maliciosos disfrazados como imágenes.} \\ \hline
+\end{tabular}
+\caption{RF14: Gestión de imágenes de productos}
+\label{tab:rf14}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Alta}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF15 & \cellcolor{tableheaderblue}\textbf{Actor} & Administrador / Cajero \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Búsqueda y filtrado avanzado de productos}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe proporcionar capacidades de búsqueda y filtrado avanzadas para localizar productos rápidamente en el catálogo mediante múltiples criterios combinables.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir buscar productos por nombre, SKU, código de barras o categoría de forma individual o combinada. \newline
+El sistema debe implementar búsqueda incremental que muestre resultados mientras el usuario escribe. \newline
+El sistema debe permitir filtrar productos por rango de precios, estado (activo/inactivo) y nivel de stock (normal, bajo, agotado). \newline
+El sistema debe ordenar los resultados por nombre, precio, stock o fecha de creación en orden ascendente o descendente.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe mostrar resultados de búsqueda en menos de 2 segundos para catálogos de hasta 10,000 productos. \newline
+2. El sistema debe resaltar visualmente los términos de búsqueda coincidentes en los resultados mostrados. \newline
+3. El sistema debe mantener activos los filtros aplicados al navegar entre páginas de resultados.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+La búsqueda debe ser insensible a mayúsculas, minúsculas y acentos para mejorar la experiencia del usuario.} \\ \hline
+\end{tabular}
+\caption{RF15: Búsqueda y filtrado avanzado de productos}
+\label{tab:rf15}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Alta}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF16 & \cellcolor{tableheaderblue}\textbf{Actor} & Cajero / Administrador \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Aplicación de descuentos en ventas}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir aplicar descuentos porcentuales o en valor fijo sobre items individuales o sobre el total de la venta, con el objetivo de facilitar promociones y ajustes comerciales.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir aplicar descuentos de tipo porcentual (\%) o valor fijo (\$) a items individuales en el carrito de venta. \newline
+El sistema debe permitir aplicar un descuento general sobre el subtotal de la venta completa. \newline
+El sistema debe recalcular automáticamente el subtotal, impuestos y total de la venta al aplicar o modificar descuentos. \newline
+El sistema debe registrar en el detalle de la venta los descuentos aplicados con su tipo, monto y justificación.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe validar que los descuentos porcentuales se encuentren entre 0\% y 100\%. \newline
+2. El sistema debe impedir aplicar descuentos que resulten en un total de venta negativo. \newline
+3. El sistema debe mostrar claramente en el comprobante de venta los descuentos aplicados y el ahorro obtenido por el cliente.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe requerir autorización mediante contraseña de administrador para descuentos superiores al 30\% del valor del item o de la venta total.} \\ \hline
+\end{tabular}
+\caption{RF16: Aplicación de descuentos en ventas}
+\label{tab:rf16}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Alta}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF17 & \cellcolor{tableheaderblue}\textbf{Actor} & Cajero \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Gestión del carrito de compras temporal}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir gestionar items en un carrito de compras antes de confirmar la venta, facilitando modificaciones de cantidad, eliminación de productos y cálculos dinámicos.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir agregar productos al carrito especificando la cantidad deseada. \newline
+El sistema debe permitir modificar la cantidad de un item ya agregado al carrito mediante incremento, decremento o ingreso directo del valor. \newline
+El sistema debe permitir eliminar items individuales del carrito antes de confirmar la venta. \newline
+El sistema debe permitir vaciar completamente el carrito para iniciar una nueva transacción. \newline
+El sistema debe mostrar en tiempo real el subtotal por item, el subtotal general, impuestos y total de la venta.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe validar disponibilidad de stock al agregar o modificar la cantidad de un producto en el carrito. \newline
+2. El sistema debe solicitar confirmación antes de vaciar completamente el carrito. \newline
+3. El sistema debe mantener el carrito activo durante la sesión del usuario hasta que se confirme la venta o se cierre sesión.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe limitar la cantidad máxima por item al stock disponible actual del producto.} \\ \hline
+\end{tabular}
+\caption{RF17: Gestión del carrito de compras temporal}
+\label{tab:rf17}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Media}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF18 & \cellcolor{tableheaderblue}\textbf{Actor} & Administrador \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Consulta de ventas por rango de fechas}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir consultar el historial de ventas realizadas filtrando por un rango de fechas específico, facilitando análisis de períodos comerciales y auditorías.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir seleccionar una fecha de inicio y una fecha de fin para delimitar el período de consulta. \newline
+El sistema debe mostrar todas las ventas registradas dentro del rango especificado con su número, fecha, cliente, total y estado. \newline
+El sistema debe calcular y mostrar totales acumulados de ventas, cantidad de transacciones y ticket promedio para el período consultado. \newline
+El sistema debe permitir ordenar los resultados por fecha, número de venta o monto total.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe validar que la fecha de inicio no sea posterior a la fecha de fin. \newline
+2. El sistema debe permitir seleccionar rangos predefinidos (hoy, últimos 7 días, último mes, mes actual). \newline
+3. El sistema debe permitir exportar los resultados de la consulta en formato Excel o PDF.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+Las consultas de rangos superiores a un año deben implementar paginación para optimizar el rendimiento del sistema.} \\ \hline
+\end{tabular}
+\caption{RF18: Consulta de ventas por rango de fechas}
+\label{tab:rf18}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Baja}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF19 & \cellcolor{tableheaderblue}\textbf{Actor} & Administrador / Cajero \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Registro de múltiples contactos por cliente}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir registrar múltiples números telefónicos y direcciones de correo electrónico para un mismo cliente, facilitando la comunicación por diferentes canales.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir agregar múltiples teléfonos para un cliente, clasificándolos por tipo (móvil, fijo, trabajo). \newline
+El sistema debe permitir agregar múltiples correos electrónicos para un cliente. \newline
+El sistema debe permitir marcar un teléfono y un correo como contacto principal. \newline
+El sistema debe validar el formato de teléfonos y correos electrónicos antes de guardarlos.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe permitir registrar al menos 3 teléfonos y 3 correos por cliente. \newline
+2. El sistema debe impedir guardar teléfonos o correos duplicados para el mismo cliente. \newline
+3. El sistema debe mostrar los contactos principales destacados visualmente en la ficha del cliente.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe requerir al menos un método de contacto (teléfono o correo) para poder registrar un cliente.} \\ \hline
+\end{tabular}
+\caption{RF19: Registro de múltiples contactos por cliente}
+\label{tab:rf19}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Baja}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF20 & \cellcolor{tableheaderblue}\textbf{Actor} & Administrador \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Segmentación de clientes por criterios}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir clasificar y segmentar clientes según criterios comerciales como frecuencia de compra, monto acumulado o fecha de última compra, facilitando estrategias de fidelización.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe calcular automáticamente métricas de comportamiento de compra para cada cliente (total gastado, número de compras, fecha de última compra, ticket promedio). \newline
+El sistema debe permitir crear segmentos personalizados de clientes basados en rangos de las métricas calculadas. \newline
+El sistema debe clasificar automáticamente clientes en categorías predefinidas (VIP, frecuente, ocasional, inactivo) según reglas configurables. \newline
+El sistema debe permitir generar listados de clientes filtrados por segmento o categoría.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe recalcular las métricas de comportamiento cada vez que se registre una nueva venta asociada al cliente. \newline
+2. El sistema debe permitir al administrador configurar los umbrales que definen cada categoría de cliente. \newline
+3. El sistema debe mostrar visualmente la categoría del cliente en su ficha y en el punto de venta.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+Los segmentos y categorías deben recalcularse mediante procesos programados para no afectar el rendimiento del sistema durante horarios de operación.} \\ \hline
+\end{tabular}
+\caption{RF20: Segmentación de clientes por criterios}
+\label{tab:rf20}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Media}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF21 & \cellcolor{tableheaderblue}\textbf{Actor} & Administrador \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Reporte de productos más vendidos}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe generar un reporte que identifique los productos con mayor volumen de ventas en un período determinado, facilitando decisiones de inventario y estrategias comerciales.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir seleccionar un rango de fechas para generar el reporte de productos más vendidos. \newline
+El sistema debe calcular para cada producto la cantidad total vendida y el valor total generado en el período. \newline
+El sistema debe ordenar los resultados por cantidad vendida o por valor total de forma descendente. \newline
+El sistema debe permitir limitar el reporte a un número específico de productos (top 10, top 20, top 50). \newline
+El sistema debe presentar los resultados en formato de tabla y gráfica de barras.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe excluir del reporte las ventas anuladas o devueltas. \newline
+2. El sistema debe permitir filtrar el reporte por categoría de productos. \newline
+3. El sistema debe permitir exportar el reporte en formato Excel o PDF.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El reporte debe considerar únicamente ventas con estado "completada" para garantizar precisión de la información.} \\ \hline
+\end{tabular}
+\caption{RF21: Reporte de productos más vendidos}
+\label{tab:rf21}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Media}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF22 & \cellcolor{tableheaderblue}\textbf{Actor} & Administrador \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Análisis de rentabilidad por producto}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe calcular y presentar métricas de rentabilidad por producto comparando precios de costo y venta, facilitando la identificación de productos con mejores márgenes comerciales.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe calcular el margen bruto unitario por producto (precio de venta - precio de costo). \newline
+El sistema debe calcular el margen bruto porcentual por producto ((precio de venta - precio de costo) / precio de venta * 100). \newline
+El sistema debe calcular la rentabilidad total acumulada por producto considerando las cantidades vendidas en un período. \newline
+El sistema debe permitir ordenar productos por margen porcentual o rentabilidad total. \newline
+El sistema debe identificar visualmente productos con márgenes negativos o muy bajos (alertas).} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe actualizar los cálculos de rentabilidad cuando se modifiquen los precios de costo o venta de un producto. \newline
+2. El sistema debe permitir filtrar el análisis por categoría y rango de fechas de ventas. \newline
+3. El sistema debe presentar un resumen con el margen promedio general del negocio.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+Los cálculos de rentabilidad deben considerar el precio de costo y venta vigentes al momento de cada transacción registrada.} \\ \hline
+\end{tabular}
+\caption{RF22: Análisis de rentabilidad por producto}
+\label{tab:rf22}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Baja}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF23 & \cellcolor{tableheaderblue}\textbf{Actor} & Administrador \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Reporte de ventas por método de pago}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe generar un reporte que agrupe las ventas según el método de pago utilizado, facilitando la conciliación financiera y el análisis de preferencias de pago de los clientes.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir seleccionar un rango de fechas para generar el reporte de ventas por método de pago. \newline
+El sistema debe calcular el total de ventas y cantidad de transacciones para cada método de pago (efectivo, tarjeta, transferencia). \newline
+El sistema debe calcular el porcentaje que representa cada método de pago sobre el total de ventas del período. \newline
+El sistema debe presentar los resultados en formato de tabla y gráfica circular (pie chart).} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe excluir del reporte las ventas anuladas. \newline
+2. El sistema debe mostrar el método de pago más utilizado destacado visualmente. \newline
+3. El sistema debe permitir exportar el reporte en formato PDF o Excel.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El reporte debe considerar únicamente ventas confirmadas y no debe incluir transacciones pendientes o en proceso.} \\ \hline
+\end{tabular}
+\caption{RF23: Reporte de ventas por método de pago}
+\label{tab:rf23}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Requerimientos funcionales}} \\ \hline
+\multicolumn{4}{|l|}{\textbf{Prioridad: Media}} \\ \hline
+\textbf{CÓDIGO DEL REQUERIMIENTO:} & RF24 & \cellcolor{tableheaderblue}\textbf{Actor} & Administrador \\ \hline
+\textbf{NOMBRE DEL REQUERIMIENTO} & \multicolumn{3}{l|}{\textbf{Reporte de movimientos de inventario}} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Descripción}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe generar un reporte detallado de todos los movimientos de inventario registrados en un período, clasificados por tipo de movimiento, facilitando la auditoría y trazabilidad del stock.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Funcionalidad}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El sistema debe permitir seleccionar un rango de fechas para generar el reporte de movimientos de inventario. \newline
+El sistema debe permitir filtrar movimientos por tipo (entrada, salida, ajuste, venta) y por producto específico. \newline
+El sistema debe mostrar para cada movimiento la fecha, tipo, producto, cantidad, stock anterior, stock resultante y usuario responsable. \newline
+El sistema debe calcular totales de entradas y salidas por tipo de movimiento para el período consultado.} \\ \hline
+\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{%
+1. El sistema debe ordenar los movimientos cronológicamente del más reciente al más antiguo por defecto. \newline
+2. El sistema debe permitir filtrar movimientos por categoría de producto. \newline
+3. El sistema debe permitir exportar el reporte completo en formato Excel incluyendo todos los detalles.} \\ \hline
+\rowcolor{tableheaderblue}
+\multicolumn{4}{|l|}{\textbf{Restricciones}} \\ \hline
+\multicolumn{4}{|p{0.96\linewidth}|}{%
+El reporte debe incluir únicamente movimientos confirmados y registrados formalmente en el sistema, excluyendo movimientos en borrador o pendientes de aprobación.} \\ \hline
+\end{tabular}
+\caption{RF24: Reporte de movimientos de inventario}
+\label{tab:rf24}
+\end{table}
+
+\clearpage
+
 \subsection{Requerimientos No Funcionales}
 
 Los requerimientos no funcionales desempeñan un papel fundamental en el presente proyecto, ya que definen las características y atributos clave que no están directamente relacionados con la funcionalidad del software, pero que son esenciales para su éxito.
@@ -694,9 +1552,7 @@ Texto que explica la figura
 \label{fig:LogoDeLaUPB}Logo de la UPB}
 \end{figure}
 
-
-
-\newpage
+\clearpage
 \section{CONCLUSIONES}
 
 Texto de las conclusiones del proyecto...

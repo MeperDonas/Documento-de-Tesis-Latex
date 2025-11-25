@@ -203,6 +203,9 @@ INPUT C:\Program Files\MiKTeX\tex\latex\pdflscape\pdflscape.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\pdflscape\pdflscape.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\pdflscape\pdflscape-nometadata.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\colortbl\colortbl.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\colortbl\colortbl.sty
+INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\t1ptm.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\t1ptm.fd
 INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\t1ptm.fd
@@ -216,14 +219,11 @@ INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\grfext\grfext.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\grfext\grfext.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
 INPUT C:\Program Files\MiKTeX\tex\latex\caption\ltcaption.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\color.sty
 INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.out
 INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.out
 INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.out

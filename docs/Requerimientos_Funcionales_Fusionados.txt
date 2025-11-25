@@ -1,0 +1,644 @@
+REQUERIMIENTOS FUNCIONALES - VERSIÓN FUSIONADA FINAL
+
+================================================================================
+MÓDULO: SEGURIDAD Y ACCESO
+================================================================================
+
+RF01 – Autenticación y control de sesión
+
+Prioridad: Alta
+Código del requerimiento: RF01
+Actor: Administrador / Usuario
+Nombre del requerimiento: Autenticación y control de sesión
+
+Descripción:
+El sistema debe gestionar el acceso seguro de los usuarios mediante credenciales y mecanismos de control de sesión basados en tokens.
+
+Funcionalidad:
+El sistema debe validar las credenciales de acceso (correo y contraseña) contra la base de datos antes de permitir el ingreso del usuario.
+El sistema debe generar un token de sesión (por ejemplo, JWT) para mantener la autenticación del usuario durante su navegación por el sistema.
+El sistema debe restringir el acceso a las rutas internas únicamente a usuarios que posean un token de sesión válido y no expirado.
+
+Criterios de aceptación:
+1. El sistema debe permitir que el usuario ingrese su correo y contraseña en un formulario seguro (canal cifrado).
+2. El sistema debe redirigir al dashboard principal cuando las credenciales sean válidas y el token se genere correctamente.
+3. El sistema debe bloquear y redirigir a la pantalla de inicio de sesión cuando se intente acceder a recursos internos sin un token válido.
+
+Restricciones:
+El sistema debe almacenar las contraseñas encriptadas en la base de datos utilizando algoritmos de hashing seguros.
+
+================================================================================
+MÓDULO: INVENTARIO
+================================================================================
+
+RF02 – Gestión del catálogo de productos (CRUD)
+
+Prioridad: Alta
+Código del requerimiento: RF02
+Actor: Administrador
+Nombre del requerimiento: Gestión del catálogo de productos
+
+Descripción:
+El sistema debe permitir la administración completa del catálogo de productos comercializados, garantizando la unicidad de identificadores y la disponibilidad inmediata de la información.
+
+Funcionalidad:
+El sistema debe permitir crear, leer, actualizar y desactivar productos, capturando como mínimo: nombre, SKU, código de barras, categoría, precio de costo, precio de venta, impuesto aplicable y stock actual.
+El sistema debe validar que el SKU y el código de barras de un producto sean únicos dentro del catálogo.
+El sistema debe aplicar eliminación lógica (borrado lógico) a los productos con ventas históricas, evitando la pérdida de información asociada.
+
+Criterios de aceptación:
+1. El sistema debe mostrar un mensaje de error cuando se intente registrar un producto con un SKU o código de barras ya existente.
+2. El sistema debe mostrar el producto recién creado o actualizado de forma inmediata en el listado general de inventario.
+3. El sistema debe impedir la eliminación física de productos que tengan ventas asociadas, permitiendo únicamente su desactivación.
+
+Restricciones:
+El sistema debe manejar paginación en el listado de productos cuando el número de registros supere el límite establecido.
+
+--------------------------------------------------------------------------------
+
+RF03 – Registro de movimientos de stock
+
+Prioridad: Alta
+Código del requerimiento: RF03
+Actor: Administrador / Usuario de inventario
+Nombre del requerimiento: Registro de movimientos de inventario
+
+Descripción:
+El sistema debe mantener la trazabilidad de las variaciones de inventario distintas a las ventas, mediante el registro estructurado de movimientos de entrada y salida.
+
+Funcionalidad:
+El sistema debe registrar entradas y salidas de inventario clasificándolas por tipo (compra, ajuste, daño, devolución u otros definidos).
+El sistema debe actualizar en tiempo cercano al real el stock disponible del producto según la cantidad registrada en cada movimiento.
+El sistema debe almacenar para cada movimiento la fecha, la hora, el tipo de movimiento, el usuario responsable y una justificación.
+
+Criterios de aceptación:
+1. El sistema debe impedir registrar movimientos de salida que dejen el stock resultante en un valor negativo.
+2. El sistema debe reflejar inmediatamente en la ficha del producto el nuevo stock disponible tras registrar un movimiento.
+3. El sistema debe permitir consultar el historial de movimientos por producto y por rango de fechas.
+
+Restricciones:
+El sistema debe tratar cada movimiento como irreversible una vez confirmado; para corregir errores se debe generar un contra-movimiento con signo contrario.
+
+--------------------------------------------------------------------------------
+
+RF04 – Alertas de stock bajo
+
+Prioridad: Media
+Código del requerimiento: RF04
+Actor: Sistema / Administrador / Usuario de inventario
+Nombre del requerimiento: Alertas de stock bajo y umbral mínimo
+
+Descripción:
+El sistema debe notificar de forma proactiva sobre productos cuyo nivel de existencias se encuentre por debajo del umbral mínimo configurado, facilitando la toma de decisiones de reabastecimiento.
+
+Funcionalidad:
+El sistema debe permitir configurar un umbral mínimo de stock por producto.
+El sistema debe identificar y marcar como "stock bajo" los productos cuyo stock actual sea inferior o igual al umbral configurado.
+El sistema debe resaltar visualmente los productos con stock bajo en el listado de inventario y/o en el dashboard principal.
+
+Criterios de aceptación:
+1. El sistema debe recalcular las alertas de stock automáticamente cada vez que se registre una venta o un movimiento de inventario.
+2. El sistema debe resaltar claramente los productos en condición de stock bajo mediante iconos, colores o etiquetas diferenciadas.
+3. El sistema debe permitir que el usuario modifique el umbral mínimo de un producto y que la alerta se actualice en consecuencia.
+
+Restricciones:
+El sistema no debe generar alertas para productos marcados como inactivos.
+
+--------------------------------------------------------------------------------
+
+RF13 – Gestión de categorías de productos
+
+Prioridad: Media
+Código del requerimiento: RF13
+Actor: Administrador
+Nombre del requerimiento: Gestión de categorías de productos
+
+Descripción:
+El sistema debe permitir la creación, modificación, consulta y eliminación de categorías para organizar el catálogo de productos, facilitando la navegación y búsqueda por agrupaciones lógicas.
+
+Funcionalidad:
+El sistema debe permitir crear categorías con nombre único y descripción opcional.
+El sistema debe permitir editar el nombre y descripción de categorías existentes.
+El sistema debe permitir desactivar categorías que contengan productos asociados mediante eliminación lógica.
+El sistema debe mostrar la cantidad de productos asociados a cada categoría en el listado de categorías.
+
+Criterios de aceptación:
+1. El sistema debe impedir la creación de categorías con nombres duplicados.
+2. El sistema debe reasignar automáticamente los productos a una categoría "Sin categoría" cuando se elimine lógicamente su categoría original.
+3. El sistema debe permitir filtrar el catálogo de productos por categoría seleccionada.
+
+Restricciones:
+El sistema debe validar que el nombre de la categoría no exceda los 100 caracteres y que no contenga caracteres especiales no permitidos.
+
+--------------------------------------------------------------------------------
+
+RF14 – Gestión de imágenes de productos
+
+Prioridad: Media
+Código del requerimiento: RF14
+Actor: Administrador
+Nombre del requerimiento: Gestión de imágenes de productos
+
+Descripción:
+El sistema debe permitir la carga, visualización y eliminación de imágenes asociadas a los productos del catálogo, mejorando la identificación visual en el punto de venta y en los reportes.
+
+Funcionalidad:
+El sistema debe permitir cargar imágenes de productos en formatos JPG, PNG o WEBP con un tamaño máximo de 5MB.
+El sistema debe optimizar automáticamente las imágenes cargadas para reducir el tiempo de carga sin pérdida significativa de calidad.
+El sistema debe almacenar las imágenes en un servicio de almacenamiento en la nube (Cloudinary) y guardar únicamente la URL en la base de datos.
+El sistema debe permitir reemplazar la imagen de un producto existente.
+
+Criterios de aceptación:
+1. El sistema debe validar el formato y tamaño del archivo antes de iniciar la carga.
+2. El sistema debe mostrar una vista previa de la imagen antes de confirmar su guardado.
+3. El sistema debe mostrar la imagen del producto en el módulo de punto de venta y en el comprobante de venta.
+
+Restricciones:
+El sistema debe implementar mecanismos de seguridad para prevenir la carga de archivos maliciosos disfrazados como imágenes.
+
+--------------------------------------------------------------------------------
+
+RF15 – Búsqueda y filtrado avanzado de productos
+
+Prioridad: Alta
+Código del requerimiento: RF15
+Actor: Administrador / Cajero
+Nombre del requerimiento: Búsqueda y filtrado avanzado de productos
+
+Descripción:
+El sistema debe proporcionar capacidades de búsqueda y filtrado avanzadas para localizar productos rápidamente en el catálogo mediante múltiples criterios combinables.
+
+Funcionalidad:
+El sistema debe permitir buscar productos por nombre, SKU, código de barras o categoría de forma individual o combinada.
+El sistema debe implementar búsqueda incremental que muestre resultados mientras el usuario escribe.
+El sistema debe permitir filtrar productos por rango de precios, estado (activo/inactivo) y nivel de stock (normal, bajo, agotado).
+El sistema debe ordenar los resultados por nombre, precio, stock o fecha de creación en orden ascendente o descendente.
+
+Criterios de aceptación:
+1. El sistema debe mostrar resultados de búsqueda en menos de 2 segundos para catálogos de hasta 10,000 productos.
+2. El sistema debe resaltar visualmente los términos de búsqueda coincidentes en los resultados mostrados.
+3. El sistema debe mantener activos los filtros aplicados al navegar entre páginas de resultados.
+
+Restricciones:
+La búsqueda debe ser insensible a mayúsculas, minúsculas y acentos para mejorar la experiencia del usuario.
+
+================================================================================
+MÓDULO: VENTAS / POS
+================================================================================
+
+RF05 – Procesamiento de venta en tiempo real
+
+Prioridad: Alta
+Código del requerimiento: RF05
+Actor: Cajero / Administrador
+Nombre del requerimiento: Procesamiento de venta en tiempo real
+
+Descripción:
+El sistema debe proporcionar una interfaz ágil para la ejecución de ventas, permitiendo la selección de productos, el cálculo automático de totales y el registro de la transacción con impacto inmediato en el inventario.
+
+Funcionalidad:
+El sistema debe permitir buscar productos por nombre, SKU o código de barras y agregarlos a un carrito de venta con la cantidad correspondiente.
+El sistema debe calcular automáticamente el subtotal, el valor del impuesto y el total final de la venta según los datos del catálogo.
+El sistema debe registrar la venta con un identificador único, fecha, hora, usuario, productos vendidos, cantidades, totales y cliente asociado (cuando aplique).
+
+Criterios de aceptación:
+1. El sistema debe impedir confirmar una venta cuando al menos uno de los productos no disponga de stock suficiente.
+2. El sistema debe mostrar al usuario un resumen detallado de la venta antes de su confirmación.
+3. El sistema debe completar el registro de la venta y dejarla disponible para consulta en el historial de ventas inmediatamente después de su confirmación.
+
+Restricciones:
+La interfaz de venta debe minimizar el número de clics necesarios para completar una transacción típica en el punto de venta.
+
+--------------------------------------------------------------------------------
+
+RF06 – Gestión de métodos de pago y cálculo de cambio
+
+Prioridad: Alta
+Código del requerimiento: RF06
+Actor: Cajero / Administrador
+Nombre del requerimiento: Gestión de métodos de pago y cálculo de cambio
+
+Descripción:
+El sistema debe manejar diferentes métodos de pago y calcular el cambio a devolver al cliente cuando el pago se realice en efectivo.
+
+Funcionalidad:
+El sistema debe permitir seleccionar el método de pago para cada venta (efectivo, tarjeta, transferencia u otros definidos).
+El sistema debe permitir ingresar el monto entregado por el cliente en caso de pago en efectivo y calcular automáticamente el cambio a devolver.
+El sistema debe registrar el método de pago y los valores asociados en el detalle de la venta para su posterior análisis.
+
+Criterios de aceptación:
+1. El sistema debe validar que el monto entregado por el cliente en efectivo sea igual o superior al total de la venta.
+2. El sistema debe mostrar de forma clara el valor del cambio a devolver antes de finalizar la transacción.
+3. El sistema debe permitir filtrar ventas por método de pago en los reportes y consultas.
+
+Restricciones:
+Los métodos de pago disponibles deben ser configurables únicamente por usuarios con permisos de administración.
+
+--------------------------------------------------------------------------------
+
+RF07 – Descuento automático de inventario por venta
+
+Prioridad: Alta
+Código del requerimiento: RF07
+Actor: Sistema / Cajero / Administrador
+Nombre del requerimiento: Actualización automática de stock por venta
+
+Descripción:
+El sistema debe actualizar automáticamente las existencias de los productos involucrados en una venta al momento de confirmar la transacción, manteniendo la consistencia con el módulo de inventario.
+
+Funcionalidad:
+El sistema debe descontar del stock de cada producto la cantidad vendida cuando una venta se confirme exitosamente.
+El sistema debe registrar un movimiento de inventario de tipo "salida por venta" asociado al identificador de la venta.
+El sistema debe impedir la confirmación de la venta si, por concurrencia u otros factores, el stock disponible es insuficiente en el momento del cierre.
+
+Criterios de aceptación:
+1. El sistema debe mostrar el nuevo stock disponible del producto inmediatamente después de confirmar la venta.
+2. El sistema debe impedir la confirmación de la venta si no se logra aplicar correctamente el descuento de inventario.
+3. El sistema debe permitir consultar, desde la ficha de un producto, los movimientos de salida generados por ventas.
+
+Restricciones:
+La operación de registro de venta y descuento de inventario debe ejecutarse de forma atómica para evitar inconsistencias.
+
+--------------------------------------------------------------------------------
+
+RF08 – Generación de comprobantes de venta
+
+Prioridad: Media
+Código del requerimiento: RF08
+Actor: Cajero / Administrador
+Nombre del requerimiento: Emisión de comprobantes de venta
+
+Descripción:
+El sistema debe generar un comprobante documental de cada venta realizada, disponible en formato imprimible o digital, para soporte del cliente y del negocio.
+
+Funcionalidad:
+El sistema debe generar automáticamente un comprobante al finalizar exitosamente una venta, incluyendo: logo del negocio, fecha, número de venta, datos del cliente (si aplica), detalle de ítems, impuestos, total y método de pago.
+El sistema debe permitir la visualización del comprobante desde el navegador y su impresión directa o descarga en formato digital (por ejemplo, PDF).
+El sistema debe manejar un consecutivo incremental y único para la numeración de las ventas.
+
+Criterios de aceptación:
+1. El sistema debe generar el comprobante inmediatamente después de finalizar la venta sin requerir acciones adicionales del usuario.
+2. El sistema debe presentar el comprobante en un formato compatible con impresoras de tirilla y/o tamaño carta, según configuración.
+3. El sistema debe permitir recuperar y volver a imprimir o descargar el comprobante desde el historial de ventas.
+
+Restricciones:
+El diseño del comprobante debe ajustarse a los formatos definidos por la configuración del negocio y las normas vigentes aplicables.
+
+--------------------------------------------------------------------------------
+
+RF09 – Anulación y devolución de ventas
+
+Prioridad: Media
+Código del requerimiento: RF09
+Actor: Administrador
+Nombre del requerimiento: Gestión de anulaciones y devoluciones
+
+Descripción:
+El sistema debe permitir gestionar anulaciones totales y devoluciones parciales de ventas, ajustando en consecuencia el inventario y los registros históricos.
+
+Funcionalidad:
+El sistema debe permitir seleccionar una venta registrada y marcarla como anulada o registrar la devolución de uno o varios productos.
+El sistema debe generar los movimientos de inventario necesarios para revertir total o parcialmente el descuento de stock asociado a la venta original.
+El sistema debe registrar la fecha, el usuario responsable y el motivo de la anulación o devolución.
+
+Criterios de aceptación:
+1. El sistema debe reflejar el ajuste del inventario derivado de la anulación o devolución en el stock de los productos afectados.
+2. El sistema debe mantener visible en el historial la venta original con un estado que indique "anulada" o "con devolución".
+3. El sistema debe impedir la anulación de ventas cuando existan restricciones adicionales configuradas (por ejemplo, cierres de caja o cierres contables).
+
+Restricciones:
+Solo usuarios con permisos de administración pueden ejecutar procesos de anulación o devolución.
+
+--------------------------------------------------------------------------------
+
+RF16 – Aplicación de descuentos en ventas
+
+Prioridad: Alta
+Código del requerimiento: RF16
+Actor: Cajero / Administrador
+Nombre del requerimiento: Aplicación de descuentos en ventas
+
+Descripción:
+El sistema debe permitir aplicar descuentos porcentuales o en valor fijo sobre items individuales o sobre el total de la venta, con el objetivo de facilitar promociones y ajustes comerciales.
+
+Funcionalidad:
+El sistema debe permitir aplicar descuentos de tipo porcentual (%) o valor fijo ($) a items individuales en el carrito de venta.
+El sistema debe permitir aplicar un descuento general sobre el subtotal de la venta completa.
+El sistema debe recalcular automáticamente el subtotal, impuestos y total de la venta al aplicar o modificar descuentos.
+El sistema debe registrar en el detalle de la venta los descuentos aplicados con su tipo, monto y justificación.
+
+Criterios de aceptación:
+1. El sistema debe validar que los descuentos porcentuales se encuentren entre 0% y 100%.
+2. El sistema debe impedir aplicar descuentos que resulten en un total de venta negativo.
+3. El sistema debe mostrar claramente en el comprobante de venta los descuentos aplicados y el ahorro obtenido por el cliente.
+
+Restricciones:
+El sistema debe requerir autorización mediante contraseña de administrador para descuentos superiores al 30% del valor del item o de la venta total.
+
+--------------------------------------------------------------------------------
+
+RF17 – Gestión del carrito de compras temporal
+
+Prioridad: Alta
+Código del requerimiento: RF17
+Actor: Cajero
+Nombre del requerimiento: Gestión del carrito de compras temporal
+
+Descripción:
+El sistema debe permitir gestionar items en un carrito de compras antes de confirmar la venta, facilitando modificaciones de cantidad, eliminación de productos y cálculos dinámicos.
+
+Funcionalidad:
+El sistema debe permitir agregar productos al carrito especificando la cantidad deseada.
+El sistema debe permitir modificar la cantidad de un item ya agregado al carrito mediante incremento, decremento o ingreso directo del valor.
+El sistema debe permitir eliminar items individuales del carrito antes de confirmar la venta.
+El sistema debe permitir vaciar completamente el carrito para iniciar una nueva transacción.
+El sistema debe mostrar en tiempo real el subtotal por item, el subtotal general, impuestos y total de la venta.
+
+Criterios de aceptación:
+1. El sistema debe validar disponibilidad de stock al agregar o modificar la cantidad de un producto en el carrito.
+2. El sistema debe solicitar confirmación antes de vaciar completamente el carrito.
+3. El sistema debe mantener el carrito activo durante la sesión del usuario hasta que se confirme la venta o se cierre sesión.
+
+Restricciones:
+El sistema debe limitar la cantidad máxima por item al stock disponible actual del producto.
+
+--------------------------------------------------------------------------------
+
+RF18 – Consulta de ventas por rango de fechas
+
+Prioridad: Media
+Código del requerimiento: RF18
+Actor: Administrador
+Nombre del requerimiento: Consulta de ventas por rango de fechas
+
+Descripción:
+El sistema debe permitir consultar el historial de ventas realizadas filtrando por un rango de fechas específico, facilitando análisis de períodos comerciales y auditorías.
+
+Funcionalidad:
+El sistema debe permitir seleccionar una fecha de inicio y una fecha de fin para delimitar el período de consulta.
+El sistema debe mostrar todas las ventas registradas dentro del rango especificado con su número, fecha, cliente, total y estado.
+El sistema debe calcular y mostrar totales acumulados de ventas, cantidad de transacciones y ticket promedio para el período consultado.
+El sistema debe permitir ordenar los resultados por fecha, número de venta o monto total.
+
+Criterios de aceptación:
+1. El sistema debe validar que la fecha de inicio no sea posterior a la fecha de fin.
+2. El sistema debe permitir seleccionar rangos predefinidos (hoy, últimos 7 días, último mes, mes actual).
+3. El sistema debe permitir exportar los resultados de la consulta en formato Excel o PDF.
+
+Restricciones:
+Las consultas de rangos superiores a un año deben implementar paginación para optimizar el rendimiento del sistema.
+
+================================================================================
+MÓDULO: CLIENTES
+================================================================================
+
+RF10 – Administración del directorio de clientes
+
+Prioridad: Media
+Código del requerimiento: RF10
+Actor: Administrador / Cajero
+Nombre del requerimiento: Gestión del directorio de clientes
+
+Descripción:
+El sistema debe centralizar la información de los clientes para facilitar su uso en las ventas y en los procesos de seguimiento comercial.
+
+Funcionalidad:
+El sistema debe permitir registrar, editar y buscar clientes, almacenando como mínimo: nombre o razón social, documento de identidad, teléfono, correo electrónico y dirección.
+El sistema debe validar que no se registren clientes duplicados con el mismo número de documento de identidad.
+El sistema debe permitir asociar un cliente existente a una venta en el módulo POS y aplicar eliminación lógica cuando se desee inactivar un cliente.
+
+Criterios de aceptación:
+1. El sistema debe mostrar un mensaje de error cuando se intente registrar un cliente con un número de documento ya existente.
+2. El sistema debe permitir filtrar rápidamente clientes por nombre, documento o correo electrónico.
+3. El sistema debe conservar el historial de ventas asociadas al cliente aun cuando este se marque como inactivo.
+
+Restricciones:
+El tratamiento de la información de clientes debe cumplir con las políticas de protección de datos personales aplicables al negocio.
+
+--------------------------------------------------------------------------------
+
+RF11 – Historial de compras por cliente
+
+Prioridad: Media
+Código del requerimiento: RF11
+Actor: Administrador / Cajero
+Nombre del requerimiento: Consulta de historial de compras por cliente
+
+Descripción:
+El sistema debe permitir consultar el historial de compras de un cliente específico, con el fin de apoyar el análisis de comportamiento y la fidelización.
+
+Funcionalidad:
+El sistema debe permitir seleccionar un cliente y listar las ventas asociadas, mostrando fecha, número de venta, monto total y método de pago.
+El sistema debe permitir filtrar el historial de compras por rango de fechas.
+El sistema debe calcular el total acumulado de compras del cliente en el período consultado.
+
+Criterios de aceptación:
+1. El sistema debe mostrar únicamente las ventas correspondientes al cliente seleccionado y al período filtrado.
+2. El sistema debe actualizar el historial de compras en tiempo cercano al real cuando se registre una nueva venta del cliente.
+3. El sistema debe permitir exportar o imprimir el historial de compras si la funcionalidad de exportación está habilitada.
+
+Restricciones:
+El acceso al historial detallado de compras debe estar restringido a usuarios con permisos autorizados.
+
+--------------------------------------------------------------------------------
+
+RF19 – Registro de múltiples contactos por cliente
+
+Prioridad: Baja
+Código del requerimiento: RF19
+Actor: Administrador / Cajero
+Nombre del requerimiento: Registro de múltiples contactos por cliente
+
+Descripción:
+El sistema debe permitir registrar múltiples números telefónicos y direcciones de correo electrónico para un mismo cliente, facilitando la comunicación por diferentes canales.
+
+Funcionalidad:
+El sistema debe permitir agregar múltiples teléfonos para un cliente, clasificándolos por tipo (móvil, fijo, trabajo).
+El sistema debe permitir agregar múltiples correos electrónicos para un cliente.
+El sistema debe permitir marcar un teléfono y un correo como contacto principal.
+El sistema debe validar el formato de teléfonos y correos electrónicos antes de guardarlos.
+
+Criterios de aceptación:
+1. El sistema debe permitir registrar al menos 3 teléfonos y 3 correos por cliente.
+2. El sistema debe impedir guardar teléfonos o correos duplicados para el mismo cliente.
+3. El sistema debe mostrar los contactos principales destacados visualmente en la ficha del cliente.
+
+Restricciones:
+El sistema debe requerir al menos un método de contacto (teléfono o correo) para poder registrar un cliente.
+
+--------------------------------------------------------------------------------
+
+RF20 – Segmentación de clientes por criterios
+
+Prioridad: Baja
+Código del requerimiento: RF20
+Actor: Administrador
+Nombre del requerimiento: Segmentación de clientes por criterios
+
+Descripción:
+El sistema debe permitir clasificar y segmentar clientes según criterios comerciales como frecuencia de compra, monto acumulado o fecha de última compra, facilitando estrategias de fidelización.
+
+Funcionalidad:
+El sistema debe calcular automáticamente métricas de comportamiento de compra para cada cliente (total gastado, número de compras, fecha de última compra, ticket promedio).
+El sistema debe permitir crear segmentos personalizados de clientes basados en rangos de las métricas calculadas.
+El sistema debe clasificar automáticamente clientes en categorías predefinidas (VIP, frecuente, ocasional, inactivo) según reglas configurables.
+El sistema debe permitir generar listados de clientes filtrados por segmento o categoría.
+
+Criterios de aceptación:
+1. El sistema debe recalcular las métricas de comportamiento cada vez que se registre una nueva venta asociada al cliente.
+2. El sistema debe permitir al administrador configurar los umbrales que definen cada categoría de cliente.
+3. El sistema debe mostrar visualmente la categoría del cliente en su ficha y en el punto de venta.
+
+Restricciones:
+Los segmentos y categorías deben recalcularse mediante procesos programados para no afectar el rendimiento del sistema durante horarios de operación.
+
+================================================================================
+MÓDULO: REPORTES
+================================================================================
+
+RF12 – Dashboard ejecutivo de KPIs y reporte histórico de ventas
+
+Prioridad: Media
+Código del requerimiento: RF12
+Actor: Administrador
+Nombre del requerimiento: Dashboard de indicadores y reporte histórico filtrable
+
+Descripción:
+El sistema debe ofrecer una vista ejecutiva del estado del negocio mediante indicadores clave y reportes históricos de ventas con filtros avanzados.
+
+Funcionalidad:
+El sistema debe calcular y mostrar en el dashboard métricas clave como ventas del día, ventas del mes, número de transacciones y número de productos con stock bajo.
+El sistema debe permitir generar reportes históricos de ventas filtrables por rango de fechas, cliente, producto y método de pago, presentando el detalle de cada transacción.
+El sistema debe recalcular los totales monetarios del reporte según los filtros aplicados y presentar la información en tablas paginadas y/o gráficas.
+
+Criterios de aceptación:
+1. El sistema debe actualizar los indicadores del dashboard en tiempo cercano al real o al recargar la página.
+2. El sistema debe permitir al usuario seleccionar un rango de fechas y aplicar filtros combinados para la generación del reporte histórico de ventas.
+3. El sistema debe garantizar que los totales mostrados en el dashboard y en los reportes coincidan con la sumatoria de las ventas almacenadas en la base de datos bajo los filtros activos.
+
+Restricciones:
+Las consultas del dashboard y de los reportes deben estar optimizadas para no degradar significativamente el tiempo de respuesta del sistema, aun con volúmenes crecientes de datos.
+
+--------------------------------------------------------------------------------
+
+RF21 – Reporte de productos más vendidos
+
+Prioridad: Media
+Código del requerimiento: RF21
+Actor: Administrador
+Nombre del requerimiento: Reporte de productos más vendidos
+
+Descripción:
+El sistema debe generar un reporte que identifique los productos con mayor volumen de ventas en un período determinado, facilitando decisiones de inventario y estrategias comerciales.
+
+Funcionalidad:
+El sistema debe permitir seleccionar un rango de fechas para generar el reporte de productos más vendidos.
+El sistema debe calcular para cada producto la cantidad total vendida y el valor total generado en el período.
+El sistema debe ordenar los resultados por cantidad vendida o por valor total de forma descendente.
+El sistema debe permitir limitar el reporte a un número específico de productos (top 10, top 20, top 50).
+El sistema debe presentar los resultados en formato de tabla y gráfica de barras.
+
+Criterios de aceptación:
+1. El sistema debe excluir del reporte las ventas anuladas o devueltas.
+2. El sistema debe permitir filtrar el reporte por categoría de productos.
+3. El sistema debe permitir exportar el reporte en formato Excel o PDF.
+
+Restricciones:
+El reporte debe considerar únicamente ventas con estado "completada" para garantizar precisión de la información.
+
+--------------------------------------------------------------------------------
+
+RF22 – Análisis de rentabilidad por producto
+
+Prioridad: Media
+Código del requerimiento: RF22
+Actor: Administrador
+Nombre del requerimiento: Análisis de rentabilidad por producto
+
+Descripción:
+El sistema debe calcular y presentar métricas de rentabilidad por producto comparando precios de costo y venta, facilitando la identificación de productos con mejores márgenes comerciales.
+
+Funcionalidad:
+El sistema debe calcular el margen bruto unitario por producto (precio de venta - precio de costo).
+El sistema debe calcular el margen bruto porcentual por producto ((precio de venta - precio de costo) / precio de venta * 100).
+El sistema debe calcular la rentabilidad total acumulada por producto considerando las cantidades vendidas en un período.
+El sistema debe permitir ordenar productos por margen porcentual o rentabilidad total.
+El sistema debe identificar visualmente productos con márgenes negativos o muy bajos (alertas).
+
+Criterios de aceptación:
+1. El sistema debe actualizar los cálculos de rentabilidad cuando se modifiquen los precios de costo o venta de un producto.
+2. El sistema debe permitir filtrar el análisis por categoría y rango de fechas de ventas.
+3. El sistema debe presentar un resumen con el margen promedio general del negocio.
+
+Restricciones:
+Los cálculos de rentabilidad deben considerar el precio de costo y venta vigentes al momento de cada transacción registrada.
+
+--------------------------------------------------------------------------------
+
+RF23 – Reporte de ventas por método de pago
+
+Prioridad: Baja
+Código del requerimiento: RF23
+Actor: Administrador
+Nombre del requerimiento: Reporte de ventas por método de pago
+
+Descripción:
+El sistema debe generar un reporte que agrupe las ventas según el método de pago utilizado, facilitando la conciliación financiera y el análisis de preferencias de pago de los clientes.
+
+Funcionalidad:
+El sistema debe permitir seleccionar un rango de fechas para generar el reporte de ventas por método de pago.
+El sistema debe calcular el total de ventas y cantidad de transacciones para cada método de pago (efectivo, tarjeta, transferencia).
+El sistema debe calcular el porcentaje que representa cada método de pago sobre el total de ventas del período.
+El sistema debe presentar los resultados en formato de tabla y gráfica circular (pie chart).
+
+Criterios de aceptación:
+1. El sistema debe excluir del reporte las ventas anuladas.
+2. El sistema debe mostrar el método de pago más utilizado destacado visualmente.
+3. El sistema debe permitir exportar el reporte en formato PDF o Excel.
+
+Restricciones:
+El reporte debe considerar únicamente ventas confirmadas y no debe incluir transacciones pendientes o en proceso.
+
+--------------------------------------------------------------------------------
+
+RF24 – Reporte de movimientos de inventario
+
+Prioridad: Media
+Código del requerimiento: RF24
+Actor: Administrador
+Nombre del requerimiento: Reporte de movimientos de inventario
+
+Descripción:
+El sistema debe generar un reporte detallado de todos los movimientos de inventario registrados en un período, clasificados por tipo de movimiento, facilitando la auditoría y trazabilidad del stock.
+
+Funcionalidad:
+El sistema debe permitir seleccionar un rango de fechas para generar el reporte de movimientos de inventario.
+El sistema debe permitir filtrar movimientos por tipo (entrada, salida, ajuste, venta) y por producto específico.
+El sistema debe mostrar para cada movimiento la fecha, tipo, producto, cantidad, stock anterior, stock resultante y usuario responsable.
+El sistema debe calcular totales de entradas y salidas por tipo de movimiento para el período consultado.
+
+Criterios de aceptación:
+1. El sistema debe ordenar los movimientos cronológicamente del más reciente al más antiguo por defecto.
+2. El sistema debe permitir filtrar movimientos por categoría de producto.
+3. El sistema debe permitir exportar el reporte completo en formato Excel incluyendo todos los detalles.
+
+Restricciones:
+El reporte debe incluir únicamente movimientos confirmados y registrados formalmente en el sistema, excluyendo movimientos en borrador o pendientes de aprobación.
+
+================================================================================
+RESUMEN DE REQUERIMIENTOS FUNCIONALES
+================================================================================
+
+Total de requerimientos: 24
+
+Por módulo:
+- Seguridad y Acceso: 1 requerimiento (RF01)
+- Inventario: 6 requerimientos (RF02, RF03, RF04, RF13, RF14, RF15)
+- Ventas / POS: 9 requerimientos (RF05, RF06, RF07, RF08, RF09, RF16, RF17, RF18)
+- Clientes: 4 requerimientos (RF10, RF11, RF19, RF20)
+- Reportes: 5 requerimientos (RF12, RF21, RF22, RF23, RF24)
+
+Por prioridad:
+- Alta: 9 requerimientos (RF01, RF02, RF03, RF05, RF06, RF07, RF15, RF16, RF17)
+- Media: 11 requerimientos (RF04, RF08, RF09, RF10, RF11, RF12, RF13, RF14, RF18, RF21, RF22, RF24)
+- Baja: 3 requerimientos (RF19, RF20, RF23)
