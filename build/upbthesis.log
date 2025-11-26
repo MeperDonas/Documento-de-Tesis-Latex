@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.18)  24 NOV 2025 23:39
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.18)  25 NOV 2025 20:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2013,10 +2013,184 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [69]
-File: Images/upb_logo.png Graphic file (type png)
-<use Images/upb_logo.png>
-Package pdftex.def Info: Images/upb_logo.png  used on input line 1549.
-(pdftex.def)             Requested size: 401.22942pt x 200.66948pt.
+Underfull \hbox (badness 10000) in paragraph at lines 1546--1546
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1547--1547
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1541--1565
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1579--1579
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1580--1580
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1574--1598
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1612--1612
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1613--1613
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1607--1631
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1645--1645
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1646--1646
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1640--1664
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1678--1678
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1679--1679
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1691.
+(C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1673--1697
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1711--1711
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1712--1712
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1706--1730
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1744--1744
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1745--1745
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1739--1763
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1777--1777
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1778--1778
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1772--1796
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1810--1810
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1811--1811
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (62.55247pt too wide) in paragraph at lines 1805--1829
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1843--1843
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1844--1844
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1838--1862
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2035,25 +2209,112 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[71
+[71]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[72]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[73]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[74]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[75]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[76]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[77]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[78]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[79]
+File: Images/upb_logo.png Graphic file (type png)
+<use Images/upb_logo.png>
+Package pdftex.def Info: Images/upb_logo.png  used on input line 1881.
+(pdftex.def)             Requested size: 401.22942pt x 200.66948pt.
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[80
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1572--1573
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[81
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 1904--1905
 []\T1/ptm/m/n/12 NestJS Con-tri-bu-tors, ``NestJS Do-cu-men-ta-tion,'' 2024. [En lí-nea]. Dis-po-ni-ble en:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1575--1576
+Underfull \hbox (badness 10000) in paragraph at lines 1907--1908
 []\T1/ptm/m/n/12 Prisma Da-ta, Inc., ``Pris-ma Do-cu-men-ta-tion,'' 2024. [En lí-nea]. Dis-po-ni-ble en:
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 1584--1585
+Underfull \hbox (badness 1931) in paragraph at lines 1916--1917
 []\T1/ptm/m/n/12 Microsoft Cor-po-ra-tion, ``Ty-peS-cript Do-cu-men-ta-tion,'' 2024. [En lí-nea]. Dis-po-ni-ble en:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1587--1588
+Underfull \hbox (badness 10000) in paragraph at lines 1919--1920
 []\T1/ptm/m/n/12 Cloudinary Ltd., ``Clou-di-nary Do-cu-men-ta-tion,'' 2024. [En lí-nea]. Dis-po-ni-ble en:
  []
 
@@ -2064,7 +2325,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[72] (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
+[82] (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -2080,17 +2341,17 @@ Package rerunfilecheck Info: File `upbthesis.out' has not changed.
 (rerunfilecheck)             Checksum: 973E02AE2DE5DDE0CA8B04F92E2CE18E;5376.
  ) 
 Here is how much of TeX's memory you used:
- 18907 strings out of 467871
- 300855 string characters out of 5428442
- 969096 words of memory out of 5000000
- 47332 multiletter control sequences out of 15000+600000
- 662468 words of font info for 87 fonts, out of 8000000 for 9000
+ 18963 strings out of 467871
+ 301571 string characters out of 5428442
+ 970124 words of memory out of 5000000
+ 47364 multiletter control sequences out of 15000+600000
+ 662782 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,12n,104p,1475b,774s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.pdf" (73 pages, 287911 bytes).
+Output written on "c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.pdf" (83 pages, 317547 bytes).
 PDF statistics:
- 709 PDF objects out of 1000 (max. 8388607)
- 142 named destinations out of 1000 (max. 500000)
+ 795 PDF objects out of 1000 (max. 8388607)
+ 162 named destinations out of 1000 (max. 500000)
  262 words of extra memory for PDF output out of 10000 (max. 10000000)
 

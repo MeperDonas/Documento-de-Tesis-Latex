@@ -27,8 +27,8 @@
 \contentsline {subsection}{\numberline {A}Requerimientos del Sistema}{45}{subsection.9.1}%
 \contentsline {subsection}{\numberline {B}Requerimientos Funcionales}{45}{subsection.9.2}%
 \contentsline {subsection}{\numberline {C}Requerimientos No Funcionales}{70}{subsection.9.3}%
-\contentsline {subsection}{\numberline {D}Ejemplo de una lista}{70}{subsection.9.4}%
-\contentsline {subsection}{\numberline {E}Ejemplo de una figura}{70}{subsection.9.5}%
-\contentsline {section}{\numberline {X}CONCLUSIONES}{71}{section.10}%
-\contentsline {section}{BIBLIOGRAFÍA}{72}{section.10}%
+\contentsline {subsection}{\numberline {D}Ejemplo de una lista}{80}{subsection.9.4}%
+\contentsline {subsection}{\numberline {E}Ejemplo de una figura}{80}{subsection.9.5}%
+\contentsline {section}{\numberline {X}CONCLUSIONES}{81}{section.10}%
+\contentsline {section}{BIBLIOGRAFÍA}{82}{section.10}%
 \contentsfinish 

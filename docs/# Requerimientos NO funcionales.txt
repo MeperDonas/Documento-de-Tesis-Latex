@@ -1,0 +1,251 @@
+# Requerimientos NO funcionales
+
+RNF01 – Protección de credenciales y datos sensibles
+
+Prioridad: Alta
+Código del requerimiento: RNF01
+Actor: Sistema / Infraestructura
+Categoría: Seguridad
+Nombre del requerimiento: Protección de credenciales y datos sensibles
+
+Descripción:
+El sistema debe garantizar la confidencialidad e integridad de las credenciales de acceso y de los datos sensibles manejados durante la autenticación y las operaciones principales del sistema.
+
+Funcionalidad:
+El sistema debe utilizar canales de comunicación cifrados, almacenar las credenciales mediante algoritmos de hashing seguros y aplicar mecanismos de sanitización y validación de entradas para prevenir ataques de inyección y ejecución de código malicioso.
+
+Criterios de aceptación:
+
+El sistema debe exponer la aplicación únicamente a través de HTTPS y redirigir automáticamente cualquier petición HTTP a HTTPS.
+
+El sistema debe almacenar las contraseñas utilizando algoritmos de hashing con sal (por ejemplo, bcrypt o equivalente), sin guardar nunca el texto plano en la base de datos ni en los logs.
+
+El sistema debe validar y sanear todos los parámetros de entrada utilizados en consultas a la base de datos o en generación de contenido dinámico, evitando ataques de inyección SQL y XSS.
+
+Restricciones:
+El sistema no debe registrar en texto plano contraseñas, tokens ni información financiera sensible, y debe aplicar consultas parametrizadas en todas las operaciones de acceso a datos.
+
+RNF02 – Control de acceso y gestión de sesiones
+
+Prioridad: Alta
+Código del requerimiento: RNF02
+Actor: Sistema / Usuario
+Categoría: Seguridad
+Nombre del requerimiento: Control de acceso y gestión de sesiones de usuario
+
+Descripción:
+El sistema debe gestionar de forma segura el ciclo de vida de las sesiones de usuario, garantizando que solo usuarios autenticados y autorizados accedan a los recursos internos del sistema.
+
+Funcionalidad:
+El sistema debe utilizar mecanismos de autenticación basados en tokens, tiempos de expiración e inactividad, y aplicar control de acceso basado en roles para definir qué acciones puede realizar cada tipo de usuario.
+
+Criterios de aceptación:
+
+El sistema debe invalidar automáticamente la sesión del usuario tras un período configurable de inactividad, requiriendo un nuevo inicio de sesión para continuar.
+
+El sistema debe rechazar cualquier petición a recursos protegidos cuando el token de sesión esté ausente, sea inválido o esté expirado.
+
+El sistema debe permitir asignar y gestionar roles (por ejemplo, administrador, cajero, auxiliar) y restringir las funcionalidades visibles en la interfaz según el rol del usuario autenticado.
+
+Restricciones:
+Los tokens de sesión deben incluir fecha de expiración y no pueden ser reutilizados tras el cierre de sesión o la revocación manual por un administrador.
+
+RNF03 – Rendimiento en operaciones críticas
+
+Prioridad: Alta
+Código del requerimiento: RNF03
+Actor: Sistema
+Categoría: Rendimiento
+Nombre del requerimiento: Rendimiento en operaciones críticas de negocio
+
+Descripción:
+El sistema debe ofrecer tiempos de respuesta adecuados en las operaciones críticas del negocio (autenticación, búsquedas, ventas y reportes) para no afectar la operación diaria del pequeño negocio.
+
+Funcionalidad:
+El sistema debe optimizar consultas, aplicar paginación sobre listados extensos y utilizar caché donde sea pertinente, con el fin de mantener tiempos de respuesta dentro de los umbrales establecidos.
+
+Criterios de aceptación:
+
+El sistema debe responder en menos de 2 segundos para al menos el 95 % de las operaciones de inicio de sesión, búsqueda de productos en el POS y registro de una venta bajo una carga de hasta 50 usuarios concurrentes.
+
+El sistema debe generar reportes de ventas de hasta un mes de datos o 10.000 transacciones en menos de 5 segundos en el entorno de producción objetivo.
+
+El sistema debe mostrar indicadores de carga (barras de progreso, spinners o mensajes de “cargando”) cuando una operación supere los 500 ms, evitando que el usuario perciba la interfaz como congelada.
+
+Restricciones:
+Las pruebas de rendimiento deben realizarse en la infraestructura de despliegue definida para el proyecto y utilizando datos de prueba representativos del volumen esperado del negocio.
+
+RNF04 – Interfaz intuitiva y curva de aprendizaje reducida
+
+Prioridad: Media
+Código del requerimiento: RNF04
+Actor: Usuario final
+Categoría: Usabilidad
+Nombre del requerimiento: Interfaz intuitiva y de fácil aprendizaje
+
+Descripción:
+El sistema debe proporcionar una interfaz de usuario intuitiva, coherente y fácil de aprender para usuarios con conocimientos básicos de informática, minimizando la necesidad de capacitación extensa.
+
+Funcionalidad:
+El sistema debe disponer de flujos claros para las tareas frecuentes (registro de productos, ventas, consultas) con un número reducido de pasos, mensajes de error comprensibles y elementos de ayuda contextual.
+
+Criterios de aceptación:
+
+El sistema debe permitir que un usuario nuevo, tras una inducción de máximo 30 minutos, pueda realizar de forma autónoma una venta completa y consultar el historial de ventas sin asistencia adicional.
+
+El sistema debe permitir completar una venta típica (búsqueda de producto, adición al carrito, selección de método de pago y confirmación) en un máximo de 5 pasos interactivos.
+
+El sistema debe mostrar mensajes de validación específicos junto a los campos de formularios con errores, indicando claramente qué información debe corregirse.
+
+Restricciones:
+Los textos de la interfaz y los mensajes deben redactarse en un lenguaje claro y consistente, evitando tecnicismos innecesarios para el usuario final.
+
+RNF05 – Diseño responsive y accesibilidad básica
+
+Prioridad: Media
+Código del requerimiento: RNF05
+Actor: Usuario final
+Categoría: Usabilidad
+Nombre del requerimiento: Adaptabilidad a diferentes dispositivos y tamaños de pantalla
+
+Descripción:
+El sistema debe adaptarse correctamente a diferentes resoluciones y tamaños de pantalla utilizados comúnmente en el entorno del pequeño negocio, garantizando una experiencia de uso adecuada tanto en equipos de escritorio como en dispositivos portátiles.
+
+Funcionalidad:
+El sistema debe aplicar diseño responsive en todas las vistas principales, reorganizando menús, tablas y formularios según el ancho de pantalla disponible y manteniendo niveles mínimos de contraste para una correcta legibilidad.
+
+Criterios de aceptación:
+
+El sistema debe visualizar el dashboard, el módulo de ventas y el módulo de inventario sin barras de desplazamiento horizontales en resoluciones entre 1280×720 y 1920×1080 píxeles.
+
+El sistema debe adaptar los menús de navegación a un formato colapsable (por ejemplo, menú tipo hamburguesa) en pantallas de menor ancho.
+
+El sistema debe cumplir con niveles mínimos de contraste recomendados (equivalentes a WCAG AA) para texto y elementos interactivos en los temas definidos.
+
+Restricciones:
+Las interfaces deben diseñarse siguiendo el sistema de diseño definido para el proyecto, reutilizando componentes UI coherentes en todos los módulos.
+
+RNF06 – Escalabilidad de datos y modularidad del sistema
+
+Prioridad: Media
+Código del requerimiento: RNF06
+Actor: Sistema / Equipo de desarrollo
+Categoría: Escalabilidad
+Nombre del requerimiento: Escalabilidad de datos y modularidad arquitectónica
+
+Descripción:
+El sistema debe poder crecer tanto en volumen de información como en funcionalidades, sin requerir cambios estructurales profundos en la arquitectura ni afectar significativamente el rendimiento.
+
+Funcionalidad:
+El sistema debe organizarse en módulos lógicos (inventario, ventas, clientes, reportes, seguridad) y utilizar mecanismos de paginación, índices y consultas optimizadas que faciliten el manejo de catálogos y volúmenes de ventas crecientes.
+
+Criterios de aceptación:
+
+El sistema debe soportar un crecimiento del catálogo de productos desde 1.000 hasta al menos 20.000 registros mediante ajustes de configuración (índices y paginación), sin modificar la arquitectura base.
+
+El sistema debe permitir añadir nuevos módulos de negocio (por ejemplo, proveedores o compras) reutilizando la API y la arquitectura por capas, sin modificar la lógica interna de los módulos existentes salvo puntos de integración definidos.
+
+El sistema debe permitir desplegar el frontend y el backend de forma independiente, manteniendo la comunicación a través de interfaces API documentadas y estables.
+
+Restricciones:
+Todos los módulos nuevos deben respetar la arquitectura modular por capas y los contratos definidos en la API, evitando dependencias directas entre la capa de presentación y la base de datos.
+
+RNF07 – Integridad transaccional y consistencia de datos
+
+Prioridad: Alta
+Código del requerimiento: RNF07
+Actor: Sistema
+Categoría: Confiabilidad
+Nombre del requerimiento: Integridad transaccional y consistencia de la información
+
+Descripción:
+El sistema debe garantizar que las operaciones críticas que afectan múltiples entidades (por ejemplo, ventas e inventario) conserven la integridad y consistencia de los datos, incluso ante fallos parciales.
+
+Funcionalidad:
+El sistema debe utilizar mecanismos transaccionales de la base de datos para operaciones complejas, aplicando el modelo ACID y restricciones de integridad referencial para evitar inconsistencias lógicas en el modelo de datos.
+
+Criterios de aceptación:
+
+El sistema debe asegurar que, si un proceso de venta falla en cualquier punto de la transacción, ni la venta ni los movimientos de inventario asociados queden registrados parcialmente (la operación debe ser atómica).
+
+El sistema debe utilizar claves foráneas y restricciones de integridad referencial que impidan eliminar productos o clientes con registros de ventas asociados.
+
+El sistema debe conservar íntegramente las transacciones confirmadas tras un reinicio inesperado del servidor de base de datos, sin evidencia de corrupción en las tablas principales.
+
+Restricciones:
+La configuración de la base de datos debe mantener las propiedades ACID, evitando desactivar mecanismos de journal o logging que comprometan la durabilidad e integridad de los datos.
+
+RNF08 – Disponibilidad y recuperación ante fallos
+
+Prioridad: Media
+Código del requerimiento: RNF08
+Actor: Sistema / Infraestructura
+Categoría: Confiabilidad
+Nombre del requerimiento: Disponibilidad del servicio y recuperación ante fallos
+
+Descripción:
+El sistema debe mantener una disponibilidad adecuada durante los horarios de operación definidos y contar con mecanismos de recuperación que reduzcan al mínimo el tiempo de interrupción ante fallos.
+
+Funcionalidad:
+El sistema debe desplegarse en una infraestructura que permita la monitorización básica del servicio, el reinicio automático de los procesos de aplicación y la posibilidad de revertir rápidamente a una versión estable en caso de incidentes graves.
+
+Criterios de aceptación:
+
+El sistema debe alcanzar al menos un 99 % de disponibilidad durante las pruebas de operación continua en una ventana de al menos una semana.
+
+El sistema debe recuperarse automáticamente y volver a estar disponible en menos de 1 minuto tras un fallo simulado del proceso de backend.
+
+El sistema debe permitir realizar un rollback a la última versión estable desplegada en un tiempo máximo de 15 minutos desde la detección de un problema crítico en producción.
+
+Restricciones:
+Los mecanismos de alta disponibilidad y recuperación deben configurarse de acuerdo con las capacidades de la plataforma de despliegue utilizada (por ejemplo, servicios PaaS con gestión de versiones y reinicio automático).
+
+RNF09 – Mantenibilidad, pruebas y documentación
+
+Prioridad: Media
+Código del requerimiento: RNF09
+Actor: Equipo de desarrollo
+Categoría: Mantenibilidad
+Nombre del requerimiento: Mantenibilidad del código mediante modularidad, pruebas y documentación
+
+Descripción:
+El sistema debe ser fácilmente mantenible y extensible por el equipo de desarrollo, reduciendo el riesgo de introducir errores al modificar o agregar funcionalidades.
+
+Funcionalidad:
+El sistema debe estructurar su código en módulos coherentes por dominio, aplicar buenas prácticas de programación y contar con pruebas automatizadas y documentación actualizada de la API y de los componentes principales.
+
+Criterios de aceptación:
+
+El sistema debe contar con pruebas unitarias y/o de integración que cubran al menos el 60 % de las funciones de negocio críticas (registro de ventas, movimientos de inventario, cálculo de totales e impuestos).
+
+El sistema debe disponer de documentación actualizada de la API (por ejemplo, mediante Swagger u otra herramienta similar), describiendo endpoints, parámetros, tipos de respuesta y códigos de error.
+
+El sistema debe permitir realizar cambios en reglas de negocio de un módulo específico (por ejemplo, umbral de stock bajo o reglas de descuento) modificando únicamente los componentes de ese módulo y sus interfaces públicas, sin necesidad de reescribir módulos no relacionados.
+
+Restricciones:
+El código del proyecto debe versionarse en un repositorio Git, desarrollarse principalmente en TypeScript y seguir un conjunto de convenciones de estilo y revisión de código acordadas (por ejemplo, ESLint y revisiones por pares).
+
+RNF10 – Auditoría y registro de eventos críticos
+
+Prioridad: Media
+Código del requerimiento: RNF10
+Actor: Sistema / Administrador
+Categoría: Seguridad / Mantenibilidad
+Nombre del requerimiento: Auditoría y registro de eventos críticos
+
+Descripción:
+El sistema debe registrar de forma estructurada los eventos críticos y las acciones sensibles realizadas por los usuarios, con el fin de facilitar auditorías, diagnósticos y la detección de comportamientos anómalos.
+
+Funcionalidad:
+El sistema debe generar registros de auditoría para operaciones como inicios de sesión fallidos, cambios de configuración, movimientos manuales de inventario, modificaciones de precios, anulaciones de ventas y cambios de roles de usuario.
+
+Criterios de aceptación:
+
+El sistema debe registrar para cada evento crítico la fecha y hora, el usuario responsable, la operación realizada y el identificador del recurso afectado.
+
+El sistema debe permitir consultar los registros de auditoría filtrando por rango de fechas, tipo de evento y usuario, ya sea mediante una interfaz administrativa o consultas sobre la base de datos.
+
+El sistema debe conservar los registros de auditoría durante un período mínimo de 90 días naturales, salvo que se definan políticas internas más estrictas.
+
+Restricciones:
+Los registros de auditoría no deben incluir información sensible en texto plano (por ejemplo, contraseñas, números completos de tarjetas u otros datos confidenciales), limitándose a identificadores, metadatos y descripciones generales de la operación.
