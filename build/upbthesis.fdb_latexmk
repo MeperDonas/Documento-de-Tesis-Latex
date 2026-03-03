@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1772562215.43711 "c:/Users/meper/Desktop/Proyecto de Grado/Tesis/Documento-de-Tesis-Latex/upbthesis.tex" "build/upbthesis.pdf" "upbthesis" 1772562218.32546 0
+["pdflatex"] 1772562734.88342 "c:/Users/meper/Desktop/Proyecto de Grado/Tesis/Documento-de-Tesis-Latex/upbthesis.tex" "build/upbthesis.pdf" "upbthesis" 1772562738.49795 0
   "C:/Program Files/MiKTeX/fonts/enc/dvips/base/8r.enc" 1458473887 4993 80dc9bab7f31fb78a000ccfed0e27cab ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/courier/pcrb8t.tfm" 1136765053 1384 87406e4336af44af883a035f17f319d9 ""
   "C:/Program Files/MiKTeX/fonts/tfm/adobe/courier/pcrbc8t.tfm" 1136765053 1400 8b4e30598ee2af7679ffc3e70fd4e91f ""
@@ -172,15 +172,15 @@
   "Images/diagramas-uml/secuencias/flujo-reporte-ventas.pdf" 1770665821 11225 574f78b6d2a586591e434e729e4ad56f ""
   "Images/diagramas-uml/secuencias/flujo-venta.pdf" 1770665821 11522 b397f5f6151b58c00cb64c4e97a89ec9 ""
   "Images/upb_logo.png" 1766370576 25158 7e36b6c9a01c1498da829a20b77ee2be ""
-  "build/diagramas-uml-section.aux" 1772562217 7328 2391872424fa9f8fb9f1607baba2c5be "pdflatex"
-  "build/upbthesis.aux" 1772562217 15191 49758b66a2d9b36dfa6cc01bd4159123 "pdflatex"
-  "build/upbthesis.lot" 1772562217 4805 57a5a39d9850bb285b423ad5bbe2b92d "pdflatex"
-  "build/upbthesis.out" 1772562217 6919 685b388c0fbe35643cd85d3f8d4908d9 "pdflatex"
-  "build/upbthesis.toc" 1772562217 3571 55feb656cfaff000448b2f251bf4d6a3 "pdflatex"
-  "c:/Users/meper/Desktop/Proyecto de Grado/Tesis/Documento-de-Tesis-Latex/upbthesis.tex" 1772562210 191186 7e57a67a072048177e8e3a0495420083 ""
+  "build/diagramas-uml-section.aux" 1772562737 7328 2391872424fa9f8fb9f1607baba2c5be "pdflatex"
+  "build/upbthesis.aux" 1772562737 15191 49758b66a2d9b36dfa6cc01bd4159123 "pdflatex"
+  "build/upbthesis.lot" 1772562737 4805 57a5a39d9850bb285b423ad5bbe2b92d "pdflatex"
+  "build/upbthesis.out" 1772562737 6919 685b388c0fbe35643cd85d3f8d4908d9 "pdflatex"
+  "build/upbthesis.toc" 1772562737 3571 55feb656cfaff000448b2f251bf4d6a3 "pdflatex"
+  "c:/Users/meper/Desktop/Proyecto de Grado/Tesis/Documento-de-Tesis-Latex/upbthesis.tex" 1772562734 191119 c209a82fbe0df82d42f22b3ec5a26e6a ""
   "diagramas-uml-section.tex" 1770664424 15785 739443d720c0b870afe90f214633009d ""
   "ieee_upb.cls" 1766370576 12273 56012ef200d1cc93338525ec9ac9d94a ""
-  "upbthesis.tex" 1772562210 191186 7e57a67a072048177e8e3a0495420083 ""
+  "upbthesis.tex" 1772562734 191119 c209a82fbe0df82d42f22b3ec5a26e6a ""
   (generated)
   "build/diagramas-uml-section.aux"
   "build/upbthesis.aux"
