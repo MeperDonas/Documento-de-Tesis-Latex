@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.18)  25 NOV 2025 20:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.18)  3 MAR 2026 13:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -776,7 +776,7 @@ LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
 (babel)             Reported on input line 11.
-)
+ (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\diagramas-uml-section.aux))
 \openout1 = `upbthesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
@@ -983,7 +983,7 @@ LaTeX Font Warning: Font shape `T1/pcr/m/In' undefined
 
 Package layouts Warning: Layout scale set to 0.5 on input line 32.
 
-<Images/upb_logo.png, id=130, 72.27pt x 36.135pt>
+<Images/upb_logo.png, id=166, 72.27pt x 36.135pt>
 File: Images/upb_logo.png Graphic file (type png)
 <use Images/upb_logo.png>
 Package pdftex.def Info: Images/upb_logo.png  used on input line 44.
@@ -1209,6 +1209,45 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [24]
+\openout2 = `diagramas-uml-section.aux'.
+
+ (diagramas-uml-section.tex
+<Images/diagramas-uml/casos-de-uso/modulo-auth.pdf, id=551, 615.0478pt x 828.09375pt>
+File: Images/diagramas-uml/casos-de-uso/modulo-auth.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/casos-de-uso/modulo-auth.pdf>
+Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-auth.pdf  used on input line 17.
+(pdftex.def)             Requested size: 424.82521pt x 571.99182pt.
+<Images/diagramas-uml/casos-de-uso/modulo-productos.pdf, id=553, 938.00438pt x 1227.08438pt>
+File: Images/diagramas-uml/casos-de-uso/modulo-productos.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/casos-de-uso/modulo-productos.pdf>
+Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-productos.pdf  used on input line 26.
+(pdftex.def)             Requested size: 424.82521pt x 555.74039pt.
+<Images/diagramas-uml/casos-de-uso/modulo-ventas.pdf, id=555, 1367.1075pt x 1059.96pt>
+File: Images/diagramas-uml/casos-de-uso/modulo-ventas.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/casos-de-uso/modulo-ventas.pdf>
+Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-ventas.pdf  used on input line 35.
+(pdftex.def)             Requested size: 424.82521pt x 329.37671pt.
+<Images/diagramas-uml/casos-de-uso/modulo-clientes.pdf, id=557, 624.83438pt x 768.62157pt>
+File: Images/diagramas-uml/casos-de-uso/modulo-clientes.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/casos-de-uso/modulo-clientes.pdf>
+Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-clientes.pdf  used on input line 44.
+(pdftex.def)             Requested size: 424.82521pt x 522.5971pt.
+<Images/diagramas-uml/casos-de-uso/modulo-reportes.pdf, id=559, 968.11688pt x 889.07156pt>
+File: Images/diagramas-uml/casos-de-uso/modulo-reportes.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/casos-de-uso/modulo-reportes.pdf>
+Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-reportes.pdf  used on input line 53.
+(pdftex.def)             Requested size: 424.82521pt x 390.13454pt.
+<Images/diagramas-uml/casos-de-uso/modulo-configuracion.pdf, id=561, 923.70094pt x 724.95844pt>
+File: Images/diagramas-uml/casos-de-uso/modulo-configuracion.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/casos-de-uso/modulo-configuracion.pdf>
+Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-configuracion.pdf  used on input line 62.
+(pdftex.def)             Requested size: 424.82521pt x 333.41855pt.
+<Images/diagramas-uml/casos-de-uso/modulo-categorias.pdf, id=563, 904.1278pt x 692.5875pt>
+File: Images/diagramas-uml/casos-de-uso/modulo-categorias.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/casos-de-uso/modulo-categorias.pdf>
+Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-categorias.pdf  used on input line 71.
+(pdftex.def)             Requested size: 424.82521pt x 325.42105pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1216,7 +1255,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25]
+[25
+
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1224,7 +1265,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[26]
+[26 <./Images/diagramas-uml/casos-de-uso/modulo-auth.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1232,10 +1273,57 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[27]
-Overfull \hbox (22.83904pt too wide) in paragraph at lines 383--384
-[]\T1/ptm/m/n/12 El fron-tend se en-ri-que-ce con bi-blio-te-cas es-pe-cia-li-za-das cui-da-do-sa-men-te se-lec-cio-na-das. shadcn/ui
- []
+[27 <./Images/diagramas-uml/casos-de-uso/modulo-productos.pdf>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[28 <./Images/diagramas-uml/casos-de-uso/modulo-ventas.pdf>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[29 <./Images/diagramas-uml/casos-de-uso/modulo-clientes.pdf>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[30 <./Images/diagramas-uml/casos-de-uso/modulo-reportes.pdf>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[31 <./Images/diagramas-uml/casos-de-uso/modulo-configuracion.pdf>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[32 <./Images/diagramas-uml/casos-de-uso/modulo-categorias.pdf>]
+<Images/diagramas-uml/componentes/modulo-auth.pdf, id=640, 775.39688pt x 744.53156pt>
+File: Images/diagramas-uml/componentes/modulo-auth.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/componentes/modulo-auth.pdf>
+Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-auth.pdf  used on input line 84.
+(pdftex.def)             Requested size: 401.22942pt x 385.26141pt.
+<Images/diagramas-uml/componentes/modulo-productos.pdf, id=642, 990.70125pt x 663.22781pt>
+File: Images/diagramas-uml/componentes/modulo-productos.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/componentes/modulo-productos.pdf>
+Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-productos.pdf  used on input line 93.
+(pdftex.def)             Requested size: 401.22942pt x 268.60579pt.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -1244,7 +1332,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[28]
+[33 <./Images/diagramas-uml/componentes/modulo-auth.pdf>]
+<Images/diagramas-uml/componentes/modulo-ventas.pdf, id=653, 919.18407pt x 962.84718pt>
+File: Images/diagramas-uml/componentes/modulo-ventas.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/componentes/modulo-ventas.pdf>
+Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-ventas.pdf  used on input line 102.
+(pdftex.def)             Requested size: 401.22942pt x 420.28964pt.
+<Images/diagramas-uml/componentes/modulo-clientes.pdf, id=655, 989.94844pt x 619.56468pt>
+File: Images/diagramas-uml/componentes/modulo-clientes.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/componentes/modulo-clientes.pdf>
+Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-clientes.pdf  used on input line 111.
+(pdftex.def)             Requested size: 401.22942pt x 251.11139pt.
+<Images/diagramas-uml/componentes/modulo-reportes.pdf, id=657, 1349.79282pt x 641.39626pt>
+File: Images/diagramas-uml/componentes/modulo-reportes.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/componentes/modulo-reportes.pdf>
+Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-reportes.pdf  used on input line 120.
+(pdftex.def)             Requested size: 401.22942pt x 190.64893pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1252,7 +1356,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[29]
+[34 <./Images/diagramas-uml/componentes/modulo-productos.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1260,7 +1364,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30]
+[35 <./Images/diagramas-uml/componentes/modulo-ventas.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1268,7 +1372,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[31]
+[36 <./Images/diagramas-uml/componentes/modulo-clientes.pdf> <./Images/diagramas-uml/componentes/modulo-reportes.pdf>]
+<Images/diagramas-uml/componentes/modulo-exportaciones.pdf, id=692, 835.62187pt x 654.94687pt>
+File: Images/diagramas-uml/componentes/modulo-exportaciones.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/componentes/modulo-exportaciones.pdf>
+Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-exportaciones.pdf  used on input line 129.
+(pdftex.def)             Requested size: 401.22942pt x 314.48087pt.
+<Images/diagramas-uml/componentes/modulo-configuracion.pdf, id=694, 1088.56688pt x 667.74469pt>
+File: Images/diagramas-uml/componentes/modulo-configuracion.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/componentes/modulo-configuracion.pdf>
+Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-configuracion.pdf  used on input line 138.
+(pdftex.def)             Requested size: 401.22942pt x 246.11409pt.
+<Images/diagramas-uml/componentes/modulo-categorias.pdf, id=696, 814.54312pt x 619.56468pt>
+File: Images/diagramas-uml/componentes/modulo-categorias.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/componentes/modulo-categorias.pdf>
+Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-categorias.pdf  used on input line 147.
+(pdftex.def)             Requested size: 401.22942pt x 305.18703pt.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1276,7 +1396,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32]
+[37 <./Images/diagramas-uml/componentes/modulo-exportaciones.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1284,47 +1404,48 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[33]
+[38 <./Images/diagramas-uml/componentes/modulo-configuracion.pdf> <./Images/diagramas-uml/componentes/modulo-categorias.pdf>]
+<Images/diagramas-uml/secuencias/flujo-venta.pdf, id=721, 1014.03844pt x 2638.60782pt>
+File: Images/diagramas-uml/secuencias/flujo-venta.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/secuencias/flujo-venta.pdf>
+Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-venta.pdf  used on input line 160.
+(pdftex.def)             Requested size: 472.03122pt x 1228.22838pt.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[34]
+LaTeX Warning: Float too large for page by 600.02214pt on input line 163.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+<Images/diagramas-uml/secuencias/flujo-autenticacion.pdf, id=723, 1145.78062pt x 2016.03188pt>
+File: Images/diagramas-uml/secuencias/flujo-autenticacion.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/secuencias/flujo-autenticacion.pdf>
+Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-autenticacion.pdf  used on input line 169.
+(pdftex.def)             Requested size: 472.03122pt x 830.54675pt.
 
-[35]
+LaTeX Warning: Float too large for page by 202.34052pt on input line 172.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+<Images/diagramas-uml/secuencias/flujo-gestion-productos.pdf, id=725, 1111.90407pt x 2157.56062pt>
+File: Images/diagramas-uml/secuencias/flujo-gestion-productos.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/secuencias/flujo-gestion-productos.pdf>
+Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-gestion-productos.pdf  used on input line 178.
+(pdftex.def)             Requested size: 472.03122pt x 915.94704pt.
 
-[36]
+LaTeX Warning: Float too large for page by 287.7408pt on input line 181.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+<Images/diagramas-uml/secuencias/flujo-reporte-ventas.pdf, id=727, 1324.95pt x 2541.495pt>
+File: Images/diagramas-uml/secuencias/flujo-reporte-ventas.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/secuencias/flujo-reporte-ventas.pdf>
+Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-reporte-ventas.pdf  used on input line 187.
+(pdftex.def)             Requested size: 472.03122pt x 905.4364pt.
 
-[37]
+LaTeX Warning: Float too large for page by 277.23016pt on input line 190.
 
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+<Images/diagramas-uml/secuencias/flujo-gestion-usuarios.pdf, id=729, 1214.28656pt x 2804.22656pt>
+File: Images/diagramas-uml/secuencias/flujo-gestion-usuarios.pdf Graphic file (type pdf)
+<use Images/diagramas-uml/secuencias/flujo-gestion-usuarios.pdf>
+Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-gestion-usuarios.pdf  used on input line 196.
+(pdftex.def)             Requested size: 472.03122pt x 1090.0925pt.
 
-[38]
+LaTeX Warning: Float too large for page by 461.88626pt on input line 199.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1340,13 +1461,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[40]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+[40 <./Images/diagramas-uml/secuencias/flujo-venta.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1354,10 +1469,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[41]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+[41 <./Images/diagramas-uml/secuencias/flujo-autenticacion.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1365,7 +1477,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[42]
+[42 <./Images/diagramas-uml/secuencias/flujo-gestion-productos.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1373,7 +1485,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[43]
+[43 <./Images/diagramas-uml/secuencias/flujo-reporte-ventas.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1381,438 +1493,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[44]
-Underfull \hbox (badness 10000) in paragraph at lines 685--685
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 686--686
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 680--706
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 720--720
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 721--721
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 715--741
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 755--755
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 756--756
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 750--776
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 790--790
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 791--791
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 785--811
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 825--825
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 826--826
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 820--846
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 860--860
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 861--861
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 855--881
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 895--895
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 896--896
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 890--916
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 930--930
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 931--931
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 925--951
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 965--965
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 966--966
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 960--986
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1000--1000
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1001--1001
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 995--1021
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1035--1035
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1036--1036
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1030--1056
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1070--1070
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1071--1071
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1065--1091
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1105--1105
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1106--1106
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1100--1127
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1141--1141
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1142--1142
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1136--1163
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1177--1177
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1178--1178
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1172--1199
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1213--1213
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1214--1214
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1208--1235
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1249--1249
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1250--1250
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1244--1272
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1286--1286
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1287--1287
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1281--1308
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1322--1322
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1323--1323
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1317--1344
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1358--1358
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1359--1359
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1353--1380
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1394--1394
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1395--1395
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1389--1417
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1431--1431
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1432--1432
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1426--1454
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1468--1468
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1469--1469
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1463--1490
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1504--1504
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1505--1505
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1499--1526
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+[44 <./Images/diagramas-uml/secuencias/flujo-gestion-usuarios.pdf>])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1828,7 +1509,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[46]
+[46
+
+
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1845,6 +1529,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [48]
+Overfull \hbox (5.8716pt too wide) in paragraph at lines 458--538
+ [][] 
+ []
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1869,6 +1557,437 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [51]
+Underfull \hbox (badness 10000) in paragraph at lines 689--689
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 690--690
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 684--710
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 724--724
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 725--725
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 719--745
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 759--759
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 760--760
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 754--780
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 794--794
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 795--795
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 789--815
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 829--829
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 830--830
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 824--850
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 864--864
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 865--865
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 859--885
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 899--899
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 900--900
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 894--920
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 934--934
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 935--935
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 929--955
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 969--969
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 970--970
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 964--990
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1004--1004
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1005--1005
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 999--1025
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1039--1039
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1040--1040
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1034--1060
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1074--1074
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1075--1075
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1069--1095
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1109--1109
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1110--1110
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1104--1131
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1145--1145
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1146--1146
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1140--1167
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1181--1181
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1182--1182
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1176--1203
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1217--1217
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1218--1218
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1212--1239
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1253--1253
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1254--1254
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1248--1276
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1290--1290
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1291--1291
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1285--1312
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1326--1326
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1327--1327
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1321--1348
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1362--1362
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1363--1363
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1357--1384
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1398--1398
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1399--1399
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1393--1421
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1435--1435
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1436--1436
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1430--1458
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1472--1472
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1473--1473
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1467--1494
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1508--1508
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1509--1509
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1503--1530
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2013,185 +2132,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [69]
-Underfull \hbox (badness 10000) in paragraph at lines 1546--1546
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1547--1547
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1541--1565
- [][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1579--1579
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1580--1580
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1574--1598
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1612--1612
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1613--1613
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1607--1631
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1645--1645
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1646--1646
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1640--1664
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1678--1678
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1679--1679
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1691.
-(C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ptm.fd
-File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
-)
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1673--1697
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1711--1711
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1712--1712
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1706--1730
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1744--1744
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1745--1745
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1739--1763
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1777--1777
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1778--1778
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1772--1796
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1810--1810
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1811--1811
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (62.55247pt too wide) in paragraph at lines 1805--1829
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 1843--1843
-[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
- []
-
-
-Underfull \hbox (badness 4366) in paragraph at lines 1844--1844
-[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
- []
-
-
-Overfull \hbox (2.79393pt too wide) in paragraph at lines 1838--1862
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2199,9 +2139,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[70
-
-]
+[70]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2250,6 +2188,185 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [76]
+Underfull \hbox (badness 10000) in paragraph at lines 1550--1550
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1551--1551
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1545--1569
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1583--1583
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1584--1584
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1578--1602
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1616--1616
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1617--1617
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1611--1635
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1649--1649
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1650--1650
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1644--1668
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1682--1682
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1683--1683
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1695.
+(C:\Program Files\MiKTeX\tex/latex/psnfss\ts1ptm.fd
+File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
+)
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1677--1701
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1715--1715
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1716--1716
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1710--1734
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1748--1748
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1749--1749
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1743--1767
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1781--1781
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1782--1782
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1776--1800
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1814--1814
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1815--1815
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (62.55247pt too wide) in paragraph at lines 1809--1833
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1847--1847
+[]|\T1/ptm/b/n/12 CÓDIGO DEL RE-
+ []
+
+
+Underfull \hbox (badness 4366) in paragraph at lines 1848--1848
+[]|\T1/ptm/b/n/12 NOMBRE DEL RE-
+ []
+
+
+Overfull \hbox (2.79393pt too wide) in paragraph at lines 1842--1866
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2257,7 +2374,9 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[77]
+[77
+
+]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2274,9 +2393,65 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [79]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[80]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[81]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[82]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[83]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[84]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[85]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[86]
 File: Images/upb_logo.png Graphic file (type png)
 <use Images/upb_logo.png>
-Package pdftex.def Info: Images/upb_logo.png  used on input line 1881.
+Package pdftex.def Info: Images/upb_logo.png  used on input line 1885.
 (pdftex.def)             Requested size: 401.22942pt x 200.66948pt.
 
 
@@ -2286,7 +2461,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[80
+[87
 
 ]
 
@@ -2296,25 +2471,33 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[81
+[88
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 1904--1905
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[89]
+Underfull \hbox (badness 10000) in paragraph at lines 1922--1923
 []\T1/ptm/m/n/12 NestJS Con-tri-bu-tors, ``NestJS Do-cu-men-ta-tion,'' 2024. [En lí-nea]. Dis-po-ni-ble en:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1907--1908
+Underfull \hbox (badness 10000) in paragraph at lines 1925--1926
 []\T1/ptm/m/n/12 Prisma Da-ta, Inc., ``Pris-ma Do-cu-men-ta-tion,'' 2024. [En lí-nea]. Dis-po-ni-ble en:
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 1916--1917
+Underfull \hbox (badness 1931) in paragraph at lines 1934--1935
 []\T1/ptm/m/n/12 Microsoft Cor-po-ra-tion, ``Ty-peS-cript Do-cu-men-ta-tion,'' 2024. [En lí-nea]. Dis-po-ni-ble en:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1919--1920
+Underfull \hbox (badness 10000) in paragraph at lines 1937--1938
 []\T1/ptm/m/n/12 Cloudinary Ltd., ``Clou-di-nary Do-cu-men-ta-tion,'' 2024. [En lí-nea]. Dis-po-ni-ble en:
  []
 
@@ -2325,10 +2508,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[82] (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
+[90] (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
-)
+ (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\diagramas-uml-section.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
@@ -2338,20 +2521,20 @@ L3 programming layer <2025-10-24>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `upbthesis.out' has not changed.
-(rerunfilecheck)             Checksum: 973E02AE2DE5DDE0CA8B04F92E2CE18E;5376.
+(rerunfilecheck)             Checksum: 685B388C0FBE35643CD85D3F8D4908D9;6919.
  ) 
 Here is how much of TeX's memory you used:
- 18963 strings out of 467871
- 301571 string characters out of 5428442
- 970124 words of memory out of 5000000
- 47364 multiletter control sequences out of 15000+600000
- 662782 words of font info for 88 fonts, out of 8000000 for 9000
+ 19236 strings out of 467871
+ 315052 string characters out of 5428442
+ 973535 words of memory out of 5000000
+ 47592 multiletter control sequences out of 15000+600000
+ 663081 words of font info for 89 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 90i,12n,104p,1475b,774s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.pdf" (83 pages, 317547 bytes).
+ 90i,12n,104p,1040b,774s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
+Output written on "c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.pdf" (91 pages, 502342 bytes).
 PDF statistics:
- 795 PDF objects out of 1000 (max. 8388607)
- 162 named destinations out of 1000 (max. 500000)
- 262 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1052 PDF objects out of 1200 (max. 8388607)
+ 199 named destinations out of 1000 (max. 500000)
+ 434 words of extra memory for PDF output out of 10000 (max. 10000000)
 

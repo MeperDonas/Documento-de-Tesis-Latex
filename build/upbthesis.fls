@@ -213,6 +213,9 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
 INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
 INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\diagramas-uml-section.aux
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\diagramas-uml-section.aux
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\diagramas-uml-section.aux
 OUTPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -302,6 +305,114 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmbi8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmbi8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmbi8r.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\courier\pcrr8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
+INPUT .\diagramas-uml-section.tex
+INPUT .\diagramas-uml-section.tex
+OUTPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\diagramas-uml-section.aux
+INPUT .\diagramas-uml-section.tex
+INPUT .\diagramas-uml-section.tex
+INPUT diagramas-uml-section.tex
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-auth.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-auth.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-auth.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-auth.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-auth.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-productos.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-productos.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-productos.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-productos.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-productos.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-ventas.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-ventas.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-ventas.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-ventas.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-ventas.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-clientes.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-clientes.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-clientes.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-clientes.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-clientes.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-reportes.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-reportes.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-reportes.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-reportes.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-reportes.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-configuracion.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-configuracion.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-configuracion.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-configuracion.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-configuracion.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-categorias.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-categorias.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-categorias.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-categorias.pdf
+INPUT .\Images\diagramas-uml\casos-de-uso\modulo-categorias.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-auth.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-auth.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-auth.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-auth.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-auth.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-productos.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-productos.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-productos.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-productos.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-productos.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-ventas.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-ventas.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-ventas.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-ventas.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-ventas.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-clientes.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-clientes.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-clientes.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-clientes.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-clientes.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-reportes.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-reportes.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-reportes.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-reportes.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-reportes.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-exportaciones.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-exportaciones.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-exportaciones.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-exportaciones.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-exportaciones.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-configuracion.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-configuracion.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-configuracion.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-configuracion.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-configuracion.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-categorias.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-categorias.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-categorias.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-categorias.pdf
+INPUT .\Images\diagramas-uml\componentes\modulo-categorias.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-venta.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-venta.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-venta.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-venta.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-venta.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-autenticacion.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-autenticacion.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-autenticacion.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-autenticacion.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-autenticacion.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-gestion-productos.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-gestion-productos.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-gestion-productos.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-gestion-productos.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-gestion-productos.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-reporte-ventas.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-reporte-ventas.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-reporte-ventas.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-reporte-ventas.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-reporte-ventas.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-gestion-usuarios.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-gestion-usuarios.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-gestion-usuarios.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-gestion-usuarios.pdf
+INPUT .\Images\diagramas-uml\secuencias\flujo-gestion-usuarios.pdf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
@@ -321,8 +432,13 @@ INPUT .\Images\upb_logo.png
 INPUT .\Images\upb_logo.png
 INPUT .\Images\upb_logo.png
 INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\diagramas-uml-section.aux
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\diagramas-uml-section.aux
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\diagramas-uml-section.aux
 INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.out
 INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.out
+INPUT C:\Program Files\MiKTeX\fonts\type1\urw\courier\ucrr8a.pfb
+INPUT C:\Program Files\MiKTeX\fonts\type1\urw\courier\ucrr8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmb8a.pfb
 INPUT C:\Program Files\MiKTeX\fonts\type1\urw\times\utmbi8a.pfb

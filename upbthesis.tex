@@ -455,55 +455,85 @@ La estimación de 20 horas semanales se sustenta en la disponibilidad real del e
 	\centering
 	\scriptsize
 	\caption{Cronograma de Ejecución del Proyecto}
-	\begin{tabular}{|p{4cm}|c|c|p{7cm}|}
+	\begin{tabular}{|p{3.8cm}|c|c|c|p{6.5cm}|}
 		\hline
-		\textbf{Fase}                       & \textbf{Semanas}    & \textbf{Horas} & \textbf{Actividades Principales}      \\
+		\textbf{Fase} & \textbf{Semanas} & \textbf{Fechas} & \textbf{Horas} & \textbf{Actividades Principales} \\
 		\hline
-		1. Análisis, Diseño y Configuración & 1-2                 & 40h            &
-		- Revisión bibliográfica \newline
-		- Definición de requisitos \newline
-		- Diseño de arquitectura y BD \newline
-		- Wireframes en Figma \newline
-		- Setup de proyectos \newline
-		- Configuración Docker                                                                                             \\
+		
+		1. Análisis, Diseño y Configuración 
+		& 1--2 
+		& 21 feb -- 6 mar 2026 
+		& 40h 
+		& - Revisión bibliográfica \newline
+			- Definición de requisitos \newline
+			- Diseño de arquitectura y BD \newline
+			- Wireframes en Figma \newline
+			- Setup de proyectos \newline
+			- Configuración Docker \\
 		\hline
-		2. Backend Core                     & 3-5                 & 64h            &
-		- Módulo de autenticación \newline
-		- Módulo de inventario completo \newline
-		- Módulo de ventas y clientes \newline
-		- Endpoints de reportes \newline
-		- Documentación Swagger \newline
-		- Pruebas unitarias                                                                                                \\
+		
+		2. Backend Core 
+		& 3--5 
+		& 7 mar -- 27 mar 2026 
+		& 64h 
+		& - Módulo de autenticación \newline
+			- Módulo de inventario completo \newline
+			- Módulo de ventas y clientes \newline
+			- Endpoints de reportes \newline
+			- Documentación Swagger \newline
+			- Pruebas unitarias \\
 		\hline
-		3. Frontend Core                    & 6-8                 & 64h            &
-		- Layout y autenticación \newline
-		- Módulo de inventario (UI) \newline
-		- Punto de venta (POS) \newline
-		- Módulo de clientes \newline
-		- Dashboard y reportes \newline
-		- Componentes reutilizables                                                                                        \\
+		
+		3. Frontend Core 
+		& 6--8 
+		& 28 mar -- 17 abr 2026 
+		& 64h 
+		& - Layout y autenticación \newline
+			- Módulo de inventario (UI) \newline
+			- Punto de venta (POS) \newline
+			- Módulo de clientes \newline
+			- Dashboard y reportes \newline
+			- Componentes reutilizables \\
 		\hline
-		4. Integración y Pruebas            & 9-10                & 40h            &
-		- Pruebas de flujos completos \newline
-		- Pruebas de integración \newline
-		- Corrección de bugs \newline
-		- Refinamiento UX \newline
-		- Generación de comprobantes                                                                                       \\
+		
+		4. Integración y Pruebas 
+		& 9--10 
+		& 18 abr -- 1 may 2026 
+		& 40h 
+		& - Pruebas de flujos completos \newline
+			- Pruebas de integración \newline
+			- Corrección de bugs \newline
+			- Refinamiento UX \newline
+			- Generación de comprobantes \\
 		\hline
-		5. Validación y Despliegue          & 11                  & 20h            &
-		- Despliegue en producción \newline
-		- Validación con usuarios \newline
-		- Recopilación de feedback \newline
-		- Ajustes críticos                                                                                                 \\
+		
+		5. Validación y Despliegue 
+		& 11 
+		& 2 may -- 8 may 2026 
+		& 20h 
+		& - Despliegue en producción \newline
+			- Validación con usuarios \newline
+			- Recopilación de feedback \newline
+			- Ajustes críticos \\
 		\hline
-		6. Documentación Final              & 12                  & 20h            &
-		- Manual de usuario \newline
-		- Documentación técnica \newline
-		- Documento de tesis completo \newline
-		- Presentación                                                                                                     \\
+		
+		6. Documentación Final 
+		& 12 
+		& 9 may -- 15 may 2026 
+		& 20h 
+		& - Manual de usuario \newline
+			- Documentación técnica \newline
+			- Documento de tesis completo \newline
+			- Presentación \\
 		\hline
-		\textbf{TOTAL}                      & \textbf{12 semanas} & \textbf{248h}  & \textbf{Sistema completo + Documento} \\
+		
+		\textbf{TOTAL} 
+		& \textbf{12 sem.} 
+		& \textbf{21 feb -- 15 may 2026} 
+		& \textbf{248h} 
+		& \textbf{Sistema completo + Documento} \\
 		\hline
+		
 	\end{tabular}
 \end{table}
 
@@ -1861,7 +1891,21 @@ Texto que explica la figura
 \clearpage
 \section{CONCLUSIONES}
 
-Texto de las conclusiones del proyecto...
+A partir del trabajo realizado en esta fase de anteproyecto, se presentan las siguientes conclusiones preliminares:
+
+\begin{itemize}
+	\item La revisión del estado actual de los pequeños negocios colombianos confirma que existe una necesidad real de herramientas de gestión accesibles. Muchos de estos negocios siguen dependiendo de registros manuales o aplicaciones aisladas que no se comunican entre sí, lo que genera pérdida de información y dificulta la toma de decisiones. El sistema propuesto apunta directamente a resolver esta fragmentación mediante la integración de inventario, ventas, clientes y reportes en una sola aplicación web.
+
+	\item El análisis de las soluciones comerciales existentes (Odoo, Alegra, Siigo) permitió identificar que, si bien ofrecen funcionalidades robustas, presentan barreras de costo, complejidad o falta de adaptación al contexto local que limitan su adopción por parte de microempresas. Esto valida la pertinencia de desarrollar una alternativa de código abierto orientada a este segmento.
+
+	\item La selección tecnológica realizada —Next.js para el frontend, NestJS para el backend, PostgreSQL como base de datos y TypeScript como lenguaje transversal— se sustenta en criterios verificables de vigencia, adopción en la industria y compatibilidad entre componentes. Todas las tecnologías elegidas cuentan con soporte activo, documentación amplia y comunidades que facilitan la resolución de problemas durante el desarrollo.
+
+	\item La arquitectura modular por capas definida para el sistema (presentación, lógica de negocio y acceso a datos) proporciona una estructura clara que separa responsabilidades, facilita el mantenimiento y permite que cada capa evolucione de forma independiente. Los patrones de diseño identificados (Repository, Inyección de Dependencias, DTO, Module) son compatibles con el stack seleccionado y resuelven problemas concretos de la implementación.
+
+	\item La metodología iterativa e incremental planteada, con sprints semanales y una dedicación estimada de 20 horas por semana durante 12 semanas, resulta viable considerando la carga académica del estudiante y el alcance acotado del proyecto. El cronograma con fechas definidas (21 de febrero al 15 de mayo de 2026) establece hitos claros para el seguimiento del avance.
+\end{itemize}
+
+Estas conclusiones corresponden a la etapa de anteproyecto y se actualizarán conforme avance el desarrollo del sistema, incorporando los resultados de la implementación, las pruebas y la validación con usuarios.
 
 
 

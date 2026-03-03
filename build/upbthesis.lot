@@ -1,39 +1,39 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {table}{\numberline {I}{\ignorespaces Cronograma de Ejecución del Proyecto}}{42}{table.caption.2}%
-\contentsline {table}{\numberline {II}{\ignorespaces Distribución Semanal de Actividades}}{42}{table.caption.3}%
-\contentsline {table}{\numberline {III}{\ignorespaces Presupuesto Estimado del Proyecto}}{43}{table.caption.4}%
-\contentsline {table}{\numberline {IV}{\ignorespaces RF01: Autenticación y control de sesión}}{46}{table.caption.5}%
-\contentsline {table}{\numberline {V}{\ignorespaces RF02: Gestión del catálogo de productos}}{47}{table.caption.6}%
-\contentsline {table}{\numberline {VI}{\ignorespaces RF03: Registro de movimientos de inventario}}{48}{table.caption.7}%
-\contentsline {table}{\numberline {VII}{\ignorespaces RF04: Alertas de stock bajo y umbral mínimo}}{49}{table.caption.8}%
-\contentsline {table}{\numberline {VIII}{\ignorespaces RF05: Procesamiento de venta en tiempo real}}{50}{table.caption.9}%
-\contentsline {table}{\numberline {IX}{\ignorespaces RF06: Gestión de métodos de pago y cálculo de cambio}}{51}{table.caption.10}%
-\contentsline {table}{\numberline {X}{\ignorespaces RF07: Actualización automática de stock por venta}}{52}{table.caption.11}%
-\contentsline {table}{\numberline {XI}{\ignorespaces RF08: Emisión de comprobantes de venta}}{53}{table.caption.12}%
-\contentsline {table}{\numberline {XII}{\ignorespaces RF09: Gestión de anulaciones y devoluciones}}{54}{table.caption.13}%
-\contentsline {table}{\numberline {XIII}{\ignorespaces RF10: Gestión del directorio de clientes}}{55}{table.caption.14}%
-\contentsline {table}{\numberline {XIV}{\ignorespaces RF11: Consulta de historial de compras por cliente}}{56}{table.caption.15}%
-\contentsline {table}{\numberline {XV}{\ignorespaces RF12: Dashboard de indicadores y reporte histórico filtrable}}{57}{table.caption.16}%
-\contentsline {table}{\numberline {XVI}{\ignorespaces RF13: Gestión de categorías de productos}}{58}{table.caption.17}%
-\contentsline {table}{\numberline {XVII}{\ignorespaces RF14: Gestión de imágenes de productos}}{59}{table.caption.18}%
-\contentsline {table}{\numberline {XVIII}{\ignorespaces RF15: Búsqueda y filtrado avanzado de productos}}{60}{table.caption.19}%
-\contentsline {table}{\numberline {XIX}{\ignorespaces RF16: Aplicación de descuentos en ventas}}{61}{table.caption.20}%
-\contentsline {table}{\numberline {XX}{\ignorespaces RF17: Gestión del carrito de compras temporal}}{62}{table.caption.21}%
-\contentsline {table}{\numberline {XXI}{\ignorespaces RF18: Consulta de ventas por rango de fechas}}{63}{table.caption.22}%
-\contentsline {table}{\numberline {XXII}{\ignorespaces RF19: Registro de múltiples contactos por cliente}}{64}{table.caption.23}%
-\contentsline {table}{\numberline {XXIII}{\ignorespaces RF20: Segmentación de clientes por criterios}}{65}{table.caption.24}%
-\contentsline {table}{\numberline {XXIV}{\ignorespaces RF21: Reporte de productos más vendidos}}{66}{table.caption.25}%
-\contentsline {table}{\numberline {XXV}{\ignorespaces RF22: Análisis de rentabilidad por producto}}{67}{table.caption.26}%
-\contentsline {table}{\numberline {XXVI}{\ignorespaces RF23: Reporte de ventas por método de pago}}{68}{table.caption.27}%
-\contentsline {table}{\numberline {XXVII}{\ignorespaces RF24: Reporte de movimientos de inventario}}{69}{table.caption.28}%
-\contentsline {table}{\numberline {XXVIII}{\ignorespaces RNF01: Protección de credenciales y datos sensibles}}{70}{table.caption.29}%
-\contentsline {table}{\numberline {XXIX}{\ignorespaces RNF02: Control de acceso y gestión de sesiones de usuario}}{71}{table.caption.30}%
-\contentsline {table}{\numberline {XXX}{\ignorespaces RNF03: Rendimiento en operaciones críticas de negocio}}{72}{table.caption.31}%
-\contentsline {table}{\numberline {XXXI}{\ignorespaces RNF04: Interfaz intuitiva y de fácil aprendizaje}}{73}{table.caption.32}%
-\contentsline {table}{\numberline {XXXII}{\ignorespaces RNF05: Adaptabilidad a diferentes dispositivos y tamaños de pantalla}}{74}{table.caption.33}%
-\contentsline {table}{\numberline {XXXIII}{\ignorespaces RNF06: Escalabilidad de datos y modularidad arquitectónica}}{75}{table.caption.34}%
-\contentsline {table}{\numberline {XXXIV}{\ignorespaces RNF07: Integridad transaccional y consistencia de la información}}{76}{table.caption.35}%
-\contentsline {table}{\numberline {XXXV}{\ignorespaces RNF08: Disponibilidad del servicio y recuperación ante fallos}}{77}{table.caption.36}%
-\contentsline {table}{\numberline {XXXVI}{\ignorespaces RNF09: Mantenibilidad del código mediante modularidad, pruebas y documentación}}{78}{table.caption.37}%
-\contentsline {table}{\numberline {XXXVII}{\ignorespaces RNF10: Auditoría y registro de eventos críticos}}{79}{table.caption.38}%
+\contentsline {table}{\numberline {I}{\ignorespaces Cronograma de Ejecución del Proyecto}}{49}{table.caption.22}%
+\contentsline {table}{\numberline {II}{\ignorespaces Distribución Semanal de Actividades}}{49}{table.caption.23}%
+\contentsline {table}{\numberline {III}{\ignorespaces Presupuesto Estimado del Proyecto}}{50}{table.caption.24}%
+\contentsline {table}{\numberline {IV}{\ignorespaces RF01: Autenticación y control de sesión}}{53}{table.caption.25}%
+\contentsline {table}{\numberline {V}{\ignorespaces RF02: Gestión del catálogo de productos}}{54}{table.caption.26}%
+\contentsline {table}{\numberline {VI}{\ignorespaces RF03: Registro de movimientos de inventario}}{55}{table.caption.27}%
+\contentsline {table}{\numberline {VII}{\ignorespaces RF04: Alertas de stock bajo y umbral mínimo}}{56}{table.caption.28}%
+\contentsline {table}{\numberline {VIII}{\ignorespaces RF05: Procesamiento de venta en tiempo real}}{57}{table.caption.29}%
+\contentsline {table}{\numberline {IX}{\ignorespaces RF06: Gestión de métodos de pago y cálculo de cambio}}{58}{table.caption.30}%
+\contentsline {table}{\numberline {X}{\ignorespaces RF07: Actualización automática de stock por venta}}{59}{table.caption.31}%
+\contentsline {table}{\numberline {XI}{\ignorespaces RF08: Emisión de comprobantes de venta}}{60}{table.caption.32}%
+\contentsline {table}{\numberline {XII}{\ignorespaces RF09: Gestión de anulaciones y devoluciones}}{61}{table.caption.33}%
+\contentsline {table}{\numberline {XIII}{\ignorespaces RF10: Gestión del directorio de clientes}}{62}{table.caption.34}%
+\contentsline {table}{\numberline {XIV}{\ignorespaces RF11: Consulta de historial de compras por cliente}}{63}{table.caption.35}%
+\contentsline {table}{\numberline {XV}{\ignorespaces RF12: Dashboard de indicadores y reporte histórico filtrable}}{64}{table.caption.36}%
+\contentsline {table}{\numberline {XVI}{\ignorespaces RF13: Gestión de categorías de productos}}{65}{table.caption.37}%
+\contentsline {table}{\numberline {XVII}{\ignorespaces RF14: Gestión de imágenes de productos}}{66}{table.caption.38}%
+\contentsline {table}{\numberline {XVIII}{\ignorespaces RF15: Búsqueda y filtrado avanzado de productos}}{67}{table.caption.39}%
+\contentsline {table}{\numberline {XIX}{\ignorespaces RF16: Aplicación de descuentos en ventas}}{68}{table.caption.40}%
+\contentsline {table}{\numberline {XX}{\ignorespaces RF17: Gestión del carrito de compras temporal}}{69}{table.caption.41}%
+\contentsline {table}{\numberline {XXI}{\ignorespaces RF18: Consulta de ventas por rango de fechas}}{70}{table.caption.42}%
+\contentsline {table}{\numberline {XXII}{\ignorespaces RF19: Registro de múltiples contactos por cliente}}{71}{table.caption.43}%
+\contentsline {table}{\numberline {XXIII}{\ignorespaces RF20: Segmentación de clientes por criterios}}{72}{table.caption.44}%
+\contentsline {table}{\numberline {XXIV}{\ignorespaces RF21: Reporte de productos más vendidos}}{73}{table.caption.45}%
+\contentsline {table}{\numberline {XXV}{\ignorespaces RF22: Análisis de rentabilidad por producto}}{74}{table.caption.46}%
+\contentsline {table}{\numberline {XXVI}{\ignorespaces RF23: Reporte de ventas por método de pago}}{75}{table.caption.47}%
+\contentsline {table}{\numberline {XXVII}{\ignorespaces RF24: Reporte de movimientos de inventario}}{76}{table.caption.48}%
+\contentsline {table}{\numberline {XXVIII}{\ignorespaces RNF01: Protección de credenciales y datos sensibles}}{77}{table.caption.49}%
+\contentsline {table}{\numberline {XXIX}{\ignorespaces RNF02: Control de acceso y gestión de sesiones de usuario}}{78}{table.caption.50}%
+\contentsline {table}{\numberline {XXX}{\ignorespaces RNF03: Rendimiento en operaciones críticas de negocio}}{79}{table.caption.51}%
+\contentsline {table}{\numberline {XXXI}{\ignorespaces RNF04: Interfaz intuitiva y de fácil aprendizaje}}{80}{table.caption.52}%
+\contentsline {table}{\numberline {XXXII}{\ignorespaces RNF05: Adaptabilidad a diferentes dispositivos y tamaños de pantalla}}{81}{table.caption.53}%
+\contentsline {table}{\numberline {XXXIII}{\ignorespaces RNF06: Escalabilidad de datos y modularidad arquitectónica}}{82}{table.caption.54}%
+\contentsline {table}{\numberline {XXXIV}{\ignorespaces RNF07: Integridad transaccional y consistencia de la información}}{83}{table.caption.55}%
+\contentsline {table}{\numberline {XXXV}{\ignorespaces RNF08: Disponibilidad del servicio y recuperación ante fallos}}{84}{table.caption.56}%
+\contentsline {table}{\numberline {XXXVI}{\ignorespaces RNF09: Mantenibilidad del código mediante modularidad, pruebas y documentación}}{85}{table.caption.57}%
+\contentsline {table}{\numberline {XXXVII}{\ignorespaces RNF10: Auditoría y registro de eventos críticos}}{86}{table.caption.58}%
 \contentsfinish 
