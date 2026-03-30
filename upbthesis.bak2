@@ -382,8 +382,6 @@ Además de las tecnologías principales, el proyecto usa las siguientes herramie
 
 \textbf{Testing.} Jest como framework de pruebas unitarias para backend y frontend. Supertest para pruebas de integración de endpoints HTTP. Opcionalmente, Playwright para pruebas de flujo completo en el navegador.
 
-\textbf{Gestión de pruebas.} TestRail se utiliza como herramienta de gestión de casos de prueba. Permite organizar los casos de prueba por módulo del sistema (inventario, ventas, clientes, reportes), definir pasos de ejecución con resultados esperados, registrar el resultado de cada ejecución (aprobado, fallido, bloqueado) y generar reportes de cobertura y avance. Su uso complementa los frameworks de pruebas automatizadas (Jest, Supertest) al proporcionar trazabilidad entre los requerimientos funcionales del sistema y los casos de prueba que los verifican. El plan gratuito permite un usuario con funcionalidades suficientes para el alcance del proyecto.
-
 \subsubsection{Justificación de la Selección Tecnológica}
 
 La elección del stack tecnológico se fundamenta en criterios verificables de vigencia, adopción y soporte activo. A continuación se presenta evidencia concreta de por qué cada tecnología seleccionada puede considerarse actual y adecuada para el proyecto:
@@ -442,8 +440,6 @@ Entregables: API REST funcional, documentación Swagger interactiva, base de dat
 Entregables: interfaz web responsive integrada con el backend, módulos funcionales operando de punta a punta, y componentes UI reutilizables documentados.
 
 \textbf{Fase 4: Integración y Pruebas (semanas 9--10, 40 horas).} Se verifica que todo funcione junto. Se ejecutan pruebas de integración que recorren flujos completos por ejemplo, realizar una venta desde la búsqueda de producto hasta la generación del comprobante  y se prueban casos de uso reales siguiendo guiones paso a paso. Se corrigen los bugs encontrados, priorizando los que bloquean funcionalidad sobre los cosméticos. Se refina la experiencia de usuario (mensajes de error claros, flujos simplificados) y se implementa la generación de comprobantes de venta en formato imprimible. Se optimiza el rendimiento donde sea necesario (índices en la base de datos, paginación, caché).
-
-Los casos de prueba se organizan en TestRail, donde cada caso define los pasos de ejecución, los datos de entrada, el resultado esperado y el módulo al que pertenece. Se crean suites de prueba para cada módulo funcional: autenticación, inventario, ventas, clientes y reportes. Los casos cubren tanto escenarios positivos (operaciones que deben funcionar correctamente) como escenarios negativos (validaciones, restricciones y manejo de errores). La ejecución de cada caso se registra con su resultado, permitiendo generar un reporte final que evidencia la cobertura de pruebas alcanzada y los defectos encontrados y corregidos durante esta fase.
 
 Entregables: sistema integrado sin errores críticos, reporte de pruebas con resultados, bugs corregidos en Git, y comprobantes de venta funcionales.
 
@@ -588,13 +584,13 @@ Se ha establecido un presupuesto enfocado en maximizar el valor obtenido de cada
 		\hline
 		Vercel                            & Despliegue frontend (gratis)          & \$0                  \\
 		\hline
-		Railway                           & Backend + PostgreSQL (gratis)         & \$0                  \\
+		Railway (Backend)                 & Plan de pago (\$5 USD)                & \$21,000             \\
 		\hline
 		Supabase                          & Plan gratuito                         & \$0                  \\
 		\hline
 		Dominio                           & Opcional (.com.co)                    & \$50,000             \\
 		\hline
-		\textbf{Subtotal Inversiones}     &                                       & \textbf{\$50,000}    \\
+		\textbf{Subtotal Inversiones}     &                                       & \textbf{\$71,000}    \\
 		\hline
 		\multicolumn{3}{c}{}                                                                             \\
 		\hline
@@ -624,13 +620,13 @@ Se ha establecido un presupuesto enfocado en maximizar el valor obtenido de cada
 		\hline
 		Papelería                         & Impresiones documento                 & \$30,000             \\
 		\hline
-		Imprevistos                       & 5\% del total                         & \$267,500            \\
+		Imprevistos                       & 5\% del total                         & \$269,550            \\
 		\hline
-		\textbf{Subtotal Otros}           &                                       & \textbf{\$397,500}   \\
+		\textbf{Subtotal Otros}           &                                       & \textbf{\$399,550}   \\
 		\hline
 		\multicolumn{3}{c}{}                                                                             \\
 		\hline
-		\textbf{COSTO TOTAL DEL PROYECTO} &                                       & \textbf{\$5,637,500} \\
+		\textbf{COSTO TOTAL DEL PROYECTO} &                                       & \textbf{\$5,660,550} \\
 		\hline
 	\end{tabular}
 \end{table}
@@ -641,7 +637,7 @@ Se ha establecido un presupuesto enfocado en maximizar el valor obtenido de cada
 
 \begin{itemize}
 	\item Todas las herramientas de desarrollo son gratuitas (código abierto)
-	\item Servicios de despliegue: Vercel (gratis), Railway (gratis), Supabase (gratis)
+	\item Servicios de despliegue en planes gratuitos suficientes
 	\item Dominio opcional, puede usarse subdominio gratuito
 \end{itemize}
 
@@ -1907,7 +1903,7 @@ A partir del trabajo realizado en esta fase de anteproyecto, se presentan las si
 
 	\item La arquitectura modular por capas definida para el sistema (presentación, lógica de negocio y acceso a datos) proporciona una estructura clara que separa responsabilidades, facilita el mantenimiento y permite que cada capa evolucione de forma independiente. Los patrones de diseño identificados (Repository, Inyección de Dependencias, DTO, Module) son compatibles con el stack seleccionado y resuelven problemas concretos de la implementación.
 
-	\item La metodología iterativa e incremental planteada, con sprints semanales y una dedicación estimada de 20 horas por semana durante 12 semanas, resulta viable considerando la carga académica del estudiante y el alcance acotado del proyecto. El cronograma con fechas definidas (19 de enero al 12 de abril de 2026) establece hitos claros para el seguimiento del avance.
+	\item La metodología iterativa e incremental planteada, con sprints semanales y una dedicación estimada de 20 horas por semana durante 12 semanas, resulta viable considerando la carga académica del estudiante y el alcance acotado del proyecto. El cronograma con fechas definidas (21 de febrero al 15 de mayo de 2026) establece hitos claros para el seguimiento del avance.
 \end{itemize}
 
 Estas conclusiones corresponden a la etapa de anteproyecto y se actualizarán conforme avance el desarrollo del sistema, incorporando los resultados de la implementación, las pruebas y la validación con usuarios.
