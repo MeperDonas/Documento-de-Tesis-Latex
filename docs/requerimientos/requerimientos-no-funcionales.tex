@@ -1,0 +1,329 @@
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\setlength{\tabcolsep}{6pt}
+	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+		\hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                                                                    \\ \hline
+		\multicolumn{4}{|l|}{\textbf{Prioridad: Alta}}                                                                                                                                                                                                                  \\ \hline
+		\textbf{CÓDIGO DEL REQUERIMIENTO:}                          & RNF01                                                                      & \cellcolor{tableheaderblue}\textbf{Actor} & Sistema / Infraestructura                                                \\ \hline
+		\textbf{NOMBRE DEL REQUERIMIENTO}                           & \multicolumn{3}{l|}{\textbf{Protección de credenciales y datos sensibles}}                                                                                                                        \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Descripción}}                                                                                                                                                                                                                      \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe garantizar la confidencialidad e integridad de las credenciales de acceso y de los datos sensibles manejados durante la autenticación y las operaciones principales del sistema.}                                                               \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Funcionalidad}}                                                                                                                                                                                                                    \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe utilizar canales de comunicación cifrados, almacenar las credenciales mediante algoritmos de hashing seguros y aplicar mecanismos de sanitización y validación de entradas para prevenir ataques de inyección y ejecución de código malicioso.} \\ \hline
+		\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{                                                                                                                                                              %
+			1. El sistema debe exponer la aplicación únicamente a través de HTTPS y redirigir automáticamente cualquier petición HTTP a HTTPS. \newline
+			2. El sistema debe almacenar las contraseñas utilizando algoritmos de hashing con sal (por ejemplo, bcrypt o equivalente), sin guardar nunca el texto plano en la base de datos ni en los logs. \newline
+		3. El sistema debe validar y sanear todos los parámetros de entrada utilizados en consultas a la base de datos o en generación de contenido dinámico, evitando ataques de inyección SQL y XSS.}                                                                 \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                                                                    \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema no debe registrar en texto plano contraseñas, tokens ni información financiera sensible, y debe aplicar consultas parametrizadas en todas las operaciones de acceso a datos.}                                                                        \\ \hline
+	\end{tabular}
+	\caption{RNF01: Protección de credenciales y datos sensibles}
+	\label{tab:rnf01}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\setlength{\tabcolsep}{6pt}
+	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+		\hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                             \\ \hline
+		\multicolumn{4}{|l|}{\textbf{Prioridad: Alta}}                                                                                                                                                                           \\ \hline
+		\textbf{CÓDIGO DEL REQUERIMIENTO:}                          & RNF02                                                                            & \cellcolor{tableheaderblue}\textbf{Actor} & Sistema / Usuario           \\ \hline
+		\textbf{NOMBRE DEL REQUERIMIENTO}                           & \multicolumn{3}{l|}{\textbf{Control de acceso y gestión de sesiones de usuario}}                                                                           \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Descripción}}                                                                                                                                                                               \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe gestionar de forma segura el ciclo de vida de las sesiones de usuario, garantizando que solo usuarios autenticados y autorizados accedan a los recursos internos del sistema.}                           \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Funcionalidad}}                                                                                                                                                                             \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe utilizar mecanismos de autenticación basados en tokens, tiempos de expiración e inactividad, y aplicar control de acceso basado en roles para definir qué acciones puede realizar cada tipo de usuario.} \\ \hline
+		\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{                                                                                                                       %
+			1. El sistema debe invalidar automáticamente la sesión del usuario tras un período configurable de inactividad, requiriendo un nuevo inicio de sesión para continuar. \newline
+			2. El sistema debe rechazar cualquier petición a recursos protegidos cuando el token de sesión esté ausente, sea inválido o esté expirado. \newline
+		3. El sistema debe permitir asignar y gestionar roles (por ejemplo, administrador, cajero, auxiliar) y restringir las funcionalidades visibles en la interfaz según el rol del usuario autenticado.}                     \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                             \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		Los tokens de sesión deben incluir fecha de expiración y no pueden ser reutilizados tras el cierre de sesión o la revocación manual por un administrador.}                                                               \\ \hline
+	\end{tabular}
+	\caption{RNF02: Control de acceso y gestión de sesiones de usuario}
+	\label{tab:rnf02}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\setlength{\tabcolsep}{6pt}
+	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+		\hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                   \\ \hline
+		\multicolumn{4}{|l|}{\textbf{Prioridad: Alta}}                                                                                                                                                                 \\ \hline
+		\textbf{CÓDIGO DEL REQUERIMIENTO:}                          & RNF03                                                                        & \cellcolor{tableheaderblue}\textbf{Actor} & Sistema               \\ \hline
+		\textbf{NOMBRE DEL REQUERIMIENTO}                           & \multicolumn{3}{l|}{\textbf{Rendimiento en operaciones críticas de negocio}}                                                                     \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Descripción}}                                                                                                                                                                     \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe ofrecer tiempos de respuesta adecuados en las operaciones críticas del negocio (autenticación, búsquedas, ventas y reportes) para no afectar la operación diaria del pequeño negocio.}         \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Funcionalidad}}                                                                                                                                                                   \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe optimizar consultas, aplicar paginación sobre listados extensos y utilizar caché donde sea pertinente, con el fin de mantener tiempos de respuesta dentro de los umbrales establecidos.}       \\ \hline
+		\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{                                                                                                             %
+			1. El sistema debe responder en menos de 2 segundos para al menos el 95\% de las operaciones de inicio de sesión, búsqueda de productos en el POS y registro de una venta bajo una carga de hasta 50 usuarios concurrentes. \newline
+			2. El sistema debe generar reportes de ventas de hasta un mes de datos o 10.000 transacciones en menos de 5 segundos en el entorno de producción objetivo. \newline
+		3. El sistema debe mostrar indicadores de carga (barras de progreso, spinners o mensajes de ``cargando'') cuando una operación supere los 500 ms, evitando que el usuario perciba la interfaz como congelada.} \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                   \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		Las pruebas de rendimiento deben realizarse en la infraestructura de despliegue definida para el proyecto y utilizando datos de prueba representativos del volumen esperado del negocio.}                      \\ \hline
+	\end{tabular}
+	\caption{RNF03: Rendimiento en operaciones críticas de negocio}
+	\label{tab:rnf03}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\setlength{\tabcolsep}{6pt}
+	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+		\hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                       \\ \hline
+		\multicolumn{4}{|l|}{\textbf{Prioridad: Media}}                                                                                                                                                                    \\ \hline
+		\textbf{CÓDIGO DEL REQUERIMIENTO:}                          & RNF04                                                                   & \cellcolor{tableheaderblue}\textbf{Actor} & Usuario final                  \\ \hline
+		\textbf{NOMBRE DEL REQUERIMIENTO}                           & \multicolumn{3}{l|}{\textbf{Interfaz intuitiva y de fácil aprendizaje}}                                                                              \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Descripción}}                                                                                                                                                                         \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe proporcionar una interfaz de usuario intuitiva, coherente y fácil de aprender para usuarios con conocimientos básicos de informática, minimizando la necesidad de capacitación extensa.}           \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Funcionalidad}}                                                                                                                                                                       \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe disponer de flujos claros para las tareas frecuentes (registro de productos, ventas, consultas) con un número reducido de pasos, mensajes de error comprensibles y elementos de ayuda contextual.} \\ \hline
+		\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{                                                                                                                 %
+			1. El sistema debe permitir que un usuario nuevo, tras una inducción de máximo 30 minutos, pueda realizar de forma autónoma una venta completa y consultar el historial de ventas sin asistencia adicional. \newline
+			2. El sistema debe permitir completar una venta típica (búsqueda de producto, adición al carrito, selección de método de pago y confirmación) en un máximo de 5 pasos interactivos. \newline
+		3. El sistema debe mostrar mensajes de validación específicos junto a los campos de formularios con errores, indicando claramente qué información debe corregirse.}                                                \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                       \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		Los textos de la interfaz y los mensajes deben redactarse en un lenguaje claro y consistente, evitando tecnicismos innecesarios para el usuario final.}                                                            \\ \hline
+	\end{tabular}
+	\caption{RNF04: Interfaz intuitiva y de fácil aprendizaje}
+	\label{tab:rnf04}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\setlength{\tabcolsep}{6pt}
+	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+		\hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                                                                   \\ \hline
+		\multicolumn{4}{|l|}{\textbf{Prioridad: Media}}                                                                                                                                                                                                                \\ \hline
+		\textbf{CÓDIGO DEL REQUERIMIENTO:}                          & RNF05                                                                                       & \cellcolor{tableheaderblue}\textbf{Actor} & Usuario final                                          \\ \hline
+		\textbf{NOMBRE DEL REQUERIMIENTO}                           & \multicolumn{3}{l|}{\textbf{Adaptabilidad a diferentes dispositivos y tamaños de pantalla}}                                                                                                      \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Descripción}}                                                                                                                                                                                                                     \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe adaptarse correctamente a diferentes resoluciones y tamaños de pantalla utilizados comúnmente en el entorno del pequeño negocio, garantizando una experiencia de uso adecuada tanto en equipos de escritorio como en dispositivos portátiles.} \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Funcionalidad}}                                                                                                                                                                                                                   \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe aplicar diseño responsive en todas las vistas principales, reorganizando menús, tablas y formularios según el ancho de pantalla disponible y manteniendo niveles mínimos de contraste para una correcta legibilidad.}                          \\ \hline
+		\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{                                                                                                                                                             %
+			1. El sistema debe visualizar el dashboard, el módulo de ventas y el módulo de inventario sin barras de desplazamiento horizontales en resoluciones entre 1280×720 y 1920×1080 píxeles. \newline
+			2. El sistema debe adaptar los menús de navegación a un formato colapsable (por ejemplo, menú tipo hamburguesa) en pantallas de menor ancho. \newline
+		3. El sistema debe cumplir con niveles mínimos de contraste recomendados (equivalentes a WCAG AA) para texto y elementos interactivos en los temas definidos.}                                                                                                 \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                                                                   \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		Las interfaces deben diseñarse siguiendo el sistema de diseño definido para el proyecto, reutilizando componentes UI coherentes en todos los módulos.}                                                                                                         \\ \hline
+	\end{tabular}
+	\caption{RNF05: Adaptabilidad a diferentes dispositivos y tamaños de pantalla}
+	\label{tab:rnf05}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\setlength{\tabcolsep}{6pt}
+	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+		\hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                                                    \\ \hline
+		\multicolumn{4}{|l|}{\textbf{Prioridad: Media}}                                                                                                                                                                                                 \\ \hline
+		\textbf{CÓDIGO DEL REQUERIMIENTO:}                          & RNF06                                                                             & \cellcolor{tableheaderblue}\textbf{Actor} & Sistema / Equipo de desarrollo                    \\ \hline
+		\textbf{NOMBRE DEL REQUERIMIENTO}                           & \multicolumn{3}{l|}{\textbf{Escalabilidad de datos y modularidad arquitectónica}}                                                                                                 \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Descripción}}                                                                                                                                                                                                      \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe poder crecer tanto en volumen de información como en funcionalidades, sin requerir cambios estructurales profundos en la arquitectura ni afectar significativamente el rendimiento.}                                            \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Funcionalidad}}                                                                                                                                                                                                    \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe organizarse en módulos lógicos (inventario, ventas, clientes, reportes, seguridad) y utilizar mecanismos de paginación, índices y consultas optimizadas que faciliten el manejo de catálogos y volúmenes de ventas crecientes.} \\ \hline
+		\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{                                                                                                                                              %
+			1. El sistema debe soportar un crecimiento del catálogo de productos desde 1.000 hasta al menos 20.000 registros mediante ajustes de configuración (índices y paginación), sin modificar la arquitectura base. \newline
+			2. El sistema debe permitir añadir nuevos módulos de negocio (por ejemplo, proveedores o compras) reutilizando la API y la arquitectura por capas, sin modificar la lógica interna de los módulos existentes salvo puntos de integración definidos. \newline
+		3. El sistema debe permitir desplegar el frontend y el backend de forma independiente, manteniendo la comunicación a través de interfaces API documentadas y estables.}                                                                         \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                                                    \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		Todos los módulos nuevos deben respetar la arquitectura modular por capas y los contratos definidos en la API, evitando dependencias directas entre la capa de presentación y la base de datos.}                                                \\ \hline
+	\end{tabular}
+	\caption{RNF06: Escalabilidad de datos y modularidad arquitectónica}
+	\label{tab:rnf06}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\setlength{\tabcolsep}{6pt}
+	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+		\hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                                       \\ \hline
+		\multicolumn{4}{|l|}{\textbf{Prioridad: Alta}}                                                                                                                                                                                     \\ \hline
+		\textbf{CÓDIGO DEL REQUERIMIENTO:}                          & RNF07                                                                                   & \cellcolor{tableheaderblue}\textbf{Actor} & Sistema                        \\ \hline
+		\textbf{NOMBRE DEL REQUERIMIENTO}                           & \multicolumn{3}{l|}{\textbf{Integridad transaccional y consistencia de la información}}                                                                              \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Descripción}}                                                                                                                                                                                         \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe garantizar que las operaciones críticas que afectan múltiples entidades (por ejemplo, ventas e inventario) conserven la integridad y consistencia de los datos, incluso ante fallos parciales.}                    \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Funcionalidad}}                                                                                                                                                                                       \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe utilizar mecanismos transaccionales de la base de datos para operaciones complejas, aplicando el modelo ACID y restricciones de integridad referencial para evitar inconsistencias lógicas en el modelo de datos.} \\ \hline
+		\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{                                                                                                                                 %
+			1. El sistema debe asegurar que, si un proceso de venta falla en cualquier punto de la transacción, ni la venta ni los movimientos de inventario asociados queden registrados parcialmente (la operación debe ser atómica). \newline
+			2. El sistema debe utilizar claves foráneas y restricciones de integridad referencial que impidan eliminar productos o clientes con registros de ventas asociados. \newline
+		3. El sistema debe conservar íntegramente las transacciones confirmadas tras un reinicio inesperado del servidor de base de datos, sin evidencia de corrupción en las tablas principales.}                                         \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                                       \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		La configuración de la base de datos debe mantener las propiedades ACID, evitando desactivar mecanismos de journal o logging que comprometan la durabilidad e integridad de los datos.}                                            \\ \hline
+	\end{tabular}
+	\caption{RNF07: Integridad transaccional y consistencia de la información}
+	\label{tab:rnf07}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\setlength{\tabcolsep}{6pt}
+	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+		\hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                                                             \\ \hline
+		\multicolumn{4}{|l|}{\textbf{Prioridad: Media}}                                                                                                                                                                                                          \\ \hline
+		\textbf{CÓDIGO DEL REQUERIMIENTO:}                          & RNF08                                                                                & \cellcolor{tableheaderblue}\textbf{Actor} & Sistema / Infraestructura                               \\ \hline
+		\textbf{NOMBRE DEL REQUERIMIENTO}                           & \multicolumn{3}{l|}{\textbf{Disponibilidad del servicio y recuperación ante fallos}}                                                                                                       \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Descripción}}                                                                                                                                                                                                               \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe mantener una disponibilidad adecuada durante los horarios de operación definidos y contar con mecanismos de recuperación que reduzcan al mínimo el tiempo de interrupción ante fallos.}                                                  \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Funcionalidad}}                                                                                                                                                                                                             \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe desplegarse en una infraestructura que permita la monitorización básica del servicio, el reinicio automático de los procesos de aplicación y la posibilidad de revertir rápidamente a una versión estable en caso de incidentes graves.} \\ \hline
+		\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{                                                                                                                                                       %
+			1. El sistema debe alcanzar al menos un 99\% de disponibilidad durante las pruebas de operación continua en una ventana de al menos una semana. \newline
+			2. El sistema debe recuperarse automáticamente y volver a estar disponible en menos de 1 minuto tras un fallo simulado del proceso de backend. \newline
+		3. El sistema debe permitir realizar un rollback a la última versión estable desplegada en un tiempo máximo de 15 minutos desde la detección de un problema crítico en producción.}                                                                      \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                                                             \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		Los mecanismos de alta disponibilidad y recuperación deben configurarse de acuerdo con las capacidades de la plataforma de despliegue utilizada (por ejemplo, servicios PaaS con gestión de versiones y reinicio automático).}                           \\ \hline
+	\end{tabular}
+	\caption{RNF08: Disponibilidad del servicio y recuperación ante fallos}
+	\label{tab:rnf08}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\setlength{\tabcolsep}{6pt}
+	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+		\hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                                                                                              \\ \hline
+		\multicolumn{4}{|l|}{\textbf{Prioridad: Media}}                                                                                                                                                                                                                                           \\ \hline
+		\textbf{CÓDIGO DEL REQUERIMIENTO:}                          & RNF09                                                                                                 & \cellcolor{tableheaderblue}\textbf{Actor} & Equipo de desarrollo                                                    \\ \hline
+		\textbf{NOMBRE DEL REQUERIMIENTO}                           & \multicolumn{3}{p{0.65\linewidth}|}{\textbf{Mantenibilidad del código mediante modularidad, pruebas y documentación}}                                                                                                         \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Descripción}}                                                                                                                                                                                                                                                \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe ser fácilmente mantenible y extensible por el equipo de desarrollo, reduciendo el riesgo de introducir errores al modificar o agregar funcionalidades.}                                                                                                                   \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Funcionalidad}}                                                                                                                                                                                                                                              \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe estructurar su código en módulos coherentes por dominio, aplicar buenas prácticas de programación y contar con pruebas automatizadas y documentación actualizada de la API y de los componentes principales.}                                                             \\ \hline
+		\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{                                                                                                                                                                                        %
+			1. El sistema debe contar con pruebas unitarias y/o de integración que cubran al menos el 60\% de las funciones de negocio críticas (registro de ventas, movimientos de inventario, cálculo de totales e impuestos). \newline
+			2. El sistema debe disponer de documentación actualizada de la API (por ejemplo, mediante Swagger u otra herramienta similar), describiendo endpoints, parámetros, tipos de respuesta y códigos de error. \newline
+		3. El sistema debe permitir realizar cambios en reglas de negocio de un módulo específico (por ejemplo, umbral de stock bajo o reglas de descuento) modificando únicamente los componentes de ese módulo y sus interfaces públicas, sin necesidad de reescribir módulos no relacionados.} \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                                                                                              \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El código del proyecto debe versionarse en un repositorio Git, desarrollarse principalmente en TypeScript y seguir un conjunto de convenciones de estilo y revisión de código acordadas (por ejemplo, ESLint y revisiones por pares).}                                                    \\ \hline
+	\end{tabular}
+	\caption{RNF09: Mantenibilidad del código mediante modularidad, pruebas y documentación}
+	\label{tab:rnf09}
+\end{table}
+
+\begin{table}[H]
+	\centering
+	\renewcommand{\arraystretch}{1.3}
+	\setlength{\tabcolsep}{6pt}
+	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+		\hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                                                                 \\ \hline
+		\multicolumn{4}{|l|}{\textbf{Prioridad: Media}}                                                                                                                                                                                                              \\ \hline
+		\textbf{CÓDIGO DEL REQUERIMIENTO:}                          & RNF10                                                                  & \cellcolor{tableheaderblue}\textbf{Actor} & Sistema / Administrador                                                   \\ \hline
+		\textbf{NOMBRE DEL REQUERIMIENTO}                           & \multicolumn{3}{l|}{\textbf{Auditoría y registro de eventos críticos}}                                                                                                                         \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Descripción}}                                                                                                                                                                                                                   \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe registrar de forma estructurada los eventos críticos y las acciones sensibles realizadas por los usuarios, con el fin de facilitar auditorías, diagnósticos y la detección de comportamientos anómalos.}                                     \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Funcionalidad}}                                                                                                                                                                                                                 \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		El sistema debe generar registros de auditoría para operaciones como inicios de sesión fallidos, cambios de configuración, movimientos manuales de inventario, modificaciones de precios, anulaciones de ventas y cambios de roles de usuario.}              \\ \hline
+		\cellcolor{tableheaderblue}\textbf{Criterios de aceptación} & \multicolumn{3}{p{0.70\linewidth}|}{                                                                                                                                                           %
+			1. El sistema debe registrar para cada evento crítico la fecha y hora, el usuario responsable, la operación realizada y el identificador del recurso afectado. \newline
+			2. El sistema debe permitir consultar los registros de auditoría filtrando por rango de fechas, tipo de evento y usuario, ya sea mediante una interfaz administrativa o consultas sobre la base de datos. \newline
+		3. El sistema debe conservar los registros de auditoría durante un período mínimo de 90 días naturales, salvo que se definan políticas internas más estrictas.}                                                                                              \\ \hline
+		\rowcolor{tableheaderblue}
+		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                                                                 \\ \hline
+		\multicolumn{4}{|p{0.96\linewidth}|}{%
+		Los registros de auditoría no deben incluir información sensible en texto plano (por ejemplo, contraseñas, números completos de tarjetas u otros datos confidenciales), limitándose a identificadores, metadatos y descripciones generales de la operación.} \\ \hline
+	\end{tabular}
+	\caption{RNF10: Auditoría y registro de eventos críticos}
+	\label{tab:rnf10}
+\end{table}
