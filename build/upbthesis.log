@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.29)  4 JUL 2026 10:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.29)  4 JUL 2026 10:45
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -898,19 +898,6 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.127 \newpage
-               [1]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
 [2]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -919,7 +906,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[3
+[3]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[4
 
 ] (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.toc
 LaTeX Info: Redefining \. on input line 1.
@@ -932,7 +927,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[4])
+[5])
 \tf@toc=\write5
 \openout5 = `upbthesis.toc'.
 
@@ -945,7 +940,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[5]
+[6]
 \c@mytablecounter=\count411
  (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.lot
 LaTeX Info: Redefining \. on input line 1.
@@ -958,7 +953,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6
+[7
 
 ]
 Overfull \hbox (3.4658pt too wide) in paragraph at lines 27--27
@@ -977,7 +972,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7] (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.lof
+[8] (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
 )
@@ -992,25 +987,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8
+[9
 
 ]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 188.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 192.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 188.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 192.
  (C:\Program Files\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[9]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -1082,7 +1069,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[18] (docs/requerimientos/requerimientos-funcionales.tex
+[18]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[19] (docs/requerimientos/requerimientos-funcionales.tex
 Underfull \hbox (badness 10000) in paragraph at lines 14--14
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1104,7 +1099,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[19]
+[20]
 Overfull \vbox (4.73712pt too high) has occurred while \output is active []
 
 
@@ -1115,7 +1110,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[20]
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 49--49
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1141,7 +1136,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[21]
+[22]
 Underfull \hbox (badness 10000) in paragraph at lines 84--84
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1167,7 +1162,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[22]
+[23]
 Underfull \hbox (badness 10000) in paragraph at lines 119--119
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1204,7 +1199,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[23]
+[24]
 Overfull \vbox (48.23712pt too high) has occurred while \output is active []
 
 
@@ -1215,7 +1210,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[24]
+[25]
 Underfull \hbox (badness 10000) in paragraph at lines 189--189
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1241,7 +1236,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[25]
+[26]
 Underfull \hbox (badness 10000) in paragraph at lines 224--224
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1267,7 +1262,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[26]
+[27]
 Underfull \hbox (badness 10000) in paragraph at lines 259--259
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1293,7 +1288,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[27]
+[28]
 Underfull \hbox (badness 10000) in paragraph at lines 294--294
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1319,7 +1314,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[28]
+[29]
 Underfull \hbox (badness 10000) in paragraph at lines 329--329
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1345,7 +1340,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[29]
+[30]
 Underfull \hbox (badness 10000) in paragraph at lines 364--364
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1382,7 +1377,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[30]
+[31]
 Overfull \vbox (48.23712pt too high) has occurred while \output is active []
 
 
@@ -1393,7 +1388,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[31]
+[32]
 Underfull \hbox (badness 10000) in paragraph at lines 434--434
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1419,7 +1414,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[32]
+[33]
 Underfull \hbox (badness 10000) in paragraph at lines 470--470
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1445,7 +1440,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[33]
+[34]
 Underfull \hbox (badness 10000) in paragraph at lines 506--506
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1471,7 +1466,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[34]
+[35]
 Underfull \hbox (badness 10000) in paragraph at lines 542--542
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1497,7 +1492,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[35]
+[36]
 Underfull \hbox (badness 10000) in paragraph at lines 578--578
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1523,7 +1518,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[36]
+[37]
 Underfull \hbox (badness 10000) in paragraph at lines 615--615
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1549,7 +1544,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[37]
+[38]
 Underfull \hbox (badness 10000) in paragraph at lines 651--651
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1586,7 +1581,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[38]
+[39]
 Overfull \vbox (48.23712pt too high) has occurred while \output is active []
 
 
@@ -1597,7 +1592,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[39]
+[40]
 Underfull \hbox (badness 10000) in paragraph at lines 723--723
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1623,7 +1618,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[40]
+[41]
 Underfull \hbox (badness 10000) in paragraph at lines 760--760
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1649,7 +1644,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[41]
+[42]
 Underfull \hbox (badness 10000) in paragraph at lines 797--797
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1675,7 +1670,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[42]
+[43]
 Underfull \hbox (badness 10000) in paragraph at lines 833--833
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1701,7 +1696,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[43]) (docs/requerimientos/requerimientos-no-funcionales.tex
+[44]) (docs/requerimientos/requerimientos-no-funcionales.tex
 Underfull \hbox (badness 10000) in paragraph at lines 13--13
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1723,7 +1718,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[44
+[45
 
 ]
 Overfull \vbox (4.73712pt too high) has occurred while \output is active []
@@ -1736,7 +1731,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[45]
+[46]
 Underfull \hbox (badness 10000) in paragraph at lines 46--46
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1773,7 +1768,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[46]
+[47]
 Overfull \vbox (48.23712pt too high) has occurred while \output is active []
 
 
@@ -1784,7 +1779,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[47]
+[48]
 Underfull \hbox (badness 10000) in paragraph at lines 112--112
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1810,7 +1805,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[48]
+[49]
 Underfull \hbox (badness 10000) in paragraph at lines 145--145
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1839,7 +1834,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[49]
+[50]
 Underfull \hbox (badness 10000) in paragraph at lines 178--178
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1865,7 +1860,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[50]
+[51]
 Underfull \hbox (badness 10000) in paragraph at lines 211--211
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1891,7 +1886,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[51]
+[52]
 Underfull \hbox (badness 10000) in paragraph at lines 244--244
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1917,7 +1912,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[52]
+[53]
 Underfull \hbox (badness 10000) in paragraph at lines 277--277
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1943,7 +1938,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[53]
+[54]
 Underfull \hbox (badness 10000) in paragraph at lines 310--310
 []|\T1/ptm/b/n/12 CÓDIGO DEL RE-
  []
@@ -1962,14 +1957,6 @@ Overfull \hbox (2.79393pt too wide) in paragraph at lines 305--329
 Overfull \vbox (48.23712pt too high) has occurred while \output is active []
 
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[54]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2026,40 +2013,48 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [61]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[62]
 \openout2 = `diagramas-uml-section.aux'.
 
  (diagramas-uml-section.tex
-<Images/diagramas-uml/casos-de-uso/modulo-auth.pdf, id=840, 615.0478pt x 828.09375pt>
+<Images/diagramas-uml/casos-de-uso/modulo-auth.pdf, id=841, 615.0478pt x 828.09375pt>
 File: Images/diagramas-uml/casos-de-uso/modulo-auth.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/casos-de-uso/modulo-auth.pdf>
 Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-auth.pdf  used on input line 19.
 (pdftex.def)             Requested size: 424.82521pt x 571.99182pt.
-<Images/diagramas-uml/casos-de-uso/modulo-productos.pdf, id=842, 938.00438pt x 1227.08438pt>
+<Images/diagramas-uml/casos-de-uso/modulo-productos.pdf, id=843, 938.00438pt x 1227.08438pt>
 File: Images/diagramas-uml/casos-de-uso/modulo-productos.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/casos-de-uso/modulo-productos.pdf>
 Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-productos.pdf  used on input line 28.
 (pdftex.def)             Requested size: 424.82521pt x 555.74039pt.
-<Images/diagramas-uml/casos-de-uso/modulo-ventas.pdf, id=844, 1367.1075pt x 1059.96pt>
+<Images/diagramas-uml/casos-de-uso/modulo-ventas.pdf, id=845, 1367.1075pt x 1059.96pt>
 File: Images/diagramas-uml/casos-de-uso/modulo-ventas.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/casos-de-uso/modulo-ventas.pdf>
 Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-ventas.pdf  used on input line 37.
 (pdftex.def)             Requested size: 424.82521pt x 329.37671pt.
-<Images/diagramas-uml/casos-de-uso/modulo-clientes.pdf, id=846, 624.83438pt x 768.62157pt>
+<Images/diagramas-uml/casos-de-uso/modulo-clientes.pdf, id=847, 624.83438pt x 768.62157pt>
 File: Images/diagramas-uml/casos-de-uso/modulo-clientes.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/casos-de-uso/modulo-clientes.pdf>
 Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-clientes.pdf  used on input line 46.
 (pdftex.def)             Requested size: 424.82521pt x 522.5971pt.
-<Images/diagramas-uml/casos-de-uso/modulo-reportes.pdf, id=848, 968.11688pt x 889.07156pt>
+<Images/diagramas-uml/casos-de-uso/modulo-reportes.pdf, id=849, 968.11688pt x 889.07156pt>
 File: Images/diagramas-uml/casos-de-uso/modulo-reportes.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/casos-de-uso/modulo-reportes.pdf>
 Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-reportes.pdf  used on input line 55.
 (pdftex.def)             Requested size: 424.82521pt x 390.13454pt.
-<Images/diagramas-uml/casos-de-uso/modulo-configuracion.pdf, id=850, 923.70094pt x 724.95844pt>
+<Images/diagramas-uml/casos-de-uso/modulo-configuracion.pdf, id=851, 923.70094pt x 724.95844pt>
 File: Images/diagramas-uml/casos-de-uso/modulo-configuracion.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/casos-de-uso/modulo-configuracion.pdf>
 Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-configuracion.pdf  used on input line 64.
 (pdftex.def)             Requested size: 424.82521pt x 333.41855pt.
-<Images/diagramas-uml/casos-de-uso/modulo-categorias.pdf, id=852, 904.1278pt x 692.5875pt>
+<Images/diagramas-uml/casos-de-uso/modulo-categorias.pdf, id=853, 904.1278pt x 692.5875pt>
 File: Images/diagramas-uml/casos-de-uso/modulo-categorias.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/casos-de-uso/modulo-categorias.pdf>
 Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-categorias.pdf  used on input line 73.
@@ -2072,7 +2067,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[62
+[63
 
 ]
 
@@ -2082,7 +2077,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[63 <./Images/diagramas-uml/casos-de-uso/modulo-auth.pdf>]
+[64 <./Images/diagramas-uml/casos-de-uso/modulo-auth.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2090,7 +2085,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[64 <./Images/diagramas-uml/casos-de-uso/modulo-productos.pdf>]
+[65 <./Images/diagramas-uml/casos-de-uso/modulo-productos.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2098,7 +2093,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[65 <./Images/diagramas-uml/casos-de-uso/modulo-ventas.pdf>]
+[66 <./Images/diagramas-uml/casos-de-uso/modulo-ventas.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2106,7 +2101,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[66 <./Images/diagramas-uml/casos-de-uso/modulo-clientes.pdf>]
+[67 <./Images/diagramas-uml/casos-de-uso/modulo-clientes.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2114,7 +2109,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[67 <./Images/diagramas-uml/casos-de-uso/modulo-reportes.pdf>]
+[68 <./Images/diagramas-uml/casos-de-uso/modulo-reportes.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2122,8 +2117,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[68 <./Images/diagramas-uml/casos-de-uso/modulo-configuracion.pdf>]
-<Images/diagramas-uml/componentes/modulo-auth.pdf, id=913, 775.39688pt x 744.53156pt>
+[69 <./Images/diagramas-uml/casos-de-uso/modulo-configuracion.pdf>]
+<Images/diagramas-uml/componentes/modulo-auth.pdf, id=914, 775.39688pt x 744.53156pt>
 File: Images/diagramas-uml/componentes/modulo-auth.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/componentes/modulo-auth.pdf>
 Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-auth.pdf  used on input line 86.
@@ -2136,7 +2131,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[69 <./Images/diagramas-uml/casos-de-uso/modulo-categorias.pdf>]
+[70 <./Images/diagramas-uml/casos-de-uso/modulo-categorias.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2144,23 +2139,23 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[70 <./Images/diagramas-uml/componentes/modulo-auth.pdf>]
-<Images/diagramas-uml/componentes/modulo-productos.pdf, id=932, 990.70125pt x 663.22781pt>
+[71 <./Images/diagramas-uml/componentes/modulo-auth.pdf>]
+<Images/diagramas-uml/componentes/modulo-productos.pdf, id=933, 990.70125pt x 663.22781pt>
 File: Images/diagramas-uml/componentes/modulo-productos.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/componentes/modulo-productos.pdf>
 Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-productos.pdf  used on input line 95.
 (pdftex.def)             Requested size: 401.22942pt x 268.60579pt.
-<Images/diagramas-uml/componentes/modulo-ventas.pdf, id=934, 919.18407pt x 962.84718pt>
+<Images/diagramas-uml/componentes/modulo-ventas.pdf, id=935, 919.18407pt x 962.84718pt>
 File: Images/diagramas-uml/componentes/modulo-ventas.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/componentes/modulo-ventas.pdf>
 Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-ventas.pdf  used on input line 104.
 (pdftex.def)             Requested size: 401.22942pt x 420.28964pt.
-<Images/diagramas-uml/componentes/modulo-clientes.pdf, id=936, 989.94844pt x 619.56468pt>
+<Images/diagramas-uml/componentes/modulo-clientes.pdf, id=937, 989.94844pt x 619.56468pt>
 File: Images/diagramas-uml/componentes/modulo-clientes.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/componentes/modulo-clientes.pdf>
 Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-clientes.pdf  used on input line 113.
 (pdftex.def)             Requested size: 401.22942pt x 251.11139pt.
-<Images/diagramas-uml/componentes/modulo-reportes.pdf, id=938, 1349.79282pt x 641.39626pt>
+<Images/diagramas-uml/componentes/modulo-reportes.pdf, id=939, 1349.79282pt x 641.39626pt>
 File: Images/diagramas-uml/componentes/modulo-reportes.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/componentes/modulo-reportes.pdf>
 Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-reportes.pdf  used on input line 122.
@@ -2173,7 +2168,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[71 <./Images/diagramas-uml/componentes/modulo-productos.pdf>]
+[72 <./Images/diagramas-uml/componentes/modulo-productos.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2181,18 +2176,18 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[72 <./Images/diagramas-uml/componentes/modulo-ventas.pdf>]
-<Images/diagramas-uml/componentes/modulo-exportaciones.pdf, id=957, 835.62187pt x 654.94687pt>
+[73 <./Images/diagramas-uml/componentes/modulo-ventas.pdf>]
+<Images/diagramas-uml/componentes/modulo-exportaciones.pdf, id=958, 835.62187pt x 654.94687pt>
 File: Images/diagramas-uml/componentes/modulo-exportaciones.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/componentes/modulo-exportaciones.pdf>
 Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-exportaciones.pdf  used on input line 131.
 (pdftex.def)             Requested size: 401.22942pt x 314.48087pt.
-<Images/diagramas-uml/componentes/modulo-configuracion.pdf, id=959, 1088.56688pt x 667.74469pt>
+<Images/diagramas-uml/componentes/modulo-configuracion.pdf, id=960, 1088.56688pt x 667.74469pt>
 File: Images/diagramas-uml/componentes/modulo-configuracion.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/componentes/modulo-configuracion.pdf>
 Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-configuracion.pdf  used on input line 140.
 (pdftex.def)             Requested size: 401.22942pt x 246.11409pt.
-<Images/diagramas-uml/componentes/modulo-categorias.pdf, id=961, 814.54312pt x 619.56468pt>
+<Images/diagramas-uml/componentes/modulo-categorias.pdf, id=962, 814.54312pt x 619.56468pt>
 File: Images/diagramas-uml/componentes/modulo-categorias.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/componentes/modulo-categorias.pdf>
 Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-categorias.pdf  used on input line 149.
@@ -2205,7 +2200,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[73 <./Images/diagramas-uml/componentes/modulo-clientes.pdf>]
+[74 <./Images/diagramas-uml/componentes/modulo-clientes.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2213,7 +2208,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[74 <./Images/diagramas-uml/componentes/modulo-reportes.pdf> <./Images/diagramas-uml/componentes/modulo-exportaciones.pdf>]
+[75 <./Images/diagramas-uml/componentes/modulo-reportes.pdf> <./Images/diagramas-uml/componentes/modulo-exportaciones.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2221,8 +2216,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[75 <./Images/diagramas-uml/componentes/modulo-configuracion.pdf> <./Images/diagramas-uml/componentes/modulo-categorias.pdf>]
-<Images/diagramas-uml/secuencias/flujo-venta.pdf, id=995, 1014.03844pt x 2638.60782pt>
+[76 <./Images/diagramas-uml/componentes/modulo-configuracion.pdf> <./Images/diagramas-uml/componentes/modulo-categorias.pdf>]
+<Images/diagramas-uml/secuencias/flujo-venta.pdf, id=996, 1014.03844pt x 2638.60782pt>
 File: Images/diagramas-uml/secuencias/flujo-venta.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/secuencias/flujo-venta.pdf>
 Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-venta.pdf  used on input line 162.
@@ -2231,7 +2226,7 @@ Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-venta.pdf  used o
 
 LaTeX Warning: Float too large for page by 600.02214pt on input line 165.
 
-<Images/diagramas-uml/secuencias/flujo-autenticacion.pdf, id=997, 1145.78062pt x 2016.03188pt>
+<Images/diagramas-uml/secuencias/flujo-autenticacion.pdf, id=998, 1145.78062pt x 2016.03188pt>
 File: Images/diagramas-uml/secuencias/flujo-autenticacion.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/secuencias/flujo-autenticacion.pdf>
 Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-autenticacion.pdf  used on input line 171.
@@ -2239,7 +2234,7 @@ Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-autenticacion.pdf
 
 LaTeX Warning: Float too large for page by 202.34052pt on input line 174.
 
-<Images/diagramas-uml/secuencias/flujo-gestion-productos.pdf, id=999, 1111.90407pt x 2157.56062pt>
+<Images/diagramas-uml/secuencias/flujo-gestion-productos.pdf, id=1000, 1111.90407pt x 2157.56062pt>
 File: Images/diagramas-uml/secuencias/flujo-gestion-productos.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/secuencias/flujo-gestion-productos.pdf>
 Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-gestion-productos.pdf  used on input line 180.
@@ -2247,7 +2242,7 @@ Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-gestion-productos
 
 LaTeX Warning: Float too large for page by 287.7408pt on input line 183.
 
-<Images/diagramas-uml/secuencias/flujo-reporte-ventas.pdf, id=1001, 1324.95pt x 2541.495pt>
+<Images/diagramas-uml/secuencias/flujo-reporte-ventas.pdf, id=1002, 1324.95pt x 2541.495pt>
 File: Images/diagramas-uml/secuencias/flujo-reporte-ventas.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/secuencias/flujo-reporte-ventas.pdf>
 Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-reporte-ventas.pdf  used on input line 189.
@@ -2255,7 +2250,7 @@ Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-reporte-ventas.pd
 
 LaTeX Warning: Float too large for page by 277.23016pt on input line 192.
 
-<Images/diagramas-uml/secuencias/flujo-gestion-usuarios.pdf, id=1003, 1214.28656pt x 2804.22656pt>
+<Images/diagramas-uml/secuencias/flujo-gestion-usuarios.pdf, id=1004, 1214.28656pt x 2804.22656pt>
 File: Images/diagramas-uml/secuencias/flujo-gestion-usuarios.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/secuencias/flujo-gestion-usuarios.pdf>
 Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-gestion-usuarios.pdf  used on input line 198.
@@ -2270,7 +2265,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[76]
+[77]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2278,7 +2273,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[77 <./Images/diagramas-uml/secuencias/flujo-venta.pdf>]
+[78 <./Images/diagramas-uml/secuencias/flujo-venta.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2286,7 +2281,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[78 <./Images/diagramas-uml/secuencias/flujo-autenticacion.pdf>]
+[79 <./Images/diagramas-uml/secuencias/flujo-autenticacion.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2294,7 +2289,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[79 <./Images/diagramas-uml/secuencias/flujo-gestion-productos.pdf>]
+[80 <./Images/diagramas-uml/secuencias/flujo-gestion-productos.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2302,7 +2297,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[80 <./Images/diagramas-uml/secuencias/flujo-reporte-ventas.pdf>]
+[81 <./Images/diagramas-uml/secuencias/flujo-reporte-ventas.pdf>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2310,7 +2305,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[81 <./Images/diagramas-uml/secuencias/flujo-gestion-usuarios.pdf>])
+[82 <./Images/diagramas-uml/secuencias/flujo-gestion-usuarios.pdf>])
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2318,7 +2313,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[82]
+[83]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2326,18 +2321,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[83
+[84
 
 
 ]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[84]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2355,7 +2342,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 
 [86]
 
-LaTeX Warning: Float too large for page by 56.90077pt on input line 583.
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[87]
+
+LaTeX Warning: Float too large for page by 56.90077pt on input line 587.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -2367,7 +2362,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[87]
+[88]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2375,7 +2370,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[88
+[89
 
 
 ]
@@ -2386,7 +2381,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[89]
+[90]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2394,40 +2389,50 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[90]
-<Images/screenshots/01-login.png, id=1087, 1284.8pt x 722.7pt>
+[91]
+<Images/screenshots/01-login.png, id=1088, 1284.8pt x 722.7pt>
 File: Images/screenshots/01-login.png Graphic file (type png)
 <use Images/screenshots/01-login.png>
-Package pdftex.def Info: Images/screenshots/01-login.png  used on input line 706.
+Package pdftex.def Info: Images/screenshots/01-login.png  used on input line 710.
 (pdftex.def)             Requested size: 401.22942pt x 225.6888pt.
-<Images/screenshots/04-inventory.png, id=1088, 1284.8pt x 766.865pt>
+<Images/screenshots/04-inventory.png, id=1089, 1284.8pt x 766.865pt>
 File: Images/screenshots/04-inventory.png Graphic file (type png)
 <use Images/screenshots/04-inventory.png>
-Package pdftex.def Info: Images/screenshots/04-inventory.png  used on input line 715.
+Package pdftex.def Info: Images/screenshots/04-inventory.png  used on input line 719.
 (pdftex.def)             Requested size: 401.22942pt x 239.48091pt.
-<Images/screenshots/03-pos.png, id=1089, 1284.8pt x 722.7pt>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[92 <./Images/screenshots/01-login.png (PNG copy)>]
+<Images/screenshots/03-pos.png, id=1094, 1284.8pt x 722.7pt>
 File: Images/screenshots/03-pos.png Graphic file (type png)
 <use Images/screenshots/03-pos.png>
-Package pdftex.def Info: Images/screenshots/03-pos.png  used on input line 724.
+Package pdftex.def Info: Images/screenshots/03-pos.png  used on input line 728.
 (pdftex.def)             Requested size: 401.22942pt x 225.6888pt.
-<Images/screenshots/06-customers.png, id=1090, 1284.8pt x 722.7pt>
+<Images/screenshots/06-customers.png, id=1095, 1284.8pt x 722.7pt>
 File: Images/screenshots/06-customers.png Graphic file (type png)
 <use Images/screenshots/06-customers.png>
-Package pdftex.def Info: Images/screenshots/06-customers.png  used on input line 733.
+Package pdftex.def Info: Images/screenshots/06-customers.png  used on input line 737.
 (pdftex.def)             Requested size: 401.22942pt x 225.6888pt.
-<Images/screenshots/02-dashboard.png, id=1091, 1284.8pt x 847.165pt>
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[93 <./Images/screenshots/04-inventory.png (PNG copy)> <./Images/screenshots/03-pos.png (PNG copy)>]
+<Images/screenshots/02-dashboard.png, id=1100, 1284.8pt x 847.165pt>
 File: Images/screenshots/02-dashboard.png Graphic file (type png)
 <use Images/screenshots/02-dashboard.png>
-Package pdftex.def Info: Images/screenshots/02-dashboard.png  used on input line 742.
+Package pdftex.def Info: Images/screenshots/02-dashboard.png  used on input line 746.
 (pdftex.def)             Requested size: 401.22942pt x 264.55743pt.
-<Images/screenshots/07-reports.png, id=1092, 1284.8pt x 1227.58624pt>
-File: Images/screenshots/07-reports.png Graphic file (type png)
-<use Images/screenshots/07-reports.png>
-Package pdftex.def Info: Images/screenshots/07-reports.png  used on input line 743.
-(pdftex.def)             Requested size: 401.22942pt x 383.35751pt.
-
-
-LaTeX Warning: Float too large for page by 20.70871pt on input line 746.
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -2436,31 +2441,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[91 <./Images/screenshots/01-login.png (PNG copy)>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[92 <./Images/screenshots/04-inventory.png (PNG copy)> <./Images/screenshots/03-pos.png (PNG copy)>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[93 <./Images/screenshots/06-customers.png (PNG copy)>]
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[94 <./Images/screenshots/02-dashboard.png (PNG copy)> <./Images/screenshots/07-reports.png (PNG copy)>]
+[94 <./Images/screenshots/06-customers.png (PNG copy)> <./Images/screenshots/02-dashboard.png (PNG copy)>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2479,27 +2460,27 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [96]
-Underfull \hbox (badness 1264) in paragraph at lines 779--780
+Underfull \hbox (badness 1264) in paragraph at lines 782--783
 []\T1/ptm/m/n/12 Odoo S.A., ``Odoo -- Open Sour-ce Bu-si-ness Apps,'' 2024. [En lí-nea]. Dis-po-ni-ble en:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--792
+Underfull \hbox (badness 10000) in paragraph at lines 794--795
 []\T1/ptm/m/n/12 NestJS Con-tri-bu-tors, ``NestJS Do-cu-men-ta-tion,'' 2024. [En lí-nea]. Dis-po-ni-ble en:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 794--795
+Underfull \hbox (badness 10000) in paragraph at lines 797--798
 []\T1/ptm/m/n/12 Prisma Da-ta, Inc., ``Pris-ma Do-cu-men-ta-tion,'' 2024. [En lí-nea]. Dis-po-ni-ble en:
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 803--804
+Underfull \hbox (badness 1931) in paragraph at lines 806--807
 []\T1/ptm/m/n/12 Microsoft Cor-po-ra-tion, ``Ty-peS-cript Do-cu-men-ta-tion,'' 2024. [En lí-nea]. Dis-po-ni-ble en:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 806--807
+Underfull \hbox (badness 10000) in paragraph at lines 809--810
 []\T1/ptm/m/n/12 Cloudinary Ltd., ``Clou-di-nary Do-cu-men-ta-tion,'' 2024. [En lí-nea]. Dis-po-ni-ble en:
  []
 
@@ -2526,17 +2507,17 @@ Package rerunfilecheck Info: File `upbthesis.out' has not changed.
 (rerunfilecheck)             Checksum: 14CAB7FD1A6269178738F273CA62D040;7427.
  ) 
 Here is how much of TeX's memory you used:
- 19396 strings out of 467683
- 320661 string characters out of 5424788
+ 19390 strings out of 467683
+ 320392 string characters out of 5424788
  869937 words of memory out of 5000000
- 47916 multiletter control sequences out of 15000+600000
+ 47910 multiletter control sequences out of 15000+600000
  656911 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,12n,104p,1052b,774s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.pdf" (98 pages, 1226764 bytes).
+Output written on "c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.pdf" (97 pages, 1095270 bytes).
 PDF statistics:
- 1202 PDF objects out of 1440 (max. 8388607)
+ 1198 PDF objects out of 1200 (max. 8388607)
  216 named destinations out of 1000 (max. 500000)
- 488 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 483 words of extra memory for PDF output out of 10000 (max. 10000000)
 

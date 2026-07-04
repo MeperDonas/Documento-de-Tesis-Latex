@@ -1,39 +1,39 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {table}{\numberline {I}{\ignorespaces RF01 - AUTENTICACIÓN Y CONTROL DE SESIÓN}}{20}{table.caption.2}%
-\contentsline {table}{\numberline {II}{\ignorespaces RF02 - GESTIÓN DEL CATÁLOGO DE PRODUCTOS}}{21}{table.caption.3}%
-\contentsline {table}{\numberline {III}{\ignorespaces RF03 - REGISTRO DE MOVIMIENTOS DE INVENTARIO}}{22}{table.caption.4}%
-\contentsline {table}{\numberline {IV}{\ignorespaces RF04 - ALERTAS DE STOCK BAJO Y UMBRAL MÍNIMO}}{23}{table.caption.5}%
-\contentsline {table}{\numberline {V}{\ignorespaces RF05 - PROCESAMIENTO DE VENTA EN TIEMPO REAL}}{24}{table.caption.6}%
-\contentsline {table}{\numberline {VI}{\ignorespaces RF06 - GESTIÓN DE MÉTODOS DE PAGO Y CÁLCULO DE CAMBIO}}{25}{table.caption.7}%
-\contentsline {table}{\numberline {VII}{\ignorespaces RF07 - ACTUALIZACIÓN AUTOMÁTICA DE STOCK POR VENTA}}{26}{table.caption.8}%
-\contentsline {table}{\numberline {VIII}{\ignorespaces RF08 - EMISIÓN DE COMPROBANTES DE VENTA}}{27}{table.caption.9}%
-\contentsline {table}{\numberline {IX}{\ignorespaces RF09 - GESTIÓN DE ANULACIONES Y DEVOLUCIONES}}{28}{table.caption.10}%
-\contentsline {table}{\numberline {X}{\ignorespaces RF10 - GESTIÓN DEL DIRECTORIO DE CLIENTES}}{29}{table.caption.11}%
-\contentsline {table}{\numberline {XI}{\ignorespaces RF11 - CONSULTA DE HISTORIAL DE COMPRAS POR CLIENTE}}{30}{table.caption.12}%
-\contentsline {table}{\numberline {XII}{\ignorespaces RF12 - DASHBOARD DE INDICADORES Y REPORTE HISTÓRICO FILTRABLE}}{31}{table.caption.13}%
-\contentsline {table}{\numberline {XIII}{\ignorespaces RF13 - GESTIÓN DE CATEGORÍAS DE PRODUCTOS}}{32}{table.caption.14}%
-\contentsline {table}{\numberline {XIV}{\ignorespaces RF14 - GESTIÓN DE IMÁGENES DE PRODUCTOS}}{33}{table.caption.15}%
-\contentsline {table}{\numberline {XV}{\ignorespaces RF15 - BÚSQUEDA Y FILTRADO AVANZADO DE PRODUCTOS}}{34}{table.caption.16}%
-\contentsline {table}{\numberline {XVI}{\ignorespaces RF16 - APLICACIÓN DE DESCUENTOS EN VENTAS}}{35}{table.caption.17}%
-\contentsline {table}{\numberline {XVII}{\ignorespaces RF17 - GESTIÓN DEL CARRITO DE COMPRAS TEMPORAL}}{36}{table.caption.18}%
-\contentsline {table}{\numberline {XVIII}{\ignorespaces RF18 - CONSULTA DE VENTAS POR RANGO DE FECHAS}}{37}{table.caption.19}%
-\contentsline {table}{\numberline {XIX}{\ignorespaces RF19 - REGISTRO DE MÚLTIPLES CONTACTOS POR CLIENTE}}{38}{table.caption.20}%
-\contentsline {table}{\numberline {XX}{\ignorespaces RF20 - SEGMENTACIÓN DE CLIENTES POR CRITERIOS}}{39}{table.caption.21}%
-\contentsline {table}{\numberline {XXI}{\ignorespaces RF21 - REPORTE DE PRODUCTOS MÁS VENDIDOS}}{40}{table.caption.22}%
-\contentsline {table}{\numberline {XXII}{\ignorespaces RF22 - ANÁLISIS DE RENTABILIDAD POR PRODUCTO}}{41}{table.caption.23}%
-\contentsline {table}{\numberline {XXIII}{\ignorespaces RF23 - REPORTE DE VENTAS POR MÉTODO DE PAGO}}{42}{table.caption.24}%
-\contentsline {table}{\numberline {XXIV}{\ignorespaces RF24 - REPORTE DE MOVIMIENTOS DE INVENTARIO}}{43}{table.caption.25}%
-\contentsline {table}{\numberline {XXV}{\ignorespaces RNF01: PROTECCIÓN DE CREDENCIALES Y DATOS SENSIBLES}}{45}{table.caption.26}%
-\contentsline {table}{\numberline {XXVI}{\ignorespaces RNF02: CONTROL DE ACCESO Y GESTIÓN DE SESIONES DE USUARIO}}{46}{table.caption.27}%
-\contentsline {table}{\numberline {XXVII}{\ignorespaces RNF03: RENDIMIENTO EN OPERACIONES CRÍTICAS DE NEGOCIO}}{47}{table.caption.28}%
-\contentsline {table}{\numberline {XXVIII}{\ignorespaces RNF04: INTERFAZ INTUITIVA Y DE FÁCIL APRENDIZAJE}}{48}{table.caption.29}%
-\contentsline {table}{\numberline {XXIX}{\ignorespaces RNF05: ADAPTABILIDAD A DIFERENTES DISPOSITIVOS Y TAMAÑOS DE PANTALLA}}{49}{table.caption.30}%
-\contentsline {table}{\numberline {XXX}{\ignorespaces RNF06: ESCALABILIDAD DE DATOS Y MODULARIDAD ARQUITECTÓNICA}}{50}{table.caption.31}%
-\contentsline {table}{\numberline {XXXI}{\ignorespaces RNF07: INTEGRIDAD TRANSACCIONAL Y CONSISTENCIA DE LA INFORMACIÓN}}{51}{table.caption.32}%
-\contentsline {table}{\numberline {XXXII}{\ignorespaces RNF08: DISPONIBILIDAD DEL SERVICIO Y RECUPERACIÓN ANTE FALLOS}}{52}{table.caption.33}%
-\contentsline {table}{\numberline {XXXIII}{\ignorespaces RNF09: MANTENIBILIDAD DEL CÓDIGO MEDIANTE MODULARIDAD, PRUEBAS Y DOCUMENTACIÓN}}{53}{table.caption.34}%
-\contentsline {table}{\numberline {XXXIV}{\ignorespaces RNF10: AUDITORÍA Y REGISTRO DE EVENTOS CRÍTICOS}}{54}{table.caption.35}%
-\contentsline {table}{\numberline {XXXV}{\ignorespaces CRONOGRAMA DE EJECUCIÓN DEL PROYECTO}}{87}{table.caption.56}%
-\contentsline {table}{\numberline {XXXVI}{\ignorespaces DISTRIBUCIÓN SEMANAL DE ACTIVIDADES}}{88}{table.caption.57}%
-\contentsline {table}{\numberline {XXXVII}{\ignorespaces PRESUPUESTO ESTIMADO DEL PROYECTO}}{89}{table.caption.58}%
+\contentsline {table}{\numberline {I}{\ignorespaces RF01 - AUTENTICACIÓN Y CONTROL DE SESIÓN}}{21}{table.caption.2}%
+\contentsline {table}{\numberline {II}{\ignorespaces RF02 - GESTIÓN DEL CATÁLOGO DE PRODUCTOS}}{22}{table.caption.3}%
+\contentsline {table}{\numberline {III}{\ignorespaces RF03 - REGISTRO DE MOVIMIENTOS DE INVENTARIO}}{23}{table.caption.4}%
+\contentsline {table}{\numberline {IV}{\ignorespaces RF04 - ALERTAS DE STOCK BAJO Y UMBRAL MÍNIMO}}{24}{table.caption.5}%
+\contentsline {table}{\numberline {V}{\ignorespaces RF05 - PROCESAMIENTO DE VENTA EN TIEMPO REAL}}{25}{table.caption.6}%
+\contentsline {table}{\numberline {VI}{\ignorespaces RF06 - GESTIÓN DE MÉTODOS DE PAGO Y CÁLCULO DE CAMBIO}}{26}{table.caption.7}%
+\contentsline {table}{\numberline {VII}{\ignorespaces RF07 - ACTUALIZACIÓN AUTOMÁTICA DE STOCK POR VENTA}}{27}{table.caption.8}%
+\contentsline {table}{\numberline {VIII}{\ignorespaces RF08 - EMISIÓN DE COMPROBANTES DE VENTA}}{28}{table.caption.9}%
+\contentsline {table}{\numberline {IX}{\ignorespaces RF09 - GESTIÓN DE ANULACIONES Y DEVOLUCIONES}}{29}{table.caption.10}%
+\contentsline {table}{\numberline {X}{\ignorespaces RF10 - GESTIÓN DEL DIRECTORIO DE CLIENTES}}{30}{table.caption.11}%
+\contentsline {table}{\numberline {XI}{\ignorespaces RF11 - CONSULTA DE HISTORIAL DE COMPRAS POR CLIENTE}}{31}{table.caption.12}%
+\contentsline {table}{\numberline {XII}{\ignorespaces RF12 - DASHBOARD DE INDICADORES Y REPORTE HISTÓRICO FILTRABLE}}{32}{table.caption.13}%
+\contentsline {table}{\numberline {XIII}{\ignorespaces RF13 - GESTIÓN DE CATEGORÍAS DE PRODUCTOS}}{33}{table.caption.14}%
+\contentsline {table}{\numberline {XIV}{\ignorespaces RF14 - GESTIÓN DE IMÁGENES DE PRODUCTOS}}{34}{table.caption.15}%
+\contentsline {table}{\numberline {XV}{\ignorespaces RF15 - BÚSQUEDA Y FILTRADO AVANZADO DE PRODUCTOS}}{35}{table.caption.16}%
+\contentsline {table}{\numberline {XVI}{\ignorespaces RF16 - APLICACIÓN DE DESCUENTOS EN VENTAS}}{36}{table.caption.17}%
+\contentsline {table}{\numberline {XVII}{\ignorespaces RF17 - GESTIÓN DEL CARRITO DE COMPRAS TEMPORAL}}{37}{table.caption.18}%
+\contentsline {table}{\numberline {XVIII}{\ignorespaces RF18 - CONSULTA DE VENTAS POR RANGO DE FECHAS}}{38}{table.caption.19}%
+\contentsline {table}{\numberline {XIX}{\ignorespaces RF19 - REGISTRO DE MÚLTIPLES CONTACTOS POR CLIENTE}}{39}{table.caption.20}%
+\contentsline {table}{\numberline {XX}{\ignorespaces RF20 - SEGMENTACIÓN DE CLIENTES POR CRITERIOS}}{40}{table.caption.21}%
+\contentsline {table}{\numberline {XXI}{\ignorespaces RF21 - REPORTE DE PRODUCTOS MÁS VENDIDOS}}{41}{table.caption.22}%
+\contentsline {table}{\numberline {XXII}{\ignorespaces RF22 - ANÁLISIS DE RENTABILIDAD POR PRODUCTO}}{42}{table.caption.23}%
+\contentsline {table}{\numberline {XXIII}{\ignorespaces RF23 - REPORTE DE VENTAS POR MÉTODO DE PAGO}}{43}{table.caption.24}%
+\contentsline {table}{\numberline {XXIV}{\ignorespaces RF24 - REPORTE DE MOVIMIENTOS DE INVENTARIO}}{44}{table.caption.25}%
+\contentsline {table}{\numberline {XXV}{\ignorespaces RNF01: PROTECCIÓN DE CREDENCIALES Y DATOS SENSIBLES}}{46}{table.caption.26}%
+\contentsline {table}{\numberline {XXVI}{\ignorespaces RNF02: CONTROL DE ACCESO Y GESTIÓN DE SESIONES DE USUARIO}}{47}{table.caption.27}%
+\contentsline {table}{\numberline {XXVII}{\ignorespaces RNF03: RENDIMIENTO EN OPERACIONES CRÍTICAS DE NEGOCIO}}{48}{table.caption.28}%
+\contentsline {table}{\numberline {XXVIII}{\ignorespaces RNF04: INTERFAZ INTUITIVA Y DE FÁCIL APRENDIZAJE}}{49}{table.caption.29}%
+\contentsline {table}{\numberline {XXIX}{\ignorespaces RNF05: ADAPTABILIDAD A DIFERENTES DISPOSITIVOS Y TAMAÑOS DE PANTALLA}}{50}{table.caption.30}%
+\contentsline {table}{\numberline {XXX}{\ignorespaces RNF06: ESCALABILIDAD DE DATOS Y MODULARIDAD ARQUITECTÓNICA}}{51}{table.caption.31}%
+\contentsline {table}{\numberline {XXXI}{\ignorespaces RNF07: INTEGRIDAD TRANSACCIONAL Y CONSISTENCIA DE LA INFORMACIÓN}}{52}{table.caption.32}%
+\contentsline {table}{\numberline {XXXII}{\ignorespaces RNF08: DISPONIBILIDAD DEL SERVICIO Y RECUPERACIÓN ANTE FALLOS}}{53}{table.caption.33}%
+\contentsline {table}{\numberline {XXXIII}{\ignorespaces RNF09: MANTENIBILIDAD DEL CÓDIGO MEDIANTE MODULARIDAD, PRUEBAS Y DOCUMENTACIÓN}}{54}{table.caption.34}%
+\contentsline {table}{\numberline {XXXIV}{\ignorespaces RNF10: AUDITORÍA Y REGISTRO DE EVENTOS CRÍTICOS}}{55}{table.caption.35}%
+\contentsline {table}{\numberline {XXXV}{\ignorespaces CRONOGRAMA DE EJECUCIÓN DEL PROYECTO}}{88}{table.caption.56}%
+\contentsline {table}{\numberline {XXXVI}{\ignorespaces DISTRIBUCIÓN SEMANAL DE ACTIVIDADES}}{89}{table.caption.57}%
+\contentsline {table}{\numberline {XXXVII}{\ignorespaces PRESUPUESTO ESTIMADO DEL PROYECTO}}{90}{table.caption.58}%
 \contentsfinish 

@@ -78,6 +78,10 @@
 
 \end{titlepage}
 
+% El entorno titlepage reinicia el contador de página a 1 al salir en documentos de una cara.
+% Lo adelantamos a 2 para que la contraportada no repita el número 1.
+\setcounter{page}{2}
+
 % Si prefieres usar el comando portada original de la clase, descomenta esto:
 % \portada{DESARROLLO DE UNA APLICACIÓN WEB PARA LA GESTIÓN INTEGRADA DE INVENTARIO, VENTAS Y CLIENTES EN PEQUEÑOS NEGOCIOS}
 % {SANTIAGO ENRIQUE VILLABONA APONTE}
@@ -701,7 +705,7 @@ A continuación se muestran las principales pantallas de la aplicación desarrol
 \subsection{Módulo de Autenticación}
 
 % Insertar aquí las imágenes de las pantallas correspondientes
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.85\textwidth]{Images/screenshots/01-login.png}
 	\caption{Pantalla de inicio de sesión}
@@ -710,7 +714,7 @@ A continuación se muestran las principales pantallas de la aplicación desarrol
 
 \subsection{Módulo de Inventario}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.85\textwidth]{Images/screenshots/04-inventory.png}
 	\caption{Listado de productos con filtros y paginación}
@@ -719,7 +723,7 @@ A continuación se muestran las principales pantallas de la aplicación desarrol
 
 \subsection{Módulo de Punto de Venta}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.85\textwidth]{Images/screenshots/03-pos.png}
 	\caption{Interfaz del punto de venta con carrito de compras}
@@ -728,7 +732,7 @@ A continuación se muestran las principales pantallas de la aplicación desarrol
 
 \subsection{Módulo de Clientes}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.85\textwidth]{Images/screenshots/06-customers.png}
 	\caption{Listado de clientes con búsqueda y filtros}
@@ -737,10 +741,9 @@ A continuación se muestran las principales pantallas de la aplicación desarrol
 
 \subsection{Dashboard y Reportes}
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.85\textwidth]{Images/screenshots/02-dashboard.png}
-	\includegraphics[width=0.85\textwidth]{Images/screenshots/07-reports.png}
 	\caption{Dashboard principal con indicadores clave del negocio}
 	\label{fig:pantalla-dashboard}
 \end{figure}

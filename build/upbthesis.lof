@@ -1,27 +1,27 @@
 \babel@toc {spanish}{}\relax 
-\contentsline {figure}{\numberline {1}{\ignorespaces Diagrama de Casos de Uso - Módulo de Autenticación}}{63}{figure.caption.36}%
-\contentsline {figure}{\numberline {2}{\ignorespaces Diagrama de Casos de Uso - Módulo de Productos}}{64}{figure.caption.37}%
-\contentsline {figure}{\numberline {3}{\ignorespaces Diagrama de Casos de Uso - Módulo de Ventas}}{65}{figure.caption.38}%
-\contentsline {figure}{\numberline {4}{\ignorespaces Diagrama de Casos de Uso - Módulo de Clientes}}{66}{figure.caption.39}%
-\contentsline {figure}{\numberline {5}{\ignorespaces Diagrama de Casos de Uso - Módulo de Reportes}}{67}{figure.caption.40}%
-\contentsline {figure}{\numberline {6}{\ignorespaces Diagrama de Casos de Uso - Módulo de Configuración}}{68}{figure.caption.41}%
-\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama de Casos de Uso - Módulo de Categorías}}{69}{figure.caption.42}%
-\contentsline {figure}{\numberline {8}{\ignorespaces Diagrama de Componentes - Módulo de Autenticación}}{70}{figure.caption.43}%
-\contentsline {figure}{\numberline {9}{\ignorespaces Diagrama de Componentes - Módulo de Productos}}{71}{figure.caption.44}%
-\contentsline {figure}{\numberline {10}{\ignorespaces Diagrama de Componentes - Módulo de Ventas}}{72}{figure.caption.45}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Diagrama de Componentes - Módulo de Clientes}}{73}{figure.caption.46}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Diagrama de Componentes - Módulo de Reportes}}{74}{figure.caption.47}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Diagrama de Componentes - Módulo de Exportaciones}}{74}{figure.caption.48}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Diagrama de Componentes - Módulo de Configuración}}{75}{figure.caption.49}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama de Componentes - Módulo de Categorías}}{75}{figure.caption.50}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Diagrama de Secuencia - Flujo Completo de Venta}}{77}{figure.caption.51}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Diagrama de Secuencia - Flujo de Autenticación}}{78}{figure.caption.52}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Diagrama de Secuencia - Flujo de Gestión de Productos}}{79}{figure.caption.53}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Diagrama de Secuencia - Flujo de Generación de Reportes de Ventas}}{80}{figure.caption.54}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Diagrama de Secuencia - Flujo de Gestión de Usuarios}}{81}{figure.caption.55}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Pantalla de inicio de sesión}}{91}{figure.caption.59}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Listado de productos con filtros y paginación}}{92}{figure.caption.60}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Interfaz del punto de venta con carrito de compras}}{92}{figure.caption.61}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Listado de clientes con búsqueda y filtros}}{93}{figure.caption.62}%
+\contentsline {figure}{\numberline {1}{\ignorespaces Diagrama de Casos de Uso - Módulo de Autenticación}}{64}{figure.caption.36}%
+\contentsline {figure}{\numberline {2}{\ignorespaces Diagrama de Casos de Uso - Módulo de Productos}}{65}{figure.caption.37}%
+\contentsline {figure}{\numberline {3}{\ignorespaces Diagrama de Casos de Uso - Módulo de Ventas}}{66}{figure.caption.38}%
+\contentsline {figure}{\numberline {4}{\ignorespaces Diagrama de Casos de Uso - Módulo de Clientes}}{67}{figure.caption.39}%
+\contentsline {figure}{\numberline {5}{\ignorespaces Diagrama de Casos de Uso - Módulo de Reportes}}{68}{figure.caption.40}%
+\contentsline {figure}{\numberline {6}{\ignorespaces Diagrama de Casos de Uso - Módulo de Configuración}}{69}{figure.caption.41}%
+\contentsline {figure}{\numberline {7}{\ignorespaces Diagrama de Casos de Uso - Módulo de Categorías}}{70}{figure.caption.42}%
+\contentsline {figure}{\numberline {8}{\ignorespaces Diagrama de Componentes - Módulo de Autenticación}}{71}{figure.caption.43}%
+\contentsline {figure}{\numberline {9}{\ignorespaces Diagrama de Componentes - Módulo de Productos}}{72}{figure.caption.44}%
+\contentsline {figure}{\numberline {10}{\ignorespaces Diagrama de Componentes - Módulo de Ventas}}{73}{figure.caption.45}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Diagrama de Componentes - Módulo de Clientes}}{74}{figure.caption.46}%
+\contentsline {figure}{\numberline {12}{\ignorespaces Diagrama de Componentes - Módulo de Reportes}}{75}{figure.caption.47}%
+\contentsline {figure}{\numberline {13}{\ignorespaces Diagrama de Componentes - Módulo de Exportaciones}}{75}{figure.caption.48}%
+\contentsline {figure}{\numberline {14}{\ignorespaces Diagrama de Componentes - Módulo de Configuración}}{76}{figure.caption.49}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Diagrama de Componentes - Módulo de Categorías}}{76}{figure.caption.50}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Diagrama de Secuencia - Flujo Completo de Venta}}{78}{figure.caption.51}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Diagrama de Secuencia - Flujo de Autenticación}}{79}{figure.caption.52}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Diagrama de Secuencia - Flujo de Gestión de Productos}}{80}{figure.caption.53}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Diagrama de Secuencia - Flujo de Generación de Reportes de Ventas}}{81}{figure.caption.54}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Diagrama de Secuencia - Flujo de Gestión de Usuarios}}{82}{figure.caption.55}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Pantalla de inicio de sesión}}{92}{figure.caption.59}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Listado de productos con filtros y paginación}}{93}{figure.caption.60}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Interfaz del punto de venta con carrito de compras}}{93}{figure.caption.61}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Listado de clientes con búsqueda y filtros}}{94}{figure.caption.62}%
 \contentsline {figure}{\numberline {25}{\ignorespaces Dashboard principal con indicadores clave del negocio}}{94}{figure.caption.63}%
 \contentsfinish 
