@@ -333,7 +333,7 @@ Criterios de aceptación:
 3. El sistema debe mostrar claramente en el comprobante de venta los descuentos aplicados y el ahorro obtenido por el cliente.
 
 Restricciones:
-El sistema debe requerir autorización mediante contraseña de administrador para descuentos superiores al 30% del valor del item o de la venta total.
+El sistema debe registrar en el detalle de la venta el tipo de descuento aplicado (porcentual o valor fijo), el monto descontado y el usuario que lo autoriza, para mantener la trazabilidad de la operación.
 
 --------------------------------------------------------------------------------
 
@@ -442,56 +442,6 @@ El acceso al historial detallado de compras debe estar restringido a usuarios co
 
 --------------------------------------------------------------------------------
 
-RF19 – Registro de múltiples contactos por cliente
-
-Prioridad: Baja
-Código del requerimiento: RF19
-Actor: Administrador / Cajero
-Nombre del requerimiento: Registro de múltiples contactos por cliente
-
-Descripción:
-El sistema debe permitir registrar múltiples números telefónicos y direcciones de correo electrónico para un mismo cliente, facilitando la comunicación por diferentes canales.
-
-Funcionalidad:
-El sistema debe permitir agregar múltiples teléfonos para un cliente, clasificándolos por tipo (móvil, fijo, trabajo).
-El sistema debe permitir agregar múltiples correos electrónicos para un cliente.
-El sistema debe permitir marcar un teléfono y un correo como contacto principal.
-El sistema debe validar el formato de teléfonos y correos electrónicos antes de guardarlos.
-
-Criterios de aceptación:
-1. El sistema debe permitir registrar al menos 3 teléfonos y 3 correos por cliente.
-2. El sistema debe impedir guardar teléfonos o correos duplicados para el mismo cliente.
-3. El sistema debe mostrar los contactos principales destacados visualmente en la ficha del cliente.
-
-Restricciones:
-El sistema debe requerir al menos un método de contacto (teléfono o correo) para poder registrar un cliente.
-
---------------------------------------------------------------------------------
-
-RF20 – Segmentación de clientes por criterios
-
-Prioridad: Baja
-Código del requerimiento: RF20
-Actor: Administrador
-Nombre del requerimiento: Segmentación de clientes por criterios
-
-Descripción:
-El sistema debe permitir clasificar y segmentar clientes según criterios comerciales como frecuencia de compra, monto acumulado o fecha de última compra, facilitando estrategias de fidelización.
-
-Funcionalidad:
-El sistema debe calcular automáticamente métricas de comportamiento de compra para cada cliente (total gastado, número de compras, fecha de última compra, ticket promedio).
-El sistema debe permitir crear segmentos personalizados de clientes basados en rangos de las métricas calculadas.
-El sistema debe clasificar automáticamente clientes en categorías predefinidas (VIP, frecuente, ocasional, inactivo) según reglas configurables.
-El sistema debe permitir generar listados de clientes filtrados por segmento o categoría.
-
-Criterios de aceptación:
-1. El sistema debe recalcular las métricas de comportamiento cada vez que se registre una nueva venta asociada al cliente.
-2. El sistema debe permitir al administrador configurar los umbrales que definen cada categoría de cliente.
-3. El sistema debe mostrar visualmente la categoría del cliente en su ficha y en el punto de venta.
-
-Restricciones:
-Los segmentos y categorías deben recalcularse mediante procesos programados para no afectar el rendimiento del sistema durante horarios de operación.
-
 ================================================================================
 MÓDULO: REPORTES
 ================================================================================
@@ -521,10 +471,10 @@ Las consultas del dashboard y de los reportes deben estar optimizadas para no de
 
 --------------------------------------------------------------------------------
 
-RF21 – Reporte de productos más vendidos
+RF19 – Reporte de productos más vendidos
 
 Prioridad: Media
-Código del requerimiento: RF21
+Código del requerimiento: RF19
 Actor: Administrador
 Nombre del requerimiento: Reporte de productos más vendidos
 
@@ -548,37 +498,10 @@ El reporte debe considerar únicamente ventas con estado "completada" para garan
 
 --------------------------------------------------------------------------------
 
-RF22 – Análisis de rentabilidad por producto
-
-Prioridad: Media
-Código del requerimiento: RF22
-Actor: Administrador
-Nombre del requerimiento: Análisis de rentabilidad por producto
-
-Descripción:
-El sistema debe calcular y presentar métricas de rentabilidad por producto comparando precios de costo y venta, facilitando la identificación de productos con mejores márgenes comerciales.
-
-Funcionalidad:
-El sistema debe calcular el margen bruto unitario por producto (precio de venta - precio de costo).
-El sistema debe calcular el margen bruto porcentual por producto ((precio de venta - precio de costo) / precio de venta * 100).
-El sistema debe calcular la rentabilidad total acumulada por producto considerando las cantidades vendidas en un período.
-El sistema debe permitir ordenar productos por margen porcentual o rentabilidad total.
-El sistema debe identificar visualmente productos con márgenes negativos o muy bajos (alertas).
-
-Criterios de aceptación:
-1. El sistema debe actualizar los cálculos de rentabilidad cuando se modifiquen los precios de costo o venta de un producto.
-2. El sistema debe permitir filtrar el análisis por categoría y rango de fechas de ventas.
-3. El sistema debe presentar un resumen con el margen promedio general del negocio.
-
-Restricciones:
-Los cálculos de rentabilidad deben considerar el precio de costo y venta vigentes al momento de cada transacción registrada.
-
---------------------------------------------------------------------------------
-
-RF23 – Reporte de ventas por método de pago
+RF20 – Reporte de ventas por método de pago
 
 Prioridad: Baja
-Código del requerimiento: RF23
+Código del requerimiento: RF20
 Actor: Administrador
 Nombre del requerimiento: Reporte de ventas por método de pago
 
@@ -601,10 +524,10 @@ El reporte debe considerar únicamente ventas confirmadas y no debe incluir tran
 
 --------------------------------------------------------------------------------
 
-RF24 – Reporte de movimientos de inventario
+RF21 – Reporte de movimientos de inventario
 
 Prioridad: Media
-Código del requerimiento: RF24
+Código del requerimiento: RF21
 Actor: Administrador
 Nombre del requerimiento: Reporte de movimientos de inventario
 
@@ -629,16 +552,16 @@ El reporte debe incluir únicamente movimientos confirmados y registrados formal
 RESUMEN DE REQUERIMIENTOS FUNCIONALES
 ================================================================================
 
-Total de requerimientos: 24
+Total de requerimientos: 21
 
 Por módulo:
 - Seguridad y Acceso: 1 requerimiento (RF01)
 - Inventario: 6 requerimientos (RF02, RF03, RF04, RF13, RF14, RF15)
 - Ventas / POS: 9 requerimientos (RF05, RF06, RF07, RF08, RF09, RF16, RF17, RF18)
-- Clientes: 4 requerimientos (RF10, RF11, RF19, RF20)
-- Reportes: 5 requerimientos (RF12, RF21, RF22, RF23, RF24)
+- Clientes: 2 requerimientos (RF10, RF11)
+- Reportes: 4 requerimientos (RF12, RF19, RF20, RF21)
 
 Por prioridad:
 - Alta: 9 requerimientos (RF01, RF02, RF03, RF05, RF06, RF07, RF15, RF16, RF17)
-- Media: 11 requerimientos (RF04, RF08, RF09, RF10, RF11, RF12, RF13, RF14, RF18, RF21, RF22, RF24)
-- Baja: 3 requerimientos (RF19, RF20, RF23)
+- Media: 11 requerimientos (RF04, RF08, RF09, RF10, RF11, RF12, RF13, RF14, RF18, RF19, RF21)
+- Baja: 1 requerimiento (RF20)

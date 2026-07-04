@@ -50,13 +50,6 @@ El sistema debe permitir asignar y gestionar roles (por ejemplo, administrador, 
 Restricciones:
 Los tokens de sesión deben incluir fecha de expiración y no pueden ser reutilizados tras el cierre de sesión o la revocación manual por un administrador.
 
-RNF03 – Rendimiento en operaciones críticas
-
-Prioridad: Alta
-Código del requerimiento: RNF03
-Actor: Sistema
-Categoría: Rendimiento
-Nombre del requerimiento: Rendimiento en operaciones críticas de negocio
 
 Descripción:
 El sistema debe ofrecer tiempos de respuesta adecuados en las operaciones críticas del negocio (autenticación, búsquedas, ventas y reportes) para no afectar la operación diaria del pequeño negocio.
@@ -75,10 +68,10 @@ El sistema debe mostrar indicadores de carga (barras de progreso, spinners o men
 Restricciones:
 Las pruebas de rendimiento deben realizarse en la infraestructura de despliegue definida para el proyecto y utilizando datos de prueba representativos del volumen esperado del negocio.
 
-RNF04 – Interfaz intuitiva y curva de aprendizaje reducida
+RNF03 – Interfaz intuitiva y curva de aprendizaje reducida
 
 Prioridad: Media
-Código del requerimiento: RNF04
+Código del requerimiento: RNF03
 Actor: Usuario final
 Categoría: Usabilidad
 Nombre del requerimiento: Interfaz intuitiva y de fácil aprendizaje
@@ -100,10 +93,10 @@ El sistema debe mostrar mensajes de validación específicos junto a los campos 
 Restricciones:
 Los textos de la interfaz y los mensajes deben redactarse en un lenguaje claro y consistente, evitando tecnicismos innecesarios para el usuario final.
 
-RNF05 – Diseño responsive y accesibilidad básica
+RNF04 – Diseño responsive y accesibilidad básica
 
 Prioridad: Media
-Código del requerimiento: RNF05
+Código del requerimiento: RNF04
 Actor: Usuario final
 Categoría: Usabilidad
 Nombre del requerimiento: Adaptabilidad a diferentes dispositivos y tamaños de pantalla
@@ -125,10 +118,10 @@ El sistema debe cumplir con niveles mínimos de contraste recomendados (equivale
 Restricciones:
 Las interfaces deben diseñarse siguiendo el sistema de diseño definido para el proyecto, reutilizando componentes UI coherentes en todos los módulos.
 
-RNF06 – Escalabilidad de datos y modularidad del sistema
+RNF05 – Escalabilidad de datos y modularidad del sistema
 
 Prioridad: Media
-Código del requerimiento: RNF06
+Código del requerimiento: RNF05
 Actor: Sistema / Equipo de desarrollo
 Categoría: Escalabilidad
 Nombre del requerimiento: Escalabilidad de datos y modularidad arquitectónica
@@ -150,10 +143,10 @@ El sistema debe permitir desplegar el frontend y el backend de forma independien
 Restricciones:
 Todos los módulos nuevos deben respetar la arquitectura modular por capas y los contratos definidos en la API, evitando dependencias directas entre la capa de presentación y la base de datos.
 
-RNF07 – Integridad transaccional y consistencia de datos
+RNF06 – Integridad transaccional y consistencia de datos
 
 Prioridad: Alta
-Código del requerimiento: RNF07
+Código del requerimiento: RNF06
 Actor: Sistema
 Categoría: Confiabilidad
 Nombre del requerimiento: Integridad transaccional y consistencia de la información
@@ -175,35 +168,10 @@ El sistema debe conservar íntegramente las transacciones confirmadas tras un re
 Restricciones:
 La configuración de la base de datos debe mantener las propiedades ACID, evitando desactivar mecanismos de journal o logging que comprometan la durabilidad e integridad de los datos.
 
-RNF08 – Disponibilidad y recuperación ante fallos
+RNF07 – Mantenibilidad, pruebas y documentación
 
 Prioridad: Media
-Código del requerimiento: RNF08
-Actor: Sistema / Infraestructura
-Categoría: Confiabilidad
-Nombre del requerimiento: Disponibilidad del servicio y recuperación ante fallos
-
-Descripción:
-El sistema debe mantener una disponibilidad adecuada durante los horarios de operación definidos y contar con mecanismos de recuperación que reduzcan al mínimo el tiempo de interrupción ante fallos.
-
-Funcionalidad:
-El sistema debe desplegarse en una infraestructura que permita la monitorización básica del servicio, el reinicio automático de los procesos de aplicación y la posibilidad de revertir rápidamente a una versión estable en caso de incidentes graves.
-
-Criterios de aceptación:
-
-El sistema debe alcanzar al menos un 99 % de disponibilidad durante las pruebas de operación continua en una ventana de al menos una semana.
-
-El sistema debe recuperarse automáticamente y volver a estar disponible en menos de 1 minuto tras un fallo simulado del proceso de backend.
-
-El sistema debe permitir realizar un rollback a la última versión estable desplegada en un tiempo máximo de 15 minutos desde la detección de un problema crítico en producción.
-
-Restricciones:
-Los mecanismos de alta disponibilidad y recuperación deben configurarse de acuerdo con las capacidades de la plataforma de despliegue utilizada (por ejemplo, servicios PaaS con gestión de versiones y reinicio automático).
-
-RNF09 – Mantenibilidad, pruebas y documentación
-
-Prioridad: Media
-Código del requerimiento: RNF09
+Código del requerimiento: RNF07
 Actor: Equipo de desarrollo
 Categoría: Mantenibilidad
 Nombre del requerimiento: Mantenibilidad del código mediante modularidad, pruebas y documentación
@@ -216,7 +184,7 @@ El sistema debe estructurar su código en módulos coherentes por dominio, aplic
 
 Criterios de aceptación:
 
-El sistema debe contar con pruebas unitarias y/o de integración que cubran al menos el 60 % de las funciones de negocio críticas (registro de ventas, movimientos de inventario, cálculo de totales e impuestos).
+El sistema debe disponer de pruebas unitarias y/o de integración automatizadas que verifiquen el correcto funcionamiento de las funciones de negocio críticas (registro de ventas, movimientos de inventario, cálculo de totales e impuestos).
 
 El sistema debe disponer de documentación actualizada de la API (por ejemplo, mediante Swagger u otra herramienta similar), describiendo endpoints, parámetros, tipos de respuesta y códigos de error.
 
@@ -225,10 +193,10 @@ El sistema debe permitir realizar cambios en reglas de negocio de un módulo esp
 Restricciones:
 El código del proyecto debe versionarse en un repositorio Git, desarrollarse principalmente en TypeScript y seguir un conjunto de convenciones de estilo y revisión de código acordadas (por ejemplo, ESLint y revisiones por pares).
 
-RNF10 – Auditoría y registro de eventos críticos
+RNF08 – Auditoría y registro de eventos críticos
 
 Prioridad: Media
-Código del requerimiento: RNF10
+Código del requerimiento: RNF08
 Actor: Sistema / Administrador
 Categoría: Seguridad / Mantenibilidad
 Nombre del requerimiento: Auditoría y registro de eventos críticos

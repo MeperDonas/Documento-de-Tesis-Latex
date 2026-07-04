@@ -3,6 +3,8 @@
 	\renewcommand{\arraystretch}{1.3}
 	\setlength{\tabcolsep}{6pt}
 	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\caption{RNF01: PROTECCIÓN DE CREDENCIALES Y DATOS SENSIBLES}
+	\label{tab:rnf01}
 	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
 		\hline
 		\rowcolor{tableheaderblue}
@@ -27,8 +29,6 @@
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		El sistema no debe registrar en texto plano contraseñas, tokens ni información financiera sensible, y debe aplicar consultas parametrizadas en todas las operaciones de acceso a datos.}                                                                        \\ \hline
 	\end{tabular}
-	\caption{RNF01: Protección de credenciales y datos sensibles}
-	\label{tab:rnf01}
 \end{table}
 
 \begin{table}[H]
@@ -36,6 +36,8 @@
 	\renewcommand{\arraystretch}{1.3}
 	\setlength{\tabcolsep}{6pt}
 	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\caption{RNF02: CONTROL DE ACCESO Y GESTIÓN DE SESIONES DE USUARIO}
+	\label{tab:rnf02}
 	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
 		\hline
 		\rowcolor{tableheaderblue}
@@ -60,8 +62,6 @@
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		Los tokens de sesión deben incluir fecha de expiración y no pueden ser reutilizados tras el cierre de sesión o la revocación manual por un administrador.}                                                               \\ \hline
 	\end{tabular}
-	\caption{RNF02: Control de acceso y gestión de sesiones de usuario}
-	\label{tab:rnf02}
 \end{table}
 
 \begin{table}[H]
@@ -69,6 +69,8 @@
 	\renewcommand{\arraystretch}{1.3}
 	\setlength{\tabcolsep}{6pt}
 	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\caption{RNF03: RENDIMIENTO EN OPERACIONES CRÍTICAS DE NEGOCIO}
+	\label{tab:rnf03}
 	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
 		\hline
 		\rowcolor{tableheaderblue}
@@ -93,8 +95,6 @@
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		Las pruebas de rendimiento deben realizarse en la infraestructura de despliegue definida para el proyecto y utilizando datos de prueba representativos del volumen esperado del negocio.}                      \\ \hline
 	\end{tabular}
-	\caption{RNF03: Rendimiento en operaciones críticas de negocio}
-	\label{tab:rnf03}
 \end{table}
 
 \begin{table}[H]
@@ -102,6 +102,8 @@
 	\renewcommand{\arraystretch}{1.3}
 	\setlength{\tabcolsep}{6pt}
 	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\caption{RNF04: INTERFAZ INTUITIVA Y DE FÁCIL APRENDIZAJE}
+	\label{tab:rnf04}
 	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
 		\hline
 		\rowcolor{tableheaderblue}
@@ -126,8 +128,6 @@
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		Los textos de la interfaz y los mensajes deben redactarse en un lenguaje claro y consistente, evitando tecnicismos innecesarios para el usuario final.}                                                            \\ \hline
 	\end{tabular}
-	\caption{RNF04: Interfaz intuitiva y de fácil aprendizaje}
-	\label{tab:rnf04}
 \end{table}
 
 \begin{table}[H]
@@ -135,6 +135,8 @@
 	\renewcommand{\arraystretch}{1.3}
 	\setlength{\tabcolsep}{6pt}
 	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\caption{RNF05: ADAPTABILIDAD A DIFERENTES DISPOSITIVOS Y TAMAÑOS DE PANTALLA}
+	\label{tab:rnf05}
 	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
 		\hline
 		\rowcolor{tableheaderblue}
@@ -159,8 +161,6 @@
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		Las interfaces deben diseñarse siguiendo el sistema de diseño definido para el proyecto, reutilizando componentes UI coherentes en todos los módulos.}                                                                                                         \\ \hline
 	\end{tabular}
-	\caption{RNF05: Adaptabilidad a diferentes dispositivos y tamaños de pantalla}
-	\label{tab:rnf05}
 \end{table}
 
 \begin{table}[H]
@@ -168,6 +168,8 @@
 	\renewcommand{\arraystretch}{1.3}
 	\setlength{\tabcolsep}{6pt}
 	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\caption{RNF06: ESCALABILIDAD DE DATOS Y MODULARIDAD ARQUITECTÓNICA}
+	\label{tab:rnf06}
 	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
 		\hline
 		\rowcolor{tableheaderblue}
@@ -192,8 +194,6 @@
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		Todos los módulos nuevos deben respetar la arquitectura modular por capas y los contratos definidos en la API, evitando dependencias directas entre la capa de presentación y la base de datos.}                                                \\ \hline
 	\end{tabular}
-	\caption{RNF06: Escalabilidad de datos y modularidad arquitectónica}
-	\label{tab:rnf06}
 \end{table}
 
 \begin{table}[H]
@@ -201,6 +201,8 @@
 	\renewcommand{\arraystretch}{1.3}
 	\setlength{\tabcolsep}{6pt}
 	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\caption{RNF07: INTEGRIDAD TRANSACCIONAL Y CONSISTENCIA DE LA INFORMACIÓN}
+	\label{tab:rnf07}
 	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
 		\hline
 		\rowcolor{tableheaderblue}
@@ -225,8 +227,6 @@
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		La configuración de la base de datos debe mantener las propiedades ACID, evitando desactivar mecanismos de journal o logging que comprometan la durabilidad e integridad de los datos.}                                            \\ \hline
 	\end{tabular}
-	\caption{RNF07: Integridad transaccional y consistencia de la información}
-	\label{tab:rnf07}
 \end{table}
 
 \begin{table}[H]
@@ -234,6 +234,8 @@
 	\renewcommand{\arraystretch}{1.3}
 	\setlength{\tabcolsep}{6pt}
 	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\caption{RNF08: DISPONIBILIDAD DEL SERVICIO Y RECUPERACIÓN ANTE FALLOS}
+	\label{tab:rnf08}
 	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
 		\hline
 		\rowcolor{tableheaderblue}
@@ -258,8 +260,6 @@
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		Los mecanismos de alta disponibilidad y recuperación deben configurarse de acuerdo con las capacidades de la plataforma de despliegue utilizada (por ejemplo, servicios PaaS con gestión de versiones y reinicio automático).}                           \\ \hline
 	\end{tabular}
-	\caption{RNF08: Disponibilidad del servicio y recuperación ante fallos}
-	\label{tab:rnf08}
 \end{table}
 
 \begin{table}[H]
@@ -267,6 +267,8 @@
 	\renewcommand{\arraystretch}{1.3}
 	\setlength{\tabcolsep}{6pt}
 	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\caption{RNF09: MANTENIBILIDAD DEL CÓDIGO MEDIANTE MODULARIDAD, PRUEBAS Y DOCUMENTACIÓN}
+	\label{tab:rnf09}
 	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
 		\hline
 		\rowcolor{tableheaderblue}
@@ -291,8 +293,6 @@
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		El código del proyecto debe versionarse en un repositorio Git, desarrollarse principalmente en TypeScript y seguir un conjunto de convenciones de estilo y revisión de código acordadas (por ejemplo, ESLint y revisiones por pares).}                                                    \\ \hline
 	\end{tabular}
-	\caption{RNF09: Mantenibilidad del código mediante modularidad, pruebas y documentación}
-	\label{tab:rnf09}
 \end{table}
 
 \begin{table}[H]
@@ -300,6 +300,8 @@
 	\renewcommand{\arraystretch}{1.3}
 	\setlength{\tabcolsep}{6pt}
 	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
+	\caption{RNF10: AUDITORÍA Y REGISTRO DE EVENTOS CRÍTICOS}
+	\label{tab:rnf10}
 	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
 		\hline
 		\rowcolor{tableheaderblue}
@@ -324,6 +326,4 @@
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		Los registros de auditoría no deben incluir información sensible en texto plano (por ejemplo, contraseñas, números completos de tarjetas u otros datos confidenciales), limitándose a identificadores, metadatos y descripciones generales de la operación.} \\ \hline
 	\end{tabular}
-	\caption{RNF10: Auditoría y registro de eventos críticos}
-	\label{tab:rnf10}
 \end{table}

@@ -255,18 +255,18 @@ INPUT .\Images\upb_logo.png
 INPUT .\Images\upb_logo.png
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Users\meper\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Program Files\MiKTeX\fonts\enc\dvips\base\8r.enc
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmri8t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmri8t.vf
@@ -279,6 +279,10 @@ INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\bu
 INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.lot
 INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.lot
 OUTPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.lot
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.lof
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.lof
+INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.lof
+OUTPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.lof
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -305,6 +309,21 @@ INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm7.tfm
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmbi8t.tfm
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmbi8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmbi8r.tfm
+INPUT .\docs\requerimientos\requerimientos-funcionales.tex
+INPUT .\docs\requerimientos\requerimientos-funcionales.tex
+INPUT .\docs\requerimientos\requerimientos-funcionales.tex
+INPUT .\docs\requerimientos\requerimientos-funcionales.tex
+INPUT docs\requerimientos\requerimientos-funcionales.tex
+INPUT .\docs\requerimientos\requerimientos-no-funcionales.tex
+INPUT .\docs\requerimientos\requerimientos-no-funcionales.tex
+INPUT .\docs\requerimientos\requerimientos-no-funcionales.tex
+INPUT .\docs\requerimientos\requerimientos-no-funcionales.tex
+INPUT docs\requerimientos\requerimientos-no-funcionales.tex
+INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ts1ptm.fd
+INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
+INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8c.vf
 INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\courier\pcrr8t.vf
 INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\courier\pcrr8r.tfm
 INPUT .\diagramas-uml-section.tex
@@ -413,24 +432,6 @@ INPUT .\Images\diagramas-uml\secuencias\flujo-gestion-usuarios.pdf
 INPUT .\Images\diagramas-uml\secuencias\flujo-gestion-usuarios.pdf
 INPUT .\Images\diagramas-uml\secuencias\flujo-gestion-usuarios.pdf
 INPUT .\Images\diagramas-uml\secuencias\flujo-gestion-usuarios.pdf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msam5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\symbols\msbm5.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8t.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmb8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmb8r.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8t.vf
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8r.tfm
-INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ts1ptm.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ts1ptm.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\psnfss\ts1ptm.fd
-INPUT C:\Program Files\MiKTeX\fonts\tfm\adobe\times\ptmr8c.tfm
-INPUT C:\Program Files\MiKTeX\fonts\vf\adobe\times\ptmr8c.vf
-INPUT .\Images\upb_logo.png
-INPUT .\Images\upb_logo.png
-INPUT .\Images\upb_logo.png
-INPUT .\Images\upb_logo.png
 INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
 INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\diagramas-uml-section.aux
 INPUT c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\diagramas-uml-section.aux

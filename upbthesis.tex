@@ -1,4 +1,8 @@
 \documentclass[spanish]{ieee_upb}
+% NOTA: ieee_upb.cls ya define Times 12pt (\LoadClass[12pt]{article} + \RequirePackage{times}),
+% interlineado 1.5 (\onehalfspacing) y numeración de página arriba a la derecha (pagestyle "plain").
+% Por eso NO se duplican esos ajustes aquí; forzarlos de nuevo con otro paquete de fuente o con
+% fancyhdr generaría conflictos con lo que la clase ya hace correctamente.
 
 \usepackage{caption}
 \usepackage{layouts}
@@ -31,9 +35,13 @@
 \newcommand{\logopath}{Images/upb_logo.png}
 
 \begin{document}
+% --- CORRECCIÓN: la numeración inicia en la portada (página 1). El entorno
+% titlepage de LaTeX pone \thispagestyle{empty} automáticamente; lo forzamos
+% a "plain", que es el estilo con el número arriba a la derecha definido en ieee_upb.cls ---
 
 % Portada personalizada
 \begin{titlepage}
+	\thispagestyle{plain}
 	\centering
 	\vspace*{1cm}
 
@@ -58,15 +66,15 @@
 
 	\vfill
 
-	{\large ESCUELA DE INGENIERÍAS}
+	{\large\bfseries ESCUELA DE INGENIERÍAS}
 
-	{\large INGENIERÍA DE SISTEMAS E INFORMÁTICA}
+	{\large\bfseries INGENIERÍA DE SISTEMAS E INFORMÁTICA}
 
 	\vspace{0.5cm}
 
-	{\large BUCARAMANGA}
+	{\large\bfseries BUCARAMANGA}
 
-	{\large \the\year}
+	{\large\bfseries \the\year}
 
 \end{titlepage}
 
@@ -79,7 +87,7 @@
 
 % Contraportada
 \newpage
-\thispagestyle{empty}
+\thispagestyle{plain}
 \begin{center}
 	\vspace*{2cm}
 
@@ -97,21 +105,21 @@
 
 	\vspace{2cm}
 
-	{\large Director:}
+	{\large\bfseries Director:}
 
-	{\large ING. JOHN JAIRO BRICEÑO VALDERRAMA}
+	{\large\bfseries ING. JOHN JAIRO BRICEÑO VALDERRAMA}
 
 	\vfill
 
 	{\large\bfseries UNIVERSIDAD PONTIFICIA BOLIVARIANA}
 
-	{\large ESCUELA DE INGENIERÍAS}
+	{\large\bfseries ESCUELA DE INGENIERÍAS}
 
-	{\large INGENIERÍA DE SISTEMAS E INFORMÁTICA}
+	{\large\bfseries INGENIERÍA DE SISTEMAS E INFORMÁTICA}
 
-	{\large BUCARAMANGA}
+	{\large\bfseries BUCARAMANGA}
 
-	{\large \the\year}
+	{\large\bfseries \the\year}
 
 \end{center}
 
@@ -170,6 +178,10 @@ Finalmente, a mis compañeros de carrera con quienes compartí trasnochadas, fru
 \renewcommand\listtablename{\hfill\normalfont\bfseries LISTA DE TABLAS\hfill}
 \listoftables
 
+% --- CORRECCIÓN: falta la Lista de Figuras, va antes del Glosario ---
+\clearpage
+\renewcommand\listfigurename{\hfill\normalfont\bfseries LISTA DE FIGURAS\hfill}
+\listoffigures
 
 \newpage
 \section*{GLOSARIO}
@@ -490,14 +502,15 @@ Entregables: sistema desplegado y accesible por URL, resultados de las sesiones 
 
 La estimación de 20 horas semanales se sustenta en la disponibilidad real del estudiante considerando la carga académica del semestre en curso. La distribución propuesta asigna aproximadamente 3 horas diarias de lunes a jueves en horario posterior a clases, 2 horas el viernes destinadas a pruebas y documentación, 4 horas el sábado para sesiones de desarrollo intensivo, y 2 horas el domingo para revisión del avance semanal y planeación de la semana siguiente. Esta dedicación equivale a un régimen de medio tiempo (20 horas sobre 40 horas laborales estándar), compatible con las demás obligaciones académicas del semestre. El total acumulado de 248 horas en 12 semanas arroja un promedio de 20,7 horas por semana, cifra coherente con la distribución diaria propuesta y con el alcance definido para el proyecto.
 
+% --- CORRECCIÓN: no se reduce el tamaño de letra; en su lugar la tabla se presenta en horizontal ---
+\begin{landscape}
 \begin{table}[h!]
 	\centering
-	\scriptsize
-	\caption{Cronograma de Ejecución del Proyecto}
-	\begin{tabular}{|p{3.8cm}|c|c|c|p{6.5cm}|}
-		\hline
+	\caption{CRONOGRAMA DE EJECUCIÓN DEL PROYECTO}
+	\begin{tabular}{p{3.8cm}cccp{9cm}}
+		\toprule
 		\textbf{Fase} & \textbf{Semanas}                       & \textbf{Fechas} & \textbf{Horas} & \textbf{Actividades Principales} \\
-		\hline
+		\midrule
 
 		1. Análisis, Diseño y Configuración
 		              & 1--2
@@ -509,7 +522,6 @@ La estimación de 20 horas semanales se sustenta en la disponibilidad real del e
 		- Wireframes en Figma \newline
 		- Setup de proyectos \newline
 		- Configuración Docker                                                                                                       \\
-		\hline
 
 		2. Backend Core
 		              & 3--5
@@ -521,7 +533,6 @@ La estimación de 20 horas semanales se sustenta en la disponibilidad real del e
 		- Endpoints de reportes \newline
 		- Documentación Swagger \newline
 		- Pruebas unitarias                                                                                                          \\
-		\hline
 
 		3. Frontend Core
 		              & 6--8
@@ -533,7 +544,6 @@ La estimación de 20 horas semanales se sustenta en la disponibilidad real del e
 		- Módulo de clientes \newline
 		- Dashboard y reportes \newline
 		- Componentes reutilizables                                                                                                  \\
-		\hline
 
 		4. Integración y Pruebas
 		              & 9--10
@@ -544,7 +554,6 @@ La estimación de 20 horas semanales se sustenta en la disponibilidad real del e
 		- Corrección de bugs \newline
 		- Refinamiento UX \newline
 		- Generación de comprobantes                                                                                                 \\
-		\hline
 
 		5. Validación y Despliegue
 		              & 11
@@ -554,7 +563,6 @@ La estimación de 20 horas semanales se sustenta en la disponibilidad real del e
 		- Validación con usuarios \newline
 		- Recopilación de feedback \newline
 		- Ajustes críticos                                                                                                           \\
-		\hline
 
 		6. Documentación Final
 		              & 12
@@ -564,41 +572,34 @@ La estimación de 20 horas semanales se sustenta en la disponibilidad real del e
 		- Documentación técnica \newline
 		- Documento de tesis completo \newline
 		- Presentación                                                                                                               \\
-		\hline
 
 		\textbf{TOTAL}
 		              & \textbf{12 sem.}
 		              & \textbf{19 ene -- 12 abr 2026}
 		              & \textbf{248h}
 		              & \textbf{Sistema completo + Documento}                                                                        \\
-		\hline
+		\bottomrule
 	\end{tabular}
 \end{table}
+\end{landscape}
 
 
 \begin{table}[h!]
 	\centering
-	\caption{Distribución Semanal de Actividades}
-	\begin{tabular}{|l|c|p{6cm}|}
-		\hline
+	\caption{DISTRIBUCIÓN SEMANAL DE ACTIVIDADES}
+	\begin{tabular}{lcp{6cm}}
+		\toprule
 		\textbf{Día}   & \textbf{Horas} & \textbf{Actividad Sugerida}   \\
-		\hline
+		\midrule
 		Lunes          & 3h             & Desarrollo backend/frontend   \\
-		\hline
 		Martes         & 3h             & Desarrollo backend/frontend   \\
-		\hline
 		Miércoles      & 3h             & Desarrollo backend/frontend   \\
-		\hline
 		Jueves         & 3h             & Desarrollo backend/frontend   \\
-		\hline
 		Viernes        & 2h             & Pruebas + documentación       \\
-		\hline
 		Sábado         & 4h             & Desarrollo intensivo          \\
-		\hline
 		Domingo        & 2h             & Revisión semanal + planeación \\
-		\hline
 		\textbf{Total} & \textbf{20h}   & \textbf{Semana completa}      \\
-		\hline
+		\bottomrule
 	\end{tabular}
 \end{table}
 
@@ -610,63 +611,49 @@ Se ha establecido un presupuesto enfocado en maximizar el valor obtenido de cada
 
 \begin{table}[h!]
 	\centering
-	\caption{Presupuesto Estimado del Proyecto}
-	\begin{tabular}{|l|p{6cm}|r|}
-		\hline
-		\multicolumn{3}{|c|}{\textbf{INVERSIONES}}                                                       \\
-		\hline
+	\caption{PRESUPUESTO ESTIMADO DEL PROYECTO}
+	\begin{tabular}{lp{6cm}r}
+		\toprule
+		\multicolumn{3}{c}{\textbf{INVERSIONES}}                                                        \\
+		\midrule
 		Equipo de cómputo                 & Laptop/PC para desarrollo (existente) & \$0                  \\
-		\hline
 		Software                          & Herramientas open-source              & \$0                  \\
-		\hline
 		Cloudinary                        & Plan gratuito (25GB)                  & \$0                  \\
-		\hline
 		Vercel                            & Despliegue frontend (gratis)          & \$0                  \\
-		\hline
 		Railway                           & Backend + PostgreSQL (gratis)         & \$0                  \\
-		\hline
 		Supabase                          & Plan gratuito                         & \$0                  \\
-		\hline
 		Dominio                           & Opcional (.com.co)                    & \$50,000             \\
-		\hline
+		\midrule
 		\textbf{Subtotal Inversiones}     &                                       & \textbf{\$50,000}    \\
-		\hline
-		\multicolumn{3}{c}{}                                                                             \\
-		\hline
-		\multicolumn{3}{|c|}{\textbf{GASTOS DE DESARROLLO}}                                              \\
-		\hline
+		\addlinespace
+		\midrule
+		\multicolumn{3}{c}{\textbf{GASTOS DE DESARROLLO}}                                               \\
+		\midrule
 		Internet                          & 3 meses x \$60,000                    & \$180,000            \\
-		\hline
 		Electricidad                      & 3 meses x \$30,000                    & \$90,000             \\
-		\hline
+		\midrule
 		\textbf{Subtotal Gastos}          &                                       & \textbf{\$270,000}   \\
-		\hline
-		\multicolumn{3}{c}{}                                                                             \\
-		\hline
-		\multicolumn{3}{|c|}{\textbf{MANO DE OBRA}}                                                      \\
-		\hline
+		\addlinespace
+		\midrule
+		\multicolumn{3}{c}{\textbf{MANO DE OBRA}}                                                       \\
+		\midrule
 		Desarrollador                     & 248 horas x \$15,000/hora             & \$3,720,000          \\
-		\hline
 		Director de tesis                 & 24 horas x \$50,000/hora              & \$1,200,000          \\
-		\hline
+		\midrule
 		\textbf{Subtotal Mano de Obra}    &                                       & \textbf{\$4,920,000} \\
-		\hline
-		\multicolumn{3}{c}{}                                                                             \\
-		\hline
-		\multicolumn{3}{|c|}{\textbf{OTROS GASTOS}}                                                      \\
-		\hline
+		\addlinespace
+		\midrule
+		\multicolumn{3}{c}{\textbf{OTROS GASTOS}}                                                       \\
+		\midrule
 		Transporte                        & Reuniones + validación                & \$100,000            \\
-		\hline
 		Papelería                         & Impresiones documento                 & \$30,000             \\
-		\hline
 		Imprevistos                       & 5\% del total                         & \$267,500            \\
-		\hline
+		\midrule
 		\textbf{Subtotal Otros}           &                                       & \textbf{\$397,500}   \\
-		\hline
-		\multicolumn{3}{c}{}                                                                             \\
-		\hline
+		\addlinespace
+		\midrule
 		\textbf{COSTO TOTAL DEL PROYECTO} &                                       & \textbf{\$5,637,500} \\
-		\hline
+		\bottomrule
 	\end{tabular}
 \end{table}
 
@@ -785,7 +772,8 @@ Estas conclusiones corresponden a la etapa de anteproyecto y se actualizarán co
 
 
 \newpage
-\renewcommand\refname{BIBLIOGRAFÍA}
+% --- CORRECCIÓN: debe decir "REFERENCIAS", no "BIBLIOGRAFÍA" ---
+\renewcommand\refname{REFERENCIAS}
 \bibliographystyle{IEEEtran}
 
 \begin{thebibliography}{9}
@@ -828,6 +816,6 @@ Estas conclusiones corresponden a la etapa de anteproyecto y se actualizarán co
 
 \end{thebibliography}
 
-\addcontentsline{toc}{section}{BIBLIOGRAFÍA}
+\addcontentsline{toc}{section}{REFERENCIAS}
 
 \end{document}
