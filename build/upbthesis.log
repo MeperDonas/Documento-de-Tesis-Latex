@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.29)  4 JUL 2026 09:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.29)  4 JUL 2026 10:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -876,7 +876,7 @@ LaTeX Font Warning: Font shape `T1/pcr/m/In' undefined
 
 Package layouts Warning: Layout scale set to 0.5 on input line 37.
 
-<Images/upb_logo.png, id=182, 72.27pt x 36.135pt>
+<Images/upb_logo.png, id=178, 72.27pt x 36.135pt>
 File: Images/upb_logo.png Graphic file (type png)
 <use Images/upb_logo.png>
 Package pdftex.def Info: Images/upb_logo.png  used on input line 53.
@@ -2029,37 +2029,37 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 \openout2 = `diagramas-uml-section.aux'.
 
  (diagramas-uml-section.tex
-<Images/diagramas-uml/casos-de-uso/modulo-auth.pdf, id=827, 615.0478pt x 828.09375pt>
+<Images/diagramas-uml/casos-de-uso/modulo-auth.pdf, id=840, 615.0478pt x 828.09375pt>
 File: Images/diagramas-uml/casos-de-uso/modulo-auth.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/casos-de-uso/modulo-auth.pdf>
 Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-auth.pdf  used on input line 19.
 (pdftex.def)             Requested size: 424.82521pt x 571.99182pt.
-<Images/diagramas-uml/casos-de-uso/modulo-productos.pdf, id=829, 938.00438pt x 1227.08438pt>
+<Images/diagramas-uml/casos-de-uso/modulo-productos.pdf, id=842, 938.00438pt x 1227.08438pt>
 File: Images/diagramas-uml/casos-de-uso/modulo-productos.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/casos-de-uso/modulo-productos.pdf>
 Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-productos.pdf  used on input line 28.
 (pdftex.def)             Requested size: 424.82521pt x 555.74039pt.
-<Images/diagramas-uml/casos-de-uso/modulo-ventas.pdf, id=831, 1367.1075pt x 1059.96pt>
+<Images/diagramas-uml/casos-de-uso/modulo-ventas.pdf, id=844, 1367.1075pt x 1059.96pt>
 File: Images/diagramas-uml/casos-de-uso/modulo-ventas.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/casos-de-uso/modulo-ventas.pdf>
 Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-ventas.pdf  used on input line 37.
 (pdftex.def)             Requested size: 424.82521pt x 329.37671pt.
-<Images/diagramas-uml/casos-de-uso/modulo-clientes.pdf, id=833, 624.83438pt x 768.62157pt>
+<Images/diagramas-uml/casos-de-uso/modulo-clientes.pdf, id=846, 624.83438pt x 768.62157pt>
 File: Images/diagramas-uml/casos-de-uso/modulo-clientes.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/casos-de-uso/modulo-clientes.pdf>
 Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-clientes.pdf  used on input line 46.
 (pdftex.def)             Requested size: 424.82521pt x 522.5971pt.
-<Images/diagramas-uml/casos-de-uso/modulo-reportes.pdf, id=835, 968.11688pt x 889.07156pt>
+<Images/diagramas-uml/casos-de-uso/modulo-reportes.pdf, id=848, 968.11688pt x 889.07156pt>
 File: Images/diagramas-uml/casos-de-uso/modulo-reportes.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/casos-de-uso/modulo-reportes.pdf>
 Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-reportes.pdf  used on input line 55.
 (pdftex.def)             Requested size: 424.82521pt x 390.13454pt.
-<Images/diagramas-uml/casos-de-uso/modulo-configuracion.pdf, id=837, 923.70094pt x 724.95844pt>
+<Images/diagramas-uml/casos-de-uso/modulo-configuracion.pdf, id=850, 923.70094pt x 724.95844pt>
 File: Images/diagramas-uml/casos-de-uso/modulo-configuracion.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/casos-de-uso/modulo-configuracion.pdf>
 Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-configuracion.pdf  used on input line 64.
 (pdftex.def)             Requested size: 424.82521pt x 333.41855pt.
-<Images/diagramas-uml/casos-de-uso/modulo-categorias.pdf, id=839, 904.1278pt x 692.5875pt>
+<Images/diagramas-uml/casos-de-uso/modulo-categorias.pdf, id=852, 904.1278pt x 692.5875pt>
 File: Images/diagramas-uml/casos-de-uso/modulo-categorias.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/casos-de-uso/modulo-categorias.pdf>
 Package pdftex.def Info: Images/diagramas-uml/casos-de-uso/modulo-categorias.pdf  used on input line 73.
@@ -2123,7 +2123,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [68 <./Images/diagramas-uml/casos-de-uso/modulo-configuracion.pdf>]
-<Images/diagramas-uml/componentes/modulo-auth.pdf, id=900, 775.39688pt x 744.53156pt>
+<Images/diagramas-uml/componentes/modulo-auth.pdf, id=913, 775.39688pt x 744.53156pt>
 File: Images/diagramas-uml/componentes/modulo-auth.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/componentes/modulo-auth.pdf>
 Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-auth.pdf  used on input line 86.
@@ -2145,22 +2145,22 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [70 <./Images/diagramas-uml/componentes/modulo-auth.pdf>]
-<Images/diagramas-uml/componentes/modulo-productos.pdf, id=919, 990.70125pt x 663.22781pt>
+<Images/diagramas-uml/componentes/modulo-productos.pdf, id=932, 990.70125pt x 663.22781pt>
 File: Images/diagramas-uml/componentes/modulo-productos.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/componentes/modulo-productos.pdf>
 Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-productos.pdf  used on input line 95.
 (pdftex.def)             Requested size: 401.22942pt x 268.60579pt.
-<Images/diagramas-uml/componentes/modulo-ventas.pdf, id=921, 919.18407pt x 962.84718pt>
+<Images/diagramas-uml/componentes/modulo-ventas.pdf, id=934, 919.18407pt x 962.84718pt>
 File: Images/diagramas-uml/componentes/modulo-ventas.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/componentes/modulo-ventas.pdf>
 Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-ventas.pdf  used on input line 104.
 (pdftex.def)             Requested size: 401.22942pt x 420.28964pt.
-<Images/diagramas-uml/componentes/modulo-clientes.pdf, id=923, 989.94844pt x 619.56468pt>
+<Images/diagramas-uml/componentes/modulo-clientes.pdf, id=936, 989.94844pt x 619.56468pt>
 File: Images/diagramas-uml/componentes/modulo-clientes.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/componentes/modulo-clientes.pdf>
 Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-clientes.pdf  used on input line 113.
 (pdftex.def)             Requested size: 401.22942pt x 251.11139pt.
-<Images/diagramas-uml/componentes/modulo-reportes.pdf, id=925, 1349.79282pt x 641.39626pt>
+<Images/diagramas-uml/componentes/modulo-reportes.pdf, id=938, 1349.79282pt x 641.39626pt>
 File: Images/diagramas-uml/componentes/modulo-reportes.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/componentes/modulo-reportes.pdf>
 Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-reportes.pdf  used on input line 122.
@@ -2182,17 +2182,17 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [72 <./Images/diagramas-uml/componentes/modulo-ventas.pdf>]
-<Images/diagramas-uml/componentes/modulo-exportaciones.pdf, id=944, 835.62187pt x 654.94687pt>
+<Images/diagramas-uml/componentes/modulo-exportaciones.pdf, id=957, 835.62187pt x 654.94687pt>
 File: Images/diagramas-uml/componentes/modulo-exportaciones.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/componentes/modulo-exportaciones.pdf>
 Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-exportaciones.pdf  used on input line 131.
 (pdftex.def)             Requested size: 401.22942pt x 314.48087pt.
-<Images/diagramas-uml/componentes/modulo-configuracion.pdf, id=946, 1088.56688pt x 667.74469pt>
+<Images/diagramas-uml/componentes/modulo-configuracion.pdf, id=959, 1088.56688pt x 667.74469pt>
 File: Images/diagramas-uml/componentes/modulo-configuracion.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/componentes/modulo-configuracion.pdf>
 Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-configuracion.pdf  used on input line 140.
 (pdftex.def)             Requested size: 401.22942pt x 246.11409pt.
-<Images/diagramas-uml/componentes/modulo-categorias.pdf, id=948, 814.54312pt x 619.56468pt>
+<Images/diagramas-uml/componentes/modulo-categorias.pdf, id=961, 814.54312pt x 619.56468pt>
 File: Images/diagramas-uml/componentes/modulo-categorias.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/componentes/modulo-categorias.pdf>
 Package pdftex.def Info: Images/diagramas-uml/componentes/modulo-categorias.pdf  used on input line 149.
@@ -2222,7 +2222,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [75 <./Images/diagramas-uml/componentes/modulo-configuracion.pdf> <./Images/diagramas-uml/componentes/modulo-categorias.pdf>]
-<Images/diagramas-uml/secuencias/flujo-venta.pdf, id=982, 1014.03844pt x 2638.60782pt>
+<Images/diagramas-uml/secuencias/flujo-venta.pdf, id=995, 1014.03844pt x 2638.60782pt>
 File: Images/diagramas-uml/secuencias/flujo-venta.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/secuencias/flujo-venta.pdf>
 Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-venta.pdf  used on input line 162.
@@ -2231,7 +2231,7 @@ Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-venta.pdf  used o
 
 LaTeX Warning: Float too large for page by 600.02214pt on input line 165.
 
-<Images/diagramas-uml/secuencias/flujo-autenticacion.pdf, id=984, 1145.78062pt x 2016.03188pt>
+<Images/diagramas-uml/secuencias/flujo-autenticacion.pdf, id=997, 1145.78062pt x 2016.03188pt>
 File: Images/diagramas-uml/secuencias/flujo-autenticacion.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/secuencias/flujo-autenticacion.pdf>
 Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-autenticacion.pdf  used on input line 171.
@@ -2239,7 +2239,7 @@ Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-autenticacion.pdf
 
 LaTeX Warning: Float too large for page by 202.34052pt on input line 174.
 
-<Images/diagramas-uml/secuencias/flujo-gestion-productos.pdf, id=986, 1111.90407pt x 2157.56062pt>
+<Images/diagramas-uml/secuencias/flujo-gestion-productos.pdf, id=999, 1111.90407pt x 2157.56062pt>
 File: Images/diagramas-uml/secuencias/flujo-gestion-productos.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/secuencias/flujo-gestion-productos.pdf>
 Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-gestion-productos.pdf  used on input line 180.
@@ -2247,7 +2247,7 @@ Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-gestion-productos
 
 LaTeX Warning: Float too large for page by 287.7408pt on input line 183.
 
-<Images/diagramas-uml/secuencias/flujo-reporte-ventas.pdf, id=988, 1324.95pt x 2541.495pt>
+<Images/diagramas-uml/secuencias/flujo-reporte-ventas.pdf, id=1001, 1324.95pt x 2541.495pt>
 File: Images/diagramas-uml/secuencias/flujo-reporte-ventas.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/secuencias/flujo-reporte-ventas.pdf>
 Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-reporte-ventas.pdf  used on input line 189.
@@ -2255,7 +2255,7 @@ Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-reporte-ventas.pd
 
 LaTeX Warning: Float too large for page by 277.23016pt on input line 192.
 
-<Images/diagramas-uml/secuencias/flujo-gestion-usuarios.pdf, id=990, 1214.28656pt x 2804.22656pt>
+<Images/diagramas-uml/secuencias/flujo-gestion-usuarios.pdf, id=1003, 1214.28656pt x 2804.22656pt>
 File: Images/diagramas-uml/secuencias/flujo-gestion-usuarios.pdf Graphic file (type pdf)
 <use Images/diagramas-uml/secuencias/flujo-gestion-usuarios.pdf>
 Package pdftex.def Info: Images/diagramas-uml/secuencias/flujo-gestion-usuarios.pdf  used on input line 198.
@@ -2395,6 +2395,40 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [90]
+<Images/screenshots/01-login.png, id=1087, 1284.8pt x 722.7pt>
+File: Images/screenshots/01-login.png Graphic file (type png)
+<use Images/screenshots/01-login.png>
+Package pdftex.def Info: Images/screenshots/01-login.png  used on input line 706.
+(pdftex.def)             Requested size: 401.22942pt x 225.6888pt.
+<Images/screenshots/04-inventory.png, id=1088, 1284.8pt x 766.865pt>
+File: Images/screenshots/04-inventory.png Graphic file (type png)
+<use Images/screenshots/04-inventory.png>
+Package pdftex.def Info: Images/screenshots/04-inventory.png  used on input line 715.
+(pdftex.def)             Requested size: 401.22942pt x 239.48091pt.
+<Images/screenshots/03-pos.png, id=1089, 1284.8pt x 722.7pt>
+File: Images/screenshots/03-pos.png Graphic file (type png)
+<use Images/screenshots/03-pos.png>
+Package pdftex.def Info: Images/screenshots/03-pos.png  used on input line 724.
+(pdftex.def)             Requested size: 401.22942pt x 225.6888pt.
+<Images/screenshots/06-customers.png, id=1090, 1284.8pt x 722.7pt>
+File: Images/screenshots/06-customers.png Graphic file (type png)
+<use Images/screenshots/06-customers.png>
+Package pdftex.def Info: Images/screenshots/06-customers.png  used on input line 733.
+(pdftex.def)             Requested size: 401.22942pt x 225.6888pt.
+<Images/screenshots/02-dashboard.png, id=1091, 1284.8pt x 847.165pt>
+File: Images/screenshots/02-dashboard.png Graphic file (type png)
+<use Images/screenshots/02-dashboard.png>
+Package pdftex.def Info: Images/screenshots/02-dashboard.png  used on input line 742.
+(pdftex.def)             Requested size: 401.22942pt x 264.55743pt.
+<Images/screenshots/07-reports.png, id=1092, 1284.8pt x 1227.58624pt>
+File: Images/screenshots/07-reports.png Graphic file (type png)
+<use Images/screenshots/07-reports.png>
+Package pdftex.def Info: Images/screenshots/07-reports.png  used on input line 743.
+(pdftex.def)             Requested size: 401.22942pt x 383.35751pt.
+
+
+LaTeX Warning: Float too large for page by 20.70871pt on input line 746.
+
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2402,7 +2436,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[91]
+[91 <./Images/screenshots/01-login.png (PNG copy)>]
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
 (fancyhdr)                Make it at least 14.49998pt, for example:
@@ -2410,7 +2444,31 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[92
+[92 <./Images/screenshots/04-inventory.png (PNG copy)> <./Images/screenshots/03-pos.png (PNG copy)>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[93 <./Images/screenshots/06-customers.png (PNG copy)>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[94 <./Images/screenshots/02-dashboard.png (PNG copy)> <./Images/screenshots/07-reports.png (PNG copy)>]
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[95
 
 ]
 
@@ -2420,28 +2478,28 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[93]
-Underfull \hbox (badness 1264) in paragraph at lines 782--783
+[96]
+Underfull \hbox (badness 1264) in paragraph at lines 779--780
 []\T1/ptm/m/n/12 Odoo S.A., ``Odoo -- Open Sour-ce Bu-si-ness Apps,'' 2024. [En lí-nea]. Dis-po-ni-ble en:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 794--795
+Underfull \hbox (badness 10000) in paragraph at lines 791--792
 []\T1/ptm/m/n/12 NestJS Con-tri-bu-tors, ``NestJS Do-cu-men-ta-tion,'' 2024. [En lí-nea]. Dis-po-ni-ble en:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 797--798
+Underfull \hbox (badness 10000) in paragraph at lines 794--795
 []\T1/ptm/m/n/12 Prisma Da-ta, Inc., ``Pris-ma Do-cu-men-ta-tion,'' 2024. [En lí-nea]. Dis-po-ni-ble en:
  []
 
 
-Underfull \hbox (badness 1931) in paragraph at lines 806--807
+Underfull \hbox (badness 1931) in paragraph at lines 803--804
 []\T1/ptm/m/n/12 Microsoft Cor-po-ra-tion, ``Ty-peS-cript Do-cu-men-ta-tion,'' 2024. [En lí-nea]. Dis-po-ni-ble en:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 809--810
+Underfull \hbox (badness 10000) in paragraph at lines 806--807
 []\T1/ptm/m/n/12 Cloudinary Ltd., ``Clou-di-nary Do-cu-men-ta-tion,'' 2024. [En lí-nea]. Dis-po-ni-ble en:
  []
 
@@ -2452,7 +2510,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[94] (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
+[97] (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
  (c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\diagramas-uml-section.aux))
@@ -2465,20 +2523,20 @@ L3 programming layer <2026-04-28>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `upbthesis.out' has not changed.
-(rerunfilecheck)             Checksum: CE3A662095ABF506832ABEEB9EDF33D5;7611.
+(rerunfilecheck)             Checksum: 14CAB7FD1A6269178738F273CA62D040;7427.
  ) 
 Here is how much of TeX's memory you used:
- 19343 strings out of 467683
- 318803 string characters out of 5424788
- 869551 words of memory out of 5000000
- 47870 multiletter control sequences out of 15000+600000
+ 19396 strings out of 467683
+ 320661 string characters out of 5424788
+ 869937 words of memory out of 5000000
+ 47916 multiletter control sequences out of 15000+600000
  656911 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  90i,12n,104p,1052b,774s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Program Files/MiKTeX/fonts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on "c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.pdf" (95 pages, 523762 bytes).
+Output written on "c:\Users\meper\Desktop\Proyecto de Grado\Tesis\Documento-de-Tesis-Latex\build\upbthesis.pdf" (98 pages, 1226764 bytes).
 PDF statistics:
- 1169 PDF objects out of 1200 (max. 8388607)
- 209 named destinations out of 1000 (max. 500000)
- 466 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1202 PDF objects out of 1440 (max. 8388607)
+ 216 named destinations out of 1000 (max. 500000)
+ 488 words of extra memory for PDF output out of 10000 (max. 10000000)
 

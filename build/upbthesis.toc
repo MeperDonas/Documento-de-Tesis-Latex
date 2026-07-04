@@ -41,7 +41,6 @@
 \contentsline {subsection}{\numberline {C}Módulo de Punto de Venta}{91}{subsection.11.3}%
 \contentsline {subsection}{\numberline {D}Módulo de Clientes}{91}{subsection.11.4}%
 \contentsline {subsection}{\numberline {E}Dashboard y Reportes}{91}{subsection.11.5}%
-\contentsline {subsection}{\numberline {F}Validación con Usuarios}{91}{subsection.11.6}%
-\contentsline {section}{\numberline {XII}CONCLUSIONES}{92}{section.12}%
-\contentsline {section}{REFERENCIAS}{94}{section.12}%
+\contentsline {section}{\numberline {XII}CONCLUSIONES}{95}{section.12}%
+\contentsline {section}{REFERENCIAS}{97}{section.12}%
 \contentsfinish 
