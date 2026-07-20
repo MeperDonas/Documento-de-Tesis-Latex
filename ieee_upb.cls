@@ -219,14 +219,14 @@
 {\arabic{subparagraph}.}{1em}{}[:]
 \titlespacing*{\subparagraph}{1cm}{*1}{*1}
 
-% Configuración de tablas
+% Configuración de tablas (títulos en negrilla, interlineado 1.5)
 \captionsetup[table]{
     labelsep=newline,
     justification=centering,
     singlelinecheck=false, % Asegura que también se aplique a captions de una línea
     labelfont={bf},
+    textfont={bf},
     name=TABLA,
-    labelfont=bf,
     skip=10pt,
     %list=no
 }
@@ -240,8 +240,9 @@
     skip=10pt
 }
 
-% Formato de listas
-\setlist{leftmargin=1.27cm}
+% Formato de listas: el texto de las viñetas inicia donde inicia el párrafo
+\setlist[itemize]{labelindent=\parindent, leftmargin=*, labelsep=0.5em, itemindent=0pt}
+\setlist[enumerate]{labelindent=\parindent, leftmargin=*, labelsep=0.5em, itemindent=0pt}
 
 % Configuración de hipervínculos
 \hypersetup{

@@ -6,207 +6,158 @@
 \newpage
 \section{DISEÑO DEL SISTEMA}
 
-Esta sección presenta el diseño detallado del sistema mediante diagramas UML que describen tanto las funcionalidades disponibles para los usuarios como la arquitectura técnica interna y los flujos de interacción entre componentes.
+Esta sección presenta el diseño detallado del sistema mediante diagramas UML que describen las funcionalidades disponibles para los usuarios y la arquitectura técnica interna del sistema.
 
-\subsection{Diagramas de Casos de Uso}
+\subsection{Diagramas de casos de uso}
 
 Los diagramas de casos de uso describen las funcionalidades del sistema desde la perspectiva de los usuarios, identificando los actores que interactúan con el sistema y las acciones que pueden realizar. El sistema define tres roles principales: Administrador, Cajero y Usuario de Inventario.
 
 El módulo de autenticación (Figura \ref{fig:cu-auth}) permite a todos los usuarios del sistema iniciar y cerrar sesión, recuperación de contraseles, y gestión de perfiles. Los administradores tienen privilegios adicionales para registrar nuevos usuarios.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Images/diagramas-uml/casos-de-uso/modulo-auth}
-	\caption{Diagrama de Casos de Uso - Módulo de Autenticación}
+	\caption{Diagrama de casos de uso - Módulo de autenticación}
 	\label{fig:cu-auth}
 \end{figure}
 
 El módulo de productos (Figura \ref{fig:cu-productos}) permite la gestión completa del inventario. Los administradores y usuarios de inventario pueden crear, editar, eliminar y consultar productos, gestionar categorías, controlar niveles de stock, y recibir alertas de stock bajo.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Images/diagramas-uml/casos-de-uso/modulo-productos}
-	\caption{Diagrama de Casos de Uso - Módulo de Productos}
+	\caption{Diagrama de casos de uso - Módulo de productos}
 	\label{fig:cu-productos}
 \end{figure}
 
 El módulo de ventas (Figura \ref{fig:cu-ventas}) representa el punto de venta (POS) del sistema. Los cajeros pueden procesar ventas, pausar y reanudar transacciones, gestionar métodos de pago, y generar comprobantes. Los administradores pueden además cancelar ventas y acceder a reportes detallados.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Images/diagramas-uml/casos-de-uso/modulo-ventas}
-	\caption{Diagrama de Casos de Uso - Módulo de Ventas}
+	\caption{Diagrama de casos de uso - Módulo de ventas}
 	\label{fig:cu-ventas}
 \end{figure}
 
 El módulo de clientes (Figura \ref{fig:cu-clientes}) permite gestionar la información de los clientes del negocio. Todos los roles pueden consultar clientes, mientras que los administradores y cajeros pueden registrar nuevos clientes y actualizar su información. Los administradores también pueden eliminar clientes (soft delete).
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Images/diagramas-uml/casos-de-uso/modulo-clientes}
-	\caption{Diagrama de Casos de Uso - Módulo de Clientes}
+	\caption{Diagrama de casos de uso - Módulo de clientes}
 	\label{fig:cu-clientes}
 \end{figure}
 
 El módulo de reportes (Figura \ref{fig:cu-reportes}) proporciona acceso a métricas y estadísticas del negocio. Los administradores y cajeros pueden acceder al dashboard con KPIs en tiempo real, reportes de ventas, productos más vendidos, y tendencias. Los administradores también pueden exportar reportes en diferentes formatos.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Images/diagramas-uml/casos-de-uso/modulo-reportes}
-	\caption{Diagrama de Casos de Uso - Módulo de Reportes}
+	\caption{Diagrama de casos de uso - Módulo de reportes}
 	\label{fig:cu-reportes}
 \end{figure}
 
 El módulo de configuración (Figura \ref{fig:cu-configuracion}) permite a los administradores gestionar usuarios del sistema, asignar roles, configurar parámetros del negocio, y ajustar configuraciones generales.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Images/diagramas-uml/casos-de-uso/modulo-configuracion}
-	\caption{Diagrama de Casos de Uso - Módulo de Configuración}
+	\caption{Diagrama de casos de uso - Módulo de configuración}
 	\label{fig:cu-configuracion}
 \end{figure}
 
 El módulo de categorías (Figura \ref{fig:cu-categorias}) permite organizar los productos en categorías jerárquicas, facilitando la búsqueda y gestión del inventario. Los administradores y usuarios de inventario pueden crear, editar, eliminar y consultar categorías.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.9\textwidth]{Images/diagramas-uml/casos-de-uso/modulo-categorias}
-	\caption{Diagrama de Casos de Uso - Módulo de Categorías}
+	\caption{Diagrama de casos de uso - Módulo de categorías}
 	\label{fig:cu-categorias}
 \end{figure}
 
-\subsection{Diagramas de Componentes}
+\subsection{Diagramas de componentes}
 
 Los diagramas de componentes describen la arquitectura técnica interna del sistema, mostrando cómo se organizan los módulos del backend implementado con NestJS y cómo interactúan entre sí y con las dependencias externas.
 
 El módulo de autenticación (Figura \ref{fig:comp-auth}) implementa la seguridad del sistema mediante JWT (JSON Web Tokens). El \texttt{AuthController} expone los endpoints REST, el \texttt{AuthService} contiene la lógica de negocio de validación de credenciales y generación de tokens, los guards (\texttt{JwtAuthGuard} y \texttt{RolesGuard}) protegen las rutas, y las estrategias (\texttt{JwtStrategy}) implementan la validación de tokens. Utiliza \texttt{PrismaService} para acceso a datos, \texttt{JwtService} para gestión de tokens, y \texttt{bcrypt} para encriptación de contraseñas.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.85\textwidth]{Images/diagramas-uml/componentes/modulo-auth}
-	\caption{Diagrama de Componentes - Módulo de Autenticación}
+	\caption{Diagrama de componentes - Módulo de autenticación}
 	\label{fig:comp-auth}
 \end{figure}
 
 El módulo de productos (Figura \ref{fig:comp-productos}) gestiona el inventario completo. El \texttt{ProductsController} expone endpoints para CRUD de productos, búsqueda y filtrado. El \texttt{ProductsService} implementa la lógica de negocio incluyendo control de stock, validaciones, y alertas. Se integra con \texttt{Cloudinary} para gestión de imágenes de productos y con \texttt{CategoriesService} para organización jerárquica.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.85\textwidth]{Images/diagramas-uml/componentes/modulo-productos}
-	\caption{Diagrama de Componentes - Módulo de Productos}
+	\caption{Diagrama de componentes - Módulo de productos}
 	\label{fig:comp-productos}
 \end{figure}
 
 El módulo de ventas (Figura \ref{fig:comp-ventas}) implementa el punto de venta con transacciones ACID. El \texttt{SalesController} expone endpoints para crear ventas, pausar/reanudar transacciones, y gestionar pagos. El \texttt{SalesService} implementa la lógica de negocio con transacciones atómicas que garantizan consistencia de datos. Se integra con \texttt{PrismaService} para persistencia y con servicios externos para generación de comprobantes.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.85\textwidth]{Images/diagramas-uml/componentes/modulo-ventas}
-	\caption{Diagrama de Componentes - Módulo de Ventas}
+	\caption{Diagrama de componentes - Módulo de ventas}
 	\label{fig:comp-ventas}
 \end{figure}
 
 El módulo de clientes (Figura \ref{fig:comp-clientes}) permite gestionar la información de clientes. El \texttt{CustomersController} expone endpoints para CRUD de clientes, búsqueda y filtrado. El \texttt{CustomersService} implementa la lógica de negocio incluyendo historial de compras y soft delete para preservar integridad referencial con ventas históricas.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.85\textwidth]{Images/diagramas-uml/componentes/modulo-clientes}
-	\caption{Diagrama de Componentes - Módulo de Clientes}
+	\caption{Diagrama de componentes - Módulo de clientes}
 	\label{fig:comp-clientes}
 \end{figure}
 
 El módulo de reportes (Figura \ref{fig:comp-reportes}) genera métricas y estadísticas del negocio. El \texttt{ReportsController} expone endpoints para dashboards, reportes de ventas, productos más vendidos, y tendencias. El \texttt{ReportsService} implementa la lógica de negocio con consultas optimizadas y caché para mejorar rendimiento. Se integra con \texttt{ExportsService} para generación de reportes en PDF, Excel y CSV.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.85\textwidth]{Images/diagramas-uml/componentes/modulo-reportes}
-	\caption{Diagrama de Componentes - Módulo de Reportes}
+	\caption{Diagrama de componentes - Módulo de reportes}
 	\label{fig:comp-reportes}
 \end{figure}
 
 El módulo de exportaciones (Figura \ref{fig:comp-exportaciones}) permite exportar datos en diferentes formatos. El \texttt{ExportsController} expone endpoints para exportar reportes, ventas y productos. El \texttt{ExportsService} genera documentos en PDF, Excel y CSV utilizando librerías especializadas.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.85\textwidth]{Images/diagramas-uml/componentes/modulo-exportaciones}
-	\caption{Diagrama de Componentes - Módulo de Exportaciones}
+	\caption{Diagrama de componentes - Módulo de exportaciones}
 	\label{fig:comp-exportaciones}
 \end{figure}
 
-El módulo de configuración (Figura \ref{fig:comp-configuracion}) permite a los administradores gestionar el sistema. El \texttt{SettingsController} expone endpoints para gestión de usuarios, roles, y configuraciones del negocio. El \texttt{SettingsService} implementa la lógica de negocio incluyendo validaciones de permisos y auditoría.
+El módulo de configuración (Figura \ref{fig:comp-configuracion}) permite a los administradores gestionar el sistema. El \texttt{SettingsController} expone endpoints para gestión de usuarios, roles, y configuraciones del negocio.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.85\textwidth]{Images/diagramas-uml/componentes/modulo-configuracion}
-	\caption{Diagrama de Componentes - Módulo de Configuración}
+	\caption{Diagrama de componentes - Módulo de configuración}
 	\label{fig:comp-configuracion}
 \end{figure}
 
 El módulo de categorías (Figura \ref{fig:comp-categorias}) gestiona la organización jerárquica de productos. El \texttt{CategoriesController} expone endpoints para CRUD de categorías y subcategorías. El \texttt{CategoriesService} implementa la lógica de negocio incluyendo validaciones de integridad referencial.
 
-\begin{figure}[htbp]
+\begin{figure}[H]
 	\centering
 	\includegraphics[width=0.85\textwidth]{Images/diagramas-uml/componentes/modulo-categorias}
-	\caption{Diagrama de Componentes - Módulo de Categorías}
+	\caption{Diagrama de componentes - Módulo de categorías}
 	\label{fig:comp-categorias}
 \end{figure}
 
-\subsection{Diagramas de Secuencia}
-
-Los diagramas de secuencia muestran el flujo de interacción entre los diferentes componentes del sistema paso a paso, ilustrando cómo se realizan las operaciones críticas del sistema.
-
-El flujo completo de venta (Figura \ref{fig:sec-venta}) muestra el proceso end-to-end de una transacción de venta, desde que el cajero agrega productos al carrito hasta que se completa la transacción con pago. Este flujo implementa transacciones ACID que garantizan que la venta sea atómica: todas las operaciones se completan exitosamente o ninguna se aplica. Incluye validación de stock, cálculo de totales e impuestos, gestión de múltiples métodos de pago, y generación de comprobante. Si algún paso falla, se ejecuta un rollback automático para mantener la consistencia de datos.
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=\textwidth]{Images/diagramas-uml/secuencias/flujo-venta}
-	\caption{Diagrama de Secuencia - Flujo Completo de Venta}
-	\label{fig:sec-venta}
-\end{figure}
-
-El flujo de autenticación (Figura \ref{fig:sec-auth}) muestra el proceso de login, generación de tokens JWT, y verificación de permisos. Comienza con el usuario ingresando credenciales en el frontend, que envía una petición POST al backend. El \texttt{AuthService} valida las credenciales comparando el password encriptado con bcrypt, genera un token JWT con información del usuario y rol, y lo retorna al cliente. Para cada petición posterior, el token se envía en el header Authorization y es verificado por el \texttt{JwtAuthGuard}. Para operaciones restringidas por rol, el \texttt{RolesGuard} verifica si el usuario tiene el permiso necesario antes de permitir el acceso.
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=\textwidth]{Images/diagramas-uml/secuencias/flujo-autenticacion}
-	\caption{Diagrama de Secuencia - Flujo de Autenticación}
-	\label{fig:sec-auth}
-\end{figure}
-
-El flujo de gestión de productos (Figura \ref{fig:sec-productos}) muestra cómo se realizan las operaciones CRUD de productos. Incluye validación de datos en dos niveles (frontend y backend), gestión de imágenes mediante Cloudinary, actualización de stock en tiempo real, y generación de alertas cuando el nivel de stock cae por debajo del umbral mínimo configurado.
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=\textwidth]{Images/diagramas-uml/secuencias/flujo-gestion-productos}
-	\caption{Diagrama de Secuencia - Flujo de Gestión de Productos}
-	\label{fig:sec-productos}
-\end{figure}
-
-El flujo de generación de reportes (Figura \ref{fig:sec-reportes}) muestra cómo se generan las estadísticas y métricas del negocio. El \texttt{ReportsService} ejecuta consultas agregadas optimizadas en la base de datos para calcular KPIs como ventas totales, productos más vendidos, y tendencias temporales. Los resultados se almacenan en caché para mejorar rendimiento en peticiones futuras. Los reportes pueden exportarse en diferentes formatos mediante el \texttt{ExportsService}.
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=\textwidth]{Images/diagramas-uml/secuencias/flujo-reporte-ventas}
-	\caption{Diagrama de Secuencia - Flujo de Generación de Reportes de Ventas}
-	\label{fig:sec-reportes}
-\end{figure}
-
-El flujo de gestión de usuarios (Figura \ref{fig:sec-usuarios}) muestra cómo los administradores pueden registrar nuevos usuarios, asignar roles, y gestionar permisos. Incluye validación de unicidad de email, encriptación de contraseñas con bcrypt, y asignación de roles con permisos específicos. Todos los cambios se auditan para mantener trazabilidad completa.
-
-\begin{figure}[htbp]
-	\centering
-	\includegraphics[width=\textwidth]{Images/diagramas-uml/secuencias/flujo-gestion-usuarios}
-	\caption{Diagrama de Secuencia - Flujo de Gestión de Usuarios}
-	\label{fig:sec-usuarios}
-\end{figure}
-
-\subsection{Resumen del Diseño}
+\subsection{Resumen del diseño}
 
 El diseño del sistema se fundamenta en los siguientes principios arquitectónicos:
 
 \textbf{Arquitectura Modular:} El backend está organizado en módulos independientes (auth, products, sales, customers, reports, settings) que pueden desarrollarse, probarse y mantenerse de manera aislada. Cada módulo sigue el patrón Controller-Service-Repository, proporcionando clara separación de responsabilidades.
 
-\textbf{API REST:} La comunicación entre frontend y backend se realiza mediante una API RESTful que utiliza los métodos HTTP estándar (GET, POST, PUT, DELETE) para operaciones sobre recursos identificados con URLs semánticas. La documentación se genera automáticamente mediante Swagger.
+\textbf{API REST:} La comunicación entre frontend y backend se realiza mediante una API RESTful que utiliza los métodos HTTP estándar (GET, POST, PUT, DELETE) para operaciones sobre recursos identificados con URLs semánticas.
 
 \textbf{Transacciones ACID:} Las operaciones críticas como las ventas implementan transacciones ACID (Atomicidad, Consistencia, Aislamiento, Durabilidad) que garantizan la integridad de datos incluso ante fallos del sistema o errores durante la ejecución.
 

@@ -1,12 +1,10 @@
-\begin{table}[H]
-	\centering
-	\renewcommand{\arraystretch}{1.3}
-	\setlength{\tabcolsep}{6pt}
-	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
-	\caption{RNF01: PROTECCIÓN DE CREDENCIALES Y DATOS SENSIBLES}
-	\label{tab:rnf01}
-	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
-		\hline
+\begingroup
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\centering
+\begin{longtable}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\caption{RNF01: PROTECCIÓN DE CREDENCIALES Y DATOS SENSIBLES}\label{tab:rnf01}\\
+\hline
 		\rowcolor{tableheaderblue}
 		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                                                                    \\ \hline
 		\multicolumn{4}{|l|}{\textbf{Prioridad: Alta}}                                                                                                                                                                                                                  \\ \hline
@@ -28,18 +26,18 @@
 		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                                                                    \\ \hline
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		El sistema no debe registrar en texto plano contraseñas, tokens ni información financiera sensible, y debe aplicar consultas parametrizadas en todas las operaciones de acceso a datos.}                                                                        \\ \hline
-	\end{tabular}
-\end{table}
+	
+\end{longtable}
+\endgroup
 
-\begin{table}[H]
-	\centering
-	\renewcommand{\arraystretch}{1.3}
-	\setlength{\tabcolsep}{6pt}
-	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
-	\caption{RNF02: CONTROL DE ACCESO Y GESTIÓN DE SESIONES DE USUARIO}
-	\label{tab:rnf02}
-	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
-		\hline
+
+\begingroup
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\centering
+\begin{longtable}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\caption{RNF02: CONTROL DE ACCESO Y GESTIÓN DE SESIONES DE USUARIO}\label{tab:rnf02}\\
+\hline
 		\rowcolor{tableheaderblue}
 		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                             \\ \hline
 		\multicolumn{4}{|l|}{\textbf{Prioridad: Alta}}                                                                                                                                                                           \\ \hline
@@ -61,18 +59,18 @@
 		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                             \\ \hline
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		Los tokens de sesión deben incluir fecha de expiración y no pueden ser reutilizados tras el cierre de sesión o la revocación manual por un administrador.}                                                               \\ \hline
-	\end{tabular}
-\end{table}
+	
+\end{longtable}
+\endgroup
 
-\begin{table}[H]
-	\centering
-	\renewcommand{\arraystretch}{1.3}
-	\setlength{\tabcolsep}{6pt}
-	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
-	\caption{RNF03: RENDIMIENTO EN OPERACIONES CRÍTICAS DE NEGOCIO}
-	\label{tab:rnf03}
-	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
-		\hline
+
+\begingroup
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\centering
+\begin{longtable}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\caption{RNF03: RENDIMIENTO EN OPERACIONES CRÍTICAS DE NEGOCIO}\label{tab:rnf03}\\
+\hline
 		\rowcolor{tableheaderblue}
 		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                   \\ \hline
 		\multicolumn{4}{|l|}{\textbf{Prioridad: Alta}}                                                                                                                                                                 \\ \hline
@@ -94,18 +92,18 @@
 		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                   \\ \hline
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		Las pruebas de rendimiento deben realizarse en la infraestructura de despliegue definida para el proyecto y utilizando datos de prueba representativos del volumen esperado del negocio.}                      \\ \hline
-	\end{tabular}
-\end{table}
+	
+\end{longtable}
+\endgroup
 
-\begin{table}[H]
-	\centering
-	\renewcommand{\arraystretch}{1.3}
-	\setlength{\tabcolsep}{6pt}
-	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
-	\caption{RNF04: INTERFAZ INTUITIVA Y DE FÁCIL APRENDIZAJE}
-	\label{tab:rnf04}
-	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
-		\hline
+
+\begingroup
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\centering
+\begin{longtable}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\caption{RNF04: INTERFAZ INTUITIVA Y DE FÁCIL APRENDIZAJE}\label{tab:rnf04}\\
+\hline
 		\rowcolor{tableheaderblue}
 		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                       \\ \hline
 		\multicolumn{4}{|l|}{\textbf{Prioridad: Media}}                                                                                                                                                                    \\ \hline
@@ -127,18 +125,18 @@
 		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                       \\ \hline
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		Los textos de la interfaz y los mensajes deben redactarse en un lenguaje claro y consistente, evitando tecnicismos innecesarios para el usuario final.}                                                            \\ \hline
-	\end{tabular}
-\end{table}
+	
+\end{longtable}
+\endgroup
 
-\begin{table}[H]
-	\centering
-	\renewcommand{\arraystretch}{1.3}
-	\setlength{\tabcolsep}{6pt}
-	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
-	\caption{RNF05: ADAPTABILIDAD A DIFERENTES DISPOSITIVOS Y TAMAÑOS DE PANTALLA}
-	\label{tab:rnf05}
-	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
-		\hline
+
+\begingroup
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\centering
+\begin{longtable}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\caption{RNF05: ADAPTABILIDAD A DIFERENTES DISPOSITIVOS Y TAMAÑOS DE PANTALLA}\label{tab:rnf05}\\
+\hline
 		\rowcolor{tableheaderblue}
 		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                                                                   \\ \hline
 		\multicolumn{4}{|l|}{\textbf{Prioridad: Media}}                                                                                                                                                                                                                \\ \hline
@@ -160,18 +158,18 @@
 		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                                                                   \\ \hline
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		Las interfaces deben diseñarse siguiendo el sistema de diseño definido para el proyecto, reutilizando componentes UI coherentes en todos los módulos.}                                                                                                         \\ \hline
-	\end{tabular}
-\end{table}
+	
+\end{longtable}
+\endgroup
 
-\begin{table}[H]
-	\centering
-	\renewcommand{\arraystretch}{1.3}
-	\setlength{\tabcolsep}{6pt}
-	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
-	\caption{RNF06: ESCALABILIDAD DE DATOS Y MODULARIDAD ARQUITECTÓNICA}
-	\label{tab:rnf06}
-	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
-		\hline
+
+\begingroup
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\centering
+\begin{longtable}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\caption{RNF06: ESCALABILIDAD DE DATOS Y MODULARIDAD ARQUITECTÓNICA}\label{tab:rnf06}\\
+\hline
 		\rowcolor{tableheaderblue}
 		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                                                    \\ \hline
 		\multicolumn{4}{|l|}{\textbf{Prioridad: Media}}                                                                                                                                                                                                 \\ \hline
@@ -193,18 +191,18 @@
 		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                                                    \\ \hline
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		Todos los módulos nuevos deben respetar la arquitectura modular por capas y los contratos definidos en la API, evitando dependencias directas entre la capa de presentación y la base de datos.}                                                \\ \hline
-	\end{tabular}
-\end{table}
+	
+\end{longtable}
+\endgroup
 
-\begin{table}[H]
-	\centering
-	\renewcommand{\arraystretch}{1.3}
-	\setlength{\tabcolsep}{6pt}
-	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
-	\caption{RNF07: INTEGRIDAD TRANSACCIONAL Y CONSISTENCIA DE LA INFORMACIÓN}
-	\label{tab:rnf07}
-	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
-		\hline
+
+\begingroup
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\centering
+\begin{longtable}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\caption{RNF07: INTEGRIDAD TRANSACCIONAL Y CONSISTENCIA DE LA INFORMACIÓN}\label{tab:rnf07}\\
+\hline
 		\rowcolor{tableheaderblue}
 		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                                       \\ \hline
 		\multicolumn{4}{|l|}{\textbf{Prioridad: Alta}}                                                                                                                                                                                     \\ \hline
@@ -226,18 +224,18 @@
 		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                                       \\ \hline
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		La configuración de la base de datos debe mantener las propiedades ACID, evitando desactivar mecanismos de journal o logging que comprometan la durabilidad e integridad de los datos.}                                            \\ \hline
-	\end{tabular}
-\end{table}
+	
+\end{longtable}
+\endgroup
 
-\begin{table}[H]
-	\centering
-	\renewcommand{\arraystretch}{1.3}
-	\setlength{\tabcolsep}{6pt}
-	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
-	\caption{RNF08: DISPONIBILIDAD DEL SERVICIO Y RECUPERACIÓN ANTE FALLOS}
-	\label{tab:rnf08}
-	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
-		\hline
+
+\begingroup
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\centering
+\begin{longtable}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\caption{RNF08: DISPONIBILIDAD DEL SERVICIO Y RECUPERACIÓN ANTE FALLOS}\label{tab:rnf08}\\
+\hline
 		\rowcolor{tableheaderblue}
 		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                                                             \\ \hline
 		\multicolumn{4}{|l|}{\textbf{Prioridad: Media}}                                                                                                                                                                                                          \\ \hline
@@ -259,18 +257,18 @@
 		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                                                             \\ \hline
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		Los mecanismos de alta disponibilidad y recuperación deben configurarse de acuerdo con las capacidades de la plataforma de despliegue utilizada (por ejemplo, servicios PaaS con gestión de versiones y reinicio automático).}                           \\ \hline
-	\end{tabular}
-\end{table}
+	
+\end{longtable}
+\endgroup
 
-\begin{table}[H]
-	\centering
-	\renewcommand{\arraystretch}{1.3}
-	\setlength{\tabcolsep}{6pt}
-	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
-	\caption{RNF09: MANTENIBILIDAD DEL CÓDIGO MEDIANTE MODULARIDAD, PRUEBAS Y DOCUMENTACIÓN}
-	\label{tab:rnf09}
-	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
-		\hline
+
+\begingroup
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\centering
+\begin{longtable}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\caption{RNF09: MANTENIBILIDAD DEL CÓDIGO MEDIANTE MODULARIDAD, PRUEBAS Y DOCUMENTACIÓN}\label{tab:rnf09}\\
+\hline
 		\rowcolor{tableheaderblue}
 		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                                                                                              \\ \hline
 		\multicolumn{4}{|l|}{\textbf{Prioridad: Media}}                                                                                                                                                                                                                                           \\ \hline
@@ -292,18 +290,18 @@
 		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                                                                                              \\ \hline
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		El código del proyecto debe versionarse en un repositorio Git, desarrollarse principalmente en TypeScript y seguir un conjunto de convenciones de estilo y revisión de código acordadas (por ejemplo, ESLint y revisiones por pares).}                                                    \\ \hline
-	\end{tabular}
-\end{table}
+	
+\end{longtable}
+\endgroup
 
-\begin{table}[H]
-	\centering
-	\renewcommand{\arraystretch}{1.3}
-	\setlength{\tabcolsep}{6pt}
-	\definecolor{tableheaderblue}{RGB}{189, 215, 238}
-	\caption{RNF10: AUDITORÍA Y REGISTRO DE EVENTOS CRÍTICOS}
-	\label{tab:rnf10}
-	\begin{tabular}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
-		\hline
+
+\begingroup
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{6pt}
+\centering
+\begin{longtable}{|p{0.25\linewidth}|p{0.15\linewidth}|p{0.15\linewidth}|p{0.35\linewidth}|}
+\caption{RNF10: AUDITORÍA Y REGISTRO DE EVENTOS CRÍTICOS}\label{tab:rnf10}\\
+\hline
 		\rowcolor{tableheaderblue}
 		\multicolumn{4}{|l|}{\textbf{Requerimientos no funcionales}}                                                                                                                                                                                                 \\ \hline
 		\multicolumn{4}{|l|}{\textbf{Prioridad: Media}}                                                                                                                                                                                                              \\ \hline
@@ -325,5 +323,7 @@
 		\multicolumn{4}{|l|}{\textbf{Restricciones}}                                                                                                                                                                                                                 \\ \hline
 		\multicolumn{4}{|p{0.96\linewidth}|}{%
 		Los registros de auditoría no deben incluir información sensible en texto plano (por ejemplo, contraseñas, números completos de tarjetas u otros datos confidenciales), limitándose a identificadores, metadatos y descripciones generales de la operación.} \\ \hline
-	\end{tabular}
-\end{table}
+	
+\end{longtable}
+\endgroup
+
